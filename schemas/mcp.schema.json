@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hermes-registry/schemas/mcp.schema.json",
+  "title": "MCP manifest",
+  "properties": {
+    "type": { "const": "mcp" },
+    "transport": { "type": "string", "enum": ["stdio", "http"] },
+    "command": { "type": "string" },
+    "args": { "type": "array", "items": { "type": "string" } },
+    "env": { "type": "object" },
+    "url": { "type": "string" },
+    "configSchema": {
+      "type": "object",
+      "description": "JSON Schema for user-supplied config (e.g. secrets). Declared only — values are never committed."
+    }
+  },
+  "required": ["transport"],
+  "allOf": [
+    { "$ref": "https://hermes-registry/schemas/manifest.base.json" },
+    {
+      "if": { "properties": { "transport": { "const": "stdio" } } },
+      "then": { "required": ["command"] }
+    },
+    {
+      "if": { "properties": { "transport": { "const": "http" } } },
+      "then": { "required": ["url"] }
+    }
+  ]
+}

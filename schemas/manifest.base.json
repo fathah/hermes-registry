@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hermes-registry/schemas/manifest.base.json",
+  "title": "Hermes Registry manifest (common core)",
+  "type": "object",
+  "properties": {
+    "schemaVersion": { "const": "1" },
+    "type": { "type": "string", "enum": ["mcp", "agent", "workflow"] },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*(/[a-z0-9][a-z0-9._-]*)?$",
+      "description": "Unique id. Either `name` or `author/name`."
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+([.-].+)?$",
+      "description": "Semantic version."
+    },
+    "description": { "type": "string", "minLength": 1 },
+    "author": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "url": { "type": "string" }
+          },
+          "required": ["name"]
+        }
+      ]
+    },
+    "license": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "icon": {
+      "type": "string",
+      "pattern": "\\.(svg|png)$",
+      "description": "Filename of an SVG or 512x512 PNG icon, relative to the entry folder."
+    },
+    "compatibility": {
+      "type": "object",
+      "properties": {
+        "hermes": { "type": "string", "description": "semver range" },
+        "desktop": { "type": "string", "description": "semver range" }
+      },
+      "required": ["hermes", "desktop"],
+      "additionalProperties": false
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "version": { "type": "string" }
+        },
+        "required": ["id"]
+      }
+    },
+    "permissions": { "type": "array", "items": { "type": "string" } },
+    "funding": {
+      "type": "object",
+      "properties": {
+        "address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+        "token": { "type": "string" },
+        "chain": { "type": "string", "enum": ["base"] }
+      },
+      "required": ["address"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "type",
+    "id",
+    "name",
+    "version",
+    "description",
+    "compatibility"
+  ]
+}
