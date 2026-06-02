@@ -1,0 +1,153 @@
+#!/usr/bin/env python3
+"""Generate index.json and categories.json from the registry folders.
+
+Skills are read from SKILL.md frontmatter; MCP/agent/workflow entries from
+their manifest.json. Output is deterministic (sorted) so diffs stay clean.
+
+Usage:  python scripts/build_index.py
+Env:    GENERATED_AT  ISO timestamp to stamp (defaults to now, UTC)
+"""
+from __future__ import annotations
+
+import json
+import os
+import sys
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import (  # noqa: E402
+    REPO_ROOT,
+    SKILLS_DIR,
+    find_icon,
+    folder_checksum,
+    hermes_meta,
+    iter_manifest_files,
+    iter_skill_files,
+    load_manifest,
+    parse_frontmatter,
+)
+
+SCHEMA_VERSION = "1"
+
+
+def rel(path: Path) -> str:
+    return path.relative_to(REPO_ROOT).as_posix()
+
+
+def author_name(value) -> str | None:
+    if isinstance(value, dict):
+        return value.get("name")
+    return value
+
+
+def skill_entry(skill_md: Path) -> dict | None:
+    folder = skill_md.parent
+    try:
+        fm = parse_frontmatter(skill_md)
+    except ValueError:
+        return None
+    meta = hermes_meta(fm)
+    # Category = the first folder segment under skills/ (folder is the source of
+    # truth, so nested skills like mlops/evaluation/* roll up to "mlops").
+    parts = folder.relative_to(SKILLS_DIR).parts
+    category = parts[0] if parts else folder.name
+    icon = find_icon(folder)
+    funding = meta.get("funding") or {}
+    return {
+        "id": fm.get("name") or folder.name,
+        "type": "skill",
+        "category": category,
+        "name": fm.get("name") or folder.name,
+        "version": str(fm.get("version")) if fm.get("version") else None,
+        "description": fm.get("description", ""),
+        "tags": meta.get("tags") or [],
+        "author": author_name(fm.get("author")),
+        "license": fm.get("license"),
+        "platforms": fm.get("platforms") or [],
+        "path": rel(folder),
+        "icon": rel(icon) if icon else None,
+        "checksum": folder_checksum(folder),
+        "compatibility": meta.get("compatibility"),
+        "acceptsFunding": bool(funding.get("address")),
+    }
+
+
+def manifest_entry(type_name: str, manifest_path: Path) -> dict | None:
+    folder = manifest_path.parent
+    try:
+        data = load_manifest(manifest_path)
+    except json.JSONDecodeError:
+        return None
+    icon = find_icon(folder, data.get("icon"))
+    funding = data.get("funding") or {}
+    return {
+        "id": data.get("id") or folder.name,
+        "type": type_name,
+        "category": type_name,
+        "name": data.get("name") or folder.name,
+        "version": data.get("version"),
+        "description": data.get("description", ""),
+        "tags": data.get("tags") or [],
+        "author": author_name(data.get("author")),
+        "license": data.get("license"),
+        "path": rel(folder),
+        "icon": rel(icon) if icon else None,
+        "checksum": folder_checksum(folder),
+        "compatibility": data.get("compatibility"),
+        "acceptsFunding": bool(funding.get("address")),
+    }
+
+
+def main() -> int:
+    entries: list[dict] = []
+
+    for skill_md in iter_skill_files():
+        e = skill_entry(skill_md)
+        if e:
+            entries.append(e)
+    for type_name, manifest_path in iter_manifest_files():
+        e = manifest_entry(type_name, manifest_path)
+        if e:
+            entries.append(e)
+
+    entries.sort(key=lambda e: (e["type"], e["category"], e["id"]))
+
+    generated = os.environ.get("GENERATED_AT") or datetime.now(timezone.utc).isoformat()
+
+    index = {
+        "schemaVersion": SCHEMA_VERSION,
+        "generated": generated,
+        "count": len(entries),
+        "entries": entries,
+    }
+
+    # categories.json — taxonomy + counts for the desktop gallery
+    cat_counter = Counter(e["category"] for e in entries)
+    type_counter = Counter(e["type"] for e in entries)
+    categories = {
+        "schemaVersion": SCHEMA_VERSION,
+        "generated": generated,
+        "types": dict(sorted(type_counter.items())),
+        "categories": [
+            {"name": name, "count": count}
+            for name, count in sorted(cat_counter.items())
+        ],
+    }
+
+    (REPO_ROOT / "index.json").write_text(
+        json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    (REPO_ROOT / "categories.json").write_text(
+        json.dumps(categories, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+
+    by_type = ", ".join(f"{t}={n}" for t, n in sorted(type_counter.items()))
+    print(f"Wrote index.json ({len(entries)} entries: {by_type or 'none'})")
+    print(f"Wrote categories.json ({len(cat_counter)} categories)")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

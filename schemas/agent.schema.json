@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hermes-registry/schemas/agent.schema.json",
+  "title": "Agent manifest",
+  "properties": {
+    "type": { "const": "agent" },
+    "entry": { "type": "string", "description": "System-prompt file, e.g. AGENT.md" },
+    "model": { "type": "string" },
+    "tools": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["entry"],
+  "allOf": [{ "$ref": "https://hermes-registry/schemas/manifest.base.json" }]
+}

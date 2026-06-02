@@ -1,0 +1,52 @@
+name: Build Index
+
+# On push to the release branch: validate, regenerate index.json +
+# categories.json from the folders, and commit them back to the branch.
+on:
+  push:
+    branches:
+      - release
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-index-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate registry
+        run: python scripts/validate.py
+
+      - name: Generate catalog
+        env:
+          GENERATED_AT: ${{ github.event.head_commit.timestamp }}
+        run: python scripts/build_index.py
+
+      - name: Commit catalog if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- index.json categories.json; then
+            echo "Catalog unchanged — nothing to commit."
+          else
+            git add index.json categories.json
+            git commit -m "chore: regenerate catalog [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          fi

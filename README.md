@@ -182,22 +182,29 @@ address so users and agents can send a tip in the Hermes token on Base.
 ## Contributing
 
 1. Fork this repo.
-2. Create a folder under the right type: `skills/<name>/`, `mcp/<name>/`,
-   `agents/<name>/`, or `workflows/<name>/`.
-3. Add a `manifest.json`, an `icon.svg` (or 512×512 `icon.png`), and the entry
-   file for that type.
-4. Run validation locally:
+2. Add your entry:
+   - **Skill** → `skills/<category>/<name>/SKILL.md` (agentskills.io frontmatter).
+     See [skills/README.md](skills/README.md).
+   - **MCP / agent / workflow** → `{type}/<name>/manifest.json` + entry file.
+     See each type's README.
+3. Add an icon if you have one (`icon.svg`, or 512×512 `icon.png`) — optional.
+4. Validate locally:
    ```bash
+   pip install -r requirements.txt
    python scripts/validate.py
    ```
-5. Open a PR. CI validates every manifest against its schema, checks icons, and
-   regenerates `index.json`.
+5. Open a PR. The **Validate** workflow checks every entry on each PR (errors
+   fail the check; warnings are allowed).
+
+The catalog (`index.json` + `categories.json`) is **generated, never
+hand-edited**. The **Build Index** workflow regenerates and commits it on every
+push to the `release` branch — so `release` always carries a fresh catalog.
 
 ### Guidelines
 
-- Use `author/name` IDs (e.g. `ziqx/web-scraper`) to avoid collisions.
+- IDs: skills use their `name`; MCP/agent/workflow may use `author/name` to avoid collisions.
 - Bump `version` (semver) on every change.
-- Declare honest `permissions` and `compatibility`.
+- Declare honest `permissions` and `compatibility` (`hermes` + `desktop`).
 - Keep entries self-contained — no secrets in the repo (MCP servers declare
   config via `configSchema`; secrets are supplied by the user at install time).
 

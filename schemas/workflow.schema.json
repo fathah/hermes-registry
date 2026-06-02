@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hermes-registry/schemas/workflow.schema.json",
+  "title": "Workflow manifest",
+  "properties": {
+    "type": { "const": "workflow" },
+    "entry": { "type": "string", "description": "Steps file, e.g. workflow.json" },
+    "requires": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of other registry entries this workflow depends on."
+    }
+  },
+  "required": ["entry"],
+  "allOf": [{ "$ref": "https://hermes-registry/schemas/manifest.base.json" }]
+}

@@ -1,0 +1,2467 @@
+{
+  "schemaVersion": "1",
+  "generated": "2026-06-02T00:00:00+00:00",
+  "count": 90,
+  "entries": [
+    {
+      "id": "apple-notes",
+      "type": "skill",
+      "category": "apple",
+      "name": "apple-notes",
+      "version": "1.0.0",
+      "description": "Manage Apple Notes via memo CLI: create, search, edit.",
+      "tags": [
+        "Notes",
+        "Apple",
+        "macOS",
+        "note-taking"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "macos"
+      ],
+      "path": "skills/apple/apple-notes",
+      "icon": null,
+      "checksum": "sha256:73a81df608c79d2b70d1f43d35a4bce66eca6edd2ce22d0b69d44264035122b3",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "apple-reminders",
+      "type": "skill",
+      "category": "apple",
+      "name": "apple-reminders",
+      "version": "1.0.0",
+      "description": "Apple Reminders via remindctl: add, list, complete.",
+      "tags": [
+        "Reminders",
+        "tasks",
+        "todo",
+        "macOS",
+        "Apple"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "macos"
+      ],
+      "path": "skills/apple/apple-reminders",
+      "icon": null,
+      "checksum": "sha256:53a861ecb691ff6c5501b7cba75754e77104fc6bef6d5429ab269a729a4ac305",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "findmy",
+      "type": "skill",
+      "category": "apple",
+      "name": "findmy",
+      "version": "1.0.0",
+      "description": "Track Apple devices/AirTags via FindMy.app on macOS.",
+      "tags": [
+        "FindMy",
+        "AirTag",
+        "location",
+        "tracking",
+        "macOS",
+        "Apple"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "macos"
+      ],
+      "path": "skills/apple/findmy",
+      "icon": null,
+      "checksum": "sha256:ddff964d35ee5d3f15e3e16e7cef4aac6eb7edac14e10e443efc4839d21f2692",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "imessage",
+      "type": "skill",
+      "category": "apple",
+      "name": "imessage",
+      "version": "1.0.0",
+      "description": "Send and receive iMessages/SMS via the imsg CLI on macOS.",
+      "tags": [
+        "iMessage",
+        "SMS",
+        "messaging",
+        "macOS",
+        "Apple"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "macos"
+      ],
+      "path": "skills/apple/imessage",
+      "icon": null,
+      "checksum": "sha256:a743d84ac70247f59d5b62518a5f3da847667f73219702a27f3b6860cd83f45a",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "macos-computer-use",
+      "type": "skill",
+      "category": "apple",
+      "name": "macos-computer-use",
+      "version": "1.0.0",
+      "description": "Drive the macOS desktop in the background — screenshots, mouse, keyboard,\nscroll, drag — without stealing the user's cursor, keyboard focus, or\nSpace. Works with any tool-capable model. Load this skill whenever the\n`computer_use` tool is available.\n",
+      "tags": [
+        "computer-use",
+        "macos",
+        "desktop",
+        "automation",
+        "gui"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "macos"
+      ],
+      "path": "skills/apple/macos-computer-use",
+      "icon": null,
+      "checksum": "sha256:8dc4279396fa021906dabeb60c24e021b59d0d6c4e2afcaafc2f61442a942359",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "claude-code",
+      "type": "skill",
+      "category": "autonomous-ai-agents",
+      "name": "claude-code",
+      "version": "2.2.0",
+      "description": "Delegate coding to Claude Code CLI (features, PRs).",
+      "tags": [
+        "Coding-Agent",
+        "Claude",
+        "Anthropic",
+        "Code-Review",
+        "Refactoring",
+        "PTY",
+        "Automation"
+      ],
+      "author": "Hermes Agent + Teknium",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/autonomous-ai-agents/claude-code",
+      "icon": null,
+      "checksum": "sha256:fef18b4b16b66839f3929e15616a60cbc3ecbf4faed111585ebcb51d3e10fc17",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "codex",
+      "type": "skill",
+      "category": "autonomous-ai-agents",
+      "name": "codex",
+      "version": "1.0.0",
+      "description": "Delegate coding to OpenAI Codex CLI (features, PRs).",
+      "tags": [
+        "Coding-Agent",
+        "Codex",
+        "OpenAI",
+        "Code-Review",
+        "Refactoring"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/autonomous-ai-agents/codex",
+      "icon": null,
+      "checksum": "sha256:5cd8c4cbf27f22f48498ae177a79aecc91085630b208d86aec06f006c7faaa08",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "hermes-agent",
+      "type": "skill",
+      "category": "autonomous-ai-agents",
+      "name": "hermes-agent",
+      "version": "2.1.0",
+      "description": "Configure, extend, or contribute to Hermes Agent.",
+      "tags": [
+        "hermes",
+        "setup",
+        "configuration",
+        "multi-agent",
+        "spawning",
+        "cli",
+        "gateway",
+        "development"
+      ],
+      "author": "Hermes Agent + Teknium",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/autonomous-ai-agents/hermes-agent",
+      "icon": null,
+      "checksum": "sha256:20ba93e66964349d80ceb65c42acb6bbbb650fd4bcfd4532eeba693c1fa0fff6",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "kanban-codex-lane",
+      "type": "skill",
+      "category": "autonomous-ai-agents",
+      "name": "kanban-codex-lane",
+      "version": "1.0.0",
+      "description": "Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.",
+      "tags": [
+        "kanban",
+        "codex",
+        "worktrees",
+        "autonomous-agents",
+        "prediction-market-bot"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [],
+      "path": "skills/autonomous-ai-agents/kanban-codex-lane",
+      "icon": null,
+      "checksum": "sha256:bc029017ade22cf9eb634ed755f4120d1820d153f3c9185ba5671ba66fd54e35",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "opencode",
+      "type": "skill",
+      "category": "autonomous-ai-agents",
+      "name": "opencode",
+      "version": "1.2.0",
+      "description": "Delegate coding to OpenCode CLI (features, PR review).",
+      "tags": [
+        "Coding-Agent",
+        "OpenCode",
+        "Autonomous",
+        "Refactoring",
+        "Code-Review"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/autonomous-ai-agents/opencode",
+      "icon": null,
+      "checksum": "sha256:843019fd291c0bdb52f718537bfd84272da6252ac6bb06bd89703f2fc15fd67a",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "architecture-diagram",
+      "type": "skill",
+      "category": "creative",
+      "name": "architecture-diagram",
+      "version": "1.0.0",
+      "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML.",
+      "tags": [
+        "architecture",
+        "diagrams",
+        "SVG",
+        "HTML",
+        "visualization",
+        "infrastructure",
+        "cloud"
+      ],
+      "author": "Cocoon AI (hello@cocoon-ai.com), ported by Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/architecture-diagram",
+      "icon": null,
+      "checksum": "sha256:7fb9288cd31a8d419ab858368f16a2eb5ef166fac7e499524a31dd8daea13c00",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "ascii-art",
+      "type": "skill",
+      "category": "creative",
+      "name": "ascii-art",
+      "version": "4.0.0",
+      "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.",
+      "tags": [
+        "ASCII",
+        "Art",
+        "Banners",
+        "Creative",
+        "Unicode",
+        "Text-Art",
+        "pyfiglet",
+        "figlet",
+        "cowsay",
+        "boxes"
+      ],
+      "author": "0xbyt4, Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/ascii-art",
+      "icon": null,
+      "checksum": "sha256:0622bc01c1494f13a2ae06fcb0bc19bfc42e13eabca858d27637e2fb174153c4",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "ascii-video",
+      "type": "skill",
+      "category": "creative",
+      "name": "ascii-video",
+      "version": null,
+      "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+      "tags": [],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/ascii-video",
+      "icon": null,
+      "checksum": "sha256:abece008606e656cedaba3de432f2c5f312f694d671d208553b3561938b69f86",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "baoyu-article-illustrator",
+      "type": "skill",
+      "category": "creative",
+      "name": "baoyu-article-illustrator",
+      "version": "1.57.0",
+      "description": "Article illustrations: type × style × palette consistency.",
+      "tags": [
+        "article-illustration",
+        "creative",
+        "image-generation"
+      ],
+      "author": "宝玉 (JimLiu)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/baoyu-article-illustrator",
+      "icon": null,
+      "checksum": "sha256:32f12d4389447100abbb5991a42fcff2f43db767540caea1737354f8a489085f",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "baoyu-comic",
+      "type": "skill",
+      "category": "creative",
+      "name": "baoyu-comic",
+      "version": "1.56.1",
+      "description": "Knowledge comics (知识漫画): educational, biography, tutorial.",
+      "tags": [
+        "comic",
+        "knowledge-comic",
+        "creative",
+        "image-generation"
+      ],
+      "author": "宝玉 (JimLiu)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/baoyu-comic",
+      "icon": null,
+      "checksum": "sha256:5a9f0fb07eafeeacbcd46d4c2d836f11e4fb797ed59b0222d9d614dd5c24eecd",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "baoyu-infographic",
+      "type": "skill",
+      "category": "creative",
+      "name": "baoyu-infographic",
+      "version": "1.56.1",
+      "description": "Infographics: 21 layouts x 21 styles (信息图, 可视化).",
+      "tags": [
+        "infographic",
+        "visual-summary",
+        "creative",
+        "image-generation"
+      ],
+      "author": "宝玉 (JimLiu)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/baoyu-infographic",
+      "icon": null,
+      "checksum": "sha256:834108fb249a0a1f41de6ac215828e67f534f4940eb13b6e977b4a5d5382a76a",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "claude-design",
+      "type": "skill",
+      "category": "creative",
+      "name": "claude-design",
+      "version": "1.0.0",
+      "description": "Design one-off HTML artifacts (landing, deck, prototype).",
+      "tags": [
+        "design",
+        "html",
+        "prototype",
+        "ux",
+        "ui",
+        "creative",
+        "artifact",
+        "deck",
+        "motion",
+        "design-system"
+      ],
+      "author": "BadTechBandit",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/claude-design",
+      "icon": null,
+      "checksum": "sha256:713b9688b14e7fffea8038c77792500b458fdb7f8512c200020d21be0b1c7366",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "comfyui",
+      "type": "skill",
+      "category": "creative",
+      "name": "comfyui",
+      "version": "5.1.0",
+      "description": "Generate images, video, and audio with ComfyUI — install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution.",
+      "tags": [
+        "comfyui",
+        "image-generation",
+        "stable-diffusion",
+        "flux",
+        "sd3",
+        "wan-video",
+        "hunyuan-video",
+        "creative",
+        "generative-ai",
+        "video-generation"
+      ],
+      "author": [
+        "kshitijk4poor",
+        "alt-glitch",
+        "purzbeats"
+      ],
+      "license": "MIT",
+      "platforms": [
+        "macos",
+        "linux",
+        "windows"
+      ],
+      "path": "skills/creative/comfyui",
+      "icon": null,
+      "checksum": "sha256:21704728b76643daaecb3ea4ce209f26f0ea432434e5f368c2169f62d485ad33",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "design-md",
+      "type": "skill",
+      "category": "creative",
+      "name": "design-md",
+      "version": "1.0.0",
+      "description": "Author/validate/export Google's DESIGN.md token spec files.",
+      "tags": [
+        "design",
+        "design-system",
+        "tokens",
+        "ui",
+        "accessibility",
+        "wcag",
+        "tailwind",
+        "dtcg",
+        "google"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/design-md",
+      "icon": null,
+      "checksum": "sha256:8688793e50fe5415e2017589f0a4063c7934b07448bf891cba2ec7cdfc3b6ec1",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "excalidraw",
+      "type": "skill",
+      "category": "creative",
+      "name": "excalidraw",
+      "version": "1.0.0",
+      "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).",
+      "tags": [
+        "Excalidraw",
+        "Diagrams",
+        "Flowcharts",
+        "Architecture",
+        "Visualization",
+        "JSON"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/excalidraw",
+      "icon": null,
+      "checksum": "sha256:a203ff6d8802cc2391d1ea7cc7b72e419faf9e78d65f3c78ce3475b29c2a5fd5",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "humanizer",
+      "type": "skill",
+      "category": "creative",
+      "name": "humanizer",
+      "version": "2.5.1",
+      "description": "Humanize text: strip AI-isms and add real voice.",
+      "tags": [
+        "writing",
+        "editing",
+        "humanize",
+        "anti-ai-slop",
+        "voice",
+        "prose",
+        "text"
+      ],
+      "author": "Siqi Chen (@blader, https://github.com/blader/humanizer), ported by Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/humanizer",
+      "icon": null,
+      "checksum": "sha256:ca486109824c4620de52a8f3830e56df443aa48fd0e0ae0bf317275d81c3aefb",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "ideation",
+      "type": "skill",
+      "category": "creative",
+      "name": "ideation",
+      "version": "1.0.0",
+      "description": "Generate project ideas via creative constraints.",
+      "tags": [
+        "Creative",
+        "Ideation",
+        "Projects",
+        "Brainstorming",
+        "Inspiration"
+      ],
+      "author": "SHL0MS",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/creative-ideation",
+      "icon": null,
+      "checksum": "sha256:ac853cd491c8624f5a7db234822240707785e2f1f8b4d1c03070bd45681edd79",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "manim-video",
+      "type": "skill",
+      "category": "creative",
+      "name": "manim-video",
+      "version": "1.0.0",
+      "description": "Manim CE animations: 3Blue1Brown math/algo videos.",
+      "tags": [],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/manim-video",
+      "icon": null,
+      "checksum": "sha256:861b209946f4696f01b45bcf96463734f108676f9ed7ffe8d5e8d63da13d39dc",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "p5js",
+      "type": "skill",
+      "category": "creative",
+      "name": "p5js",
+      "version": "1.0.0",
+      "description": "p5.js sketches: gen art, shaders, interactive, 3D.",
+      "tags": [
+        "creative-coding",
+        "generative-art",
+        "p5js",
+        "canvas",
+        "interactive",
+        "visualization",
+        "webgl",
+        "shaders",
+        "animation"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/p5js",
+      "icon": null,
+      "checksum": "sha256:a44157a17340c441260c1442801212ec4416d7dad9ee4609845512179a823e38",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "pixel-art",
+      "type": "skill",
+      "category": "creative",
+      "name": "pixel-art",
+      "version": "2.0.0",
+      "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8).",
+      "tags": [
+        "creative",
+        "pixel-art",
+        "arcade",
+        "snes",
+        "nes",
+        "gameboy",
+        "retro",
+        "image",
+        "video"
+      ],
+      "author": "dodo-reach",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/pixel-art",
+      "icon": null,
+      "checksum": "sha256:06ef8938adeb9ce005edaf026397a6851f5f15d9765a6af29316538ce10ae086",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "popular-web-designs",
+      "type": "skill",
+      "category": "creative",
+      "name": "popular-web-designs",
+      "version": "1.0.0",
+      "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+      "tags": [],
+      "author": "Hermes Agent + Teknium (design systems sourced from VoltAgent/awesome-design-md)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/popular-web-designs",
+      "icon": null,
+      "checksum": "sha256:0ff333a9c1c8f400632a2299c396c2e46a9382654035106853f6e0fe87065b03",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "pretext",
+      "type": "skill",
+      "category": "creative",
+      "name": "pretext",
+      "version": "1.0.0",
+      "description": "Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.",
+      "tags": [
+        "creative-coding",
+        "typography",
+        "pretext",
+        "ascii-art",
+        "canvas",
+        "generative",
+        "text-layout",
+        "kinetic-typography"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/pretext",
+      "icon": null,
+      "checksum": "sha256:ad01a9e0ad49dcfb131c3fb773a7ba4ae02b4cce1efa3f7c7b0494453793cebe",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "sketch",
+      "type": "skill",
+      "category": "creative",
+      "name": "sketch",
+      "version": "1.0.0",
+      "description": "Throwaway HTML mockups: 2-3 design variants to compare.",
+      "tags": [
+        "sketch",
+        "mockup",
+        "design",
+        "ui",
+        "prototype",
+        "html",
+        "variants",
+        "exploration",
+        "wireframe",
+        "comparison"
+      ],
+      "author": "Hermes Agent (adapted from gsd-build/get-shit-done)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/sketch",
+      "icon": null,
+      "checksum": "sha256:46f0bf6edc0a5d77ebbc5152ea07db4b37087025842264a12bc9597064ceff01",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "songwriting-and-ai-music",
+      "type": "skill",
+      "category": "creative",
+      "name": "songwriting-and-ai-music",
+      "version": null,
+      "description": "Songwriting craft and Suno AI music prompts.",
+      "tags": [],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/songwriting-and-ai-music",
+      "icon": null,
+      "checksum": "sha256:c9d9fb17a6d9299dbf2615117c65039bd68151b4525c8ec402c449acadb31fc6",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "touchdesigner-mcp",
+      "type": "skill",
+      "category": "creative",
+      "name": "touchdesigner-mcp",
+      "version": "1.1.0",
+      "description": "Control a running TouchDesigner instance via twozero MCP — create operators, set parameters, wire connections, execute Python, build real-time visuals. 36 native tools.",
+      "tags": [
+        "TouchDesigner",
+        "MCP",
+        "twozero",
+        "creative-coding",
+        "real-time-visuals",
+        "generative-art",
+        "audio-reactive",
+        "VJ",
+        "installation",
+        "GLSL"
+      ],
+      "author": "kshitijk4poor",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/creative/touchdesigner-mcp",
+      "icon": null,
+      "checksum": "sha256:40040b02e28620385e4ffa6cda14732968a243e06169d2ce4f7ff1eea4172835",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "jupyter-live-kernel",
+      "type": "skill",
+      "category": "data-science",
+      "name": "jupyter-live-kernel",
+      "version": "1.0.0",
+      "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+      "tags": [
+        "jupyter",
+        "notebook",
+        "repl",
+        "data-science",
+        "exploration",
+        "iterative"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/data-science/jupyter-live-kernel",
+      "icon": null,
+      "checksum": "sha256:5eb40567439d0504900866aeafa547a6085f50ffa68be07d3277f0b1c16fe2ae",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "kanban-orchestrator",
+      "type": "skill",
+      "category": "devops",
+      "name": "kanban-orchestrator",
+      "version": "3.0.0",
+      "description": "Decomposition playbook + anti-temptation rules for an orchestrator profile routing work through Kanban. The \"don't do the work yourself\" rule and the basic lifecycle are auto-injected into every kanban worker's system prompt; this skill is the deeper playbook when you're specifically playing the orchestrator role.",
+      "tags": [
+        "kanban",
+        "multi-agent",
+        "orchestration",
+        "routing"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/devops/kanban-orchestrator",
+      "icon": null,
+      "checksum": "sha256:1b4c5909023b3dc83aff12c19e5bcf2952978d48711485ad2b9fdbecd3805211",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "kanban-worker",
+      "type": "skill",
+      "category": "devops",
+      "name": "kanban-worker",
+      "version": "2.0.0",
+      "description": "Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is auto-injected into every worker's system prompt as KANBAN_GUIDANCE (from agent/prompt_builder.py); this skill is what you load when you want deeper detail on specific scenarios.",
+      "tags": [
+        "kanban",
+        "multi-agent",
+        "collaboration",
+        "workflow",
+        "pitfalls"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/devops/kanban-worker",
+      "icon": null,
+      "checksum": "sha256:fb1fd1d0a2bc13d8997c646005f5b49d5b20e03ca6963e785bb13208218ff04e",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "webhook-subscriptions",
+      "type": "skill",
+      "category": "devops",
+      "name": "webhook-subscriptions",
+      "version": "1.1.0",
+      "description": "Webhook subscriptions: event-driven agent runs.",
+      "tags": [
+        "webhook",
+        "events",
+        "automation",
+        "integrations",
+        "notifications",
+        "push"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/devops/webhook-subscriptions",
+      "icon": null,
+      "checksum": "sha256:7ef378b1c093a2ac4f66b0e9d08d5f2e3881f4e7b750d65771ab2bb4b9a2b5af",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "dogfood",
+      "type": "skill",
+      "category": "dogfood",
+      "name": "dogfood",
+      "version": "1.0.0",
+      "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
+      "tags": [
+        "qa",
+        "testing",
+        "browser",
+        "web",
+        "dogfood"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/dogfood",
+      "icon": null,
+      "checksum": "sha256:0134d8b398fc708f58a208326d01f2dc680dfae8671a8b32519aa1f3a0b6acb5",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "himalaya",
+      "type": "skill",
+      "category": "email",
+      "name": "himalaya",
+      "version": "1.1.0",
+      "description": "Himalaya CLI: IMAP/SMTP email from terminal.",
+      "tags": [
+        "Email",
+        "IMAP",
+        "SMTP",
+        "CLI",
+        "Communication"
+      ],
+      "author": "community",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/email/himalaya",
+      "icon": null,
+      "checksum": "sha256:d042f8f8bd1153f77a38053309204fa4209c0ce1e5c62b7d67993ec0abe2ef71",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "minecraft-modpack-server",
+      "type": "skill",
+      "category": "gaming",
+      "name": "minecraft-modpack-server",
+      "version": null,
+      "description": "Host modded Minecraft servers (CurseForge, Modrinth).",
+      "tags": [],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/gaming/minecraft-modpack-server",
+      "icon": null,
+      "checksum": "sha256:7b280be63bf365e98ee8c32b574d323101d63ead46e7934e8a17d9daf89742e2",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "pokemon-player",
+      "type": "skill",
+      "category": "gaming",
+      "name": "pokemon-player",
+      "version": null,
+      "description": "Play Pokemon via headless emulator + RAM reads.",
+      "tags": [],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/gaming/pokemon-player",
+      "icon": null,
+      "checksum": "sha256:8e611a65654769924da5a3bd8d7a1b4c1e58e857bf0d6ffaa1218386681033a1",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "codebase-inspection",
+      "type": "skill",
+      "category": "github",
+      "name": "codebase-inspection",
+      "version": "1.0.0",
+      "description": "Inspect codebases w/ pygount: LOC, languages, ratios.",
+      "tags": [
+        "LOC",
+        "Code Analysis",
+        "pygount",
+        "Codebase",
+        "Metrics",
+        "Repository"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/github/codebase-inspection",
+      "icon": null,
+      "checksum": "sha256:5aed240eba9845706b4234425593212b05ca47eee1c60e90797779751789693a",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "github-auth",
+      "type": "skill",
+      "category": "github",
+      "name": "github-auth",
+      "version": "1.1.0",
+      "description": "GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.",
+      "tags": [
+        "GitHub",
+        "Authentication",
+        "Git",
+        "gh-cli",
+        "SSH",
+        "Setup"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/github/github-auth",
+      "icon": null,
+      "checksum": "sha256:02e2cc4f5ae260c5d53d74c2c242e1c2bd01af83f42d45932363dfefe1702807",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "github-code-review",
+      "type": "skill",
+      "category": "github",
+      "name": "github-code-review",
+      "version": "1.1.0",
+      "description": "Review PRs: diffs, inline comments via gh or REST.",
+      "tags": [
+        "GitHub",
+        "Code-Review",
+        "Pull-Requests",
+        "Git",
+        "Quality"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/github/github-code-review",
+      "icon": null,
+      "checksum": "sha256:605642c1fc3bc5ab08f81dede75ced293c5fa2592d79596b21c69fd258f3e69d",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "github-issues",
+      "type": "skill",
+      "category": "github",
+      "name": "github-issues",
+      "version": "1.1.0",
+      "description": "Create, triage, label, assign GitHub issues via gh or REST.",
+      "tags": [
+        "GitHub",
+        "Issues",
+        "Project-Management",
+        "Bug-Tracking",
+        "Triage"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/github/github-issues",
+      "icon": null,
+      "checksum": "sha256:fb80b6180ebf52a0ce9f7b6b5a145f72d6a15d241c1ec4d7d141ee6829fb9953",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "github-pr-workflow",
+      "type": "skill",
+      "category": "github",
+      "name": "github-pr-workflow",
+      "version": "1.1.0",
+      "description": "GitHub PR lifecycle: branch, commit, open, CI, merge.",
+      "tags": [
+        "GitHub",
+        "Pull-Requests",
+        "CI/CD",
+        "Git",
+        "Automation",
+        "Merge"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/github/github-pr-workflow",
+      "icon": null,
+      "checksum": "sha256:a52945c020b927b14798344355b8629704b7b07de317ee2c425520e8382dd36e",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "github-repo-management",
+      "type": "skill",
+      "category": "github",
+      "name": "github-repo-management",
+      "version": "1.1.0",
+      "description": "Clone/create/fork repos; manage remotes, releases.",
+      "tags": [
+        "GitHub",
+        "Repositories",
+        "Git",
+        "Releases",
+        "Secrets",
+        "Configuration"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/github/github-repo-management",
+      "icon": null,
+      "checksum": "sha256:ea4688738a4e0cda492f2bccf744fa287abf0974dac5285845d0089b251fb65d",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "native-mcp",
+      "type": "skill",
+      "category": "mcp",
+      "name": "native-mcp",
+      "version": "1.0.0",
+      "description": "MCP client: connect servers, register tools (stdio/HTTP).",
+      "tags": [
+        "MCP",
+        "Tools",
+        "Integrations"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/mcp/native-mcp",
+      "icon": null,
+      "checksum": "sha256:f57d524186e2f6dbbd2af97bbe8d953bf54c254decda8a7c4b9fc03c19920124",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "gif-search",
+      "type": "skill",
+      "category": "media",
+      "name": "gif-search",
+      "version": "1.1.0",
+      "description": "Search/download GIFs from Tenor via curl + jq.",
+      "tags": [
+        "GIF",
+        "Media",
+        "Search",
+        "Tenor",
+        "API"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/media/gif-search",
+      "icon": null,
+      "checksum": "sha256:00dbf59debec177b9655e5126ee8e340494186315578d191cad87841db0690ae",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "heartmula",
+      "type": "skill",
+      "category": "media",
+      "name": "heartmula",
+      "version": "1.0.0",
+      "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+      "tags": [
+        "music",
+        "audio",
+        "generation",
+        "ai",
+        "heartmula",
+        "heartcodec",
+        "lyrics",
+        "songs"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/media/heartmula",
+      "icon": null,
+      "checksum": "sha256:e9b8c1248da9c2c20053459a9060ac95d53ecef1b5bdddca8edc23c04b2b35ef",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "songsee",
+      "type": "skill",
+      "category": "media",
+      "name": "songsee",
+      "version": "1.0.0",
+      "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+      "tags": [
+        "Audio",
+        "Visualization",
+        "Spectrogram",
+        "Music",
+        "Analysis"
+      ],
+      "author": "community",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/media/songsee",
+      "icon": null,
+      "checksum": "sha256:84b2eec93a6e5b978e39275a4a0f9df108d6004b03f1284377ce699fda3efc09",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "spotify",
+      "type": "skill",
+      "category": "media",
+      "name": "spotify",
+      "version": "1.0.0",
+      "description": "Spotify: play, search, queue, manage playlists and devices.",
+      "tags": [
+        "spotify",
+        "music",
+        "playback",
+        "playlists",
+        "media"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/media/spotify",
+      "icon": null,
+      "checksum": "sha256:c72fc64f946601d40cb10295cd9a95fa823075155c968f104aa2e837db4c80bb",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "youtube-content",
+      "type": "skill",
+      "category": "media",
+      "name": "youtube-content",
+      "version": null,
+      "description": "YouTube transcripts to summaries, threads, blogs.",
+      "tags": [],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/media/youtube-content",
+      "icon": null,
+      "checksum": "sha256:c2b310ab578da57b5e7f9c48c491b546b6c23877339eaa843aa03f55300ac659",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "audiocraft-audio-generation",
+      "type": "skill",
+      "category": "mlops",
+      "name": "audiocraft-audio-generation",
+      "version": "1.0.0",
+      "description": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.",
+      "tags": [
+        "Multimodal",
+        "Audio Generation",
+        "Text-to-Music",
+        "Text-to-Audio",
+        "MusicGen"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/mlops/models/audiocraft",
+      "icon": null,
+      "checksum": "sha256:84df7e9a79f71696003d81728777f11c5c4068a0abdd0f9c904f8ab20a772f8c",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "dspy",
+      "type": "skill",
+      "category": "mlops",
+      "name": "dspy",
+      "version": "1.0.0",
+      "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+      "tags": [
+        "Prompt Engineering",
+        "DSPy",
+        "Declarative Programming",
+        "RAG",
+        "Agents",
+        "Prompt Optimization",
+        "LM Programming",
+        "Stanford NLP",
+        "Automatic Optimization",
+        "Modular AI"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/mlops/research/dspy",
+      "icon": null,
+      "checksum": "sha256:eed8df1d7735fa5ed5f6fb6a08485945266a4eea2de9816a0d6b8423f0e53e6e",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "evaluating-llms-harness",
+      "type": "skill",
+      "category": "mlops",
+      "name": "evaluating-llms-harness",
+      "version": "1.0.0",
+      "description": "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).",
+      "tags": [
+        "Evaluation",
+        "LM Evaluation Harness",
+        "Benchmarking",
+        "MMLU",
+        "HumanEval",
+        "GSM8K",
+        "EleutherAI",
+        "Model Quality",
+        "Academic Benchmarks",
+        "Industry Standard"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/mlops/evaluation/lm-evaluation-harness",
+      "icon": null,
+      "checksum": "sha256:5ad064e25bdb85d402595c6a408afa0eac21a65ab7c2a228fc7a324dae3b78bf",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "huggingface-hub",
+      "type": "skill",
+      "category": "mlops",
+      "name": "huggingface-hub",
+      "version": "1.0.0",
+      "description": "HuggingFace hf CLI: search/download/upload models, datasets.",
+      "tags": [],
+      "author": "Hugging Face",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/mlops/huggingface-hub",
+      "icon": null,
+      "checksum": "sha256:fa94317d8233c0e0c01f5ef5e0d6e44657afc8a2bd9d821dce037fd970e98f6a",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "llama-cpp",
+      "type": "skill",
+      "category": "mlops",
+      "name": "llama-cpp",
+      "version": "2.1.2",
+      "description": "llama.cpp local GGUF inference + HF Hub model discovery.",
+      "tags": [
+        "llama.cpp",
+        "GGUF",
+        "Quantization",
+        "Hugging Face Hub",
+        "CPU Inference",
+        "Apple Silicon",
+        "Edge Deployment",
+        "AMD GPUs",
+        "Intel GPUs",
+        "NVIDIA",
+        "URL-first"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/mlops/inference/llama-cpp",
+      "icon": null,
+      "checksum": "sha256:d09d4f8f2774ddd6c28c80900e2b1a4ec78322f8b6512c21c6dedb9231202df7",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "obliteratus",
+      "type": "skill",
+      "category": "mlops",
+      "name": "obliteratus",
+      "version": "2.0.0",
+      "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
+      "tags": [
+        "Abliteration",
+        "Uncensoring",
+        "Refusal-Removal",
+        "LLM",
+        "Weight-Projection",
+        "SVD",
+        "Mechanistic-Interpretability",
+        "HuggingFace",
+        "Model-Surgery"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/mlops/inference/obliteratus",
+      "icon": null,
+      "checksum": "sha256:499c64f75c35522fa0f13359a6a4e357286379715b4dee25bd317ce0166270e1",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "segment-anything-model",
+      "type": "skill",
+      "category": "mlops",
+      "name": "segment-anything-model",
+      "version": "1.0.0",
+      "description": "SAM: zero-shot image segmentation via points, boxes, masks.",
+      "tags": [
+        "Multimodal",
+        "Image Segmentation",
+        "Computer Vision",
+        "SAM",
+        "Zero-Shot"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/mlops/models/segment-anything",
+      "icon": null,
+      "checksum": "sha256:bbb91c890ddf6feb6741db6416ab329a31302fc5d8a3b8831a06f04de231e668",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "serving-llms-vllm",
+      "type": "skill",
+      "category": "mlops",
+      "name": "serving-llms-vllm",
+      "version": "1.0.0",
+      "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+      "tags": [
+        "vLLM",
+        "Inference Serving",
+        "PagedAttention",
+        "Continuous Batching",
+        "High Throughput",
+        "Production",
+        "OpenAI API",
+        "Quantization",
+        "Tensor Parallelism"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/mlops/inference/vllm",
+      "icon": null,
+      "checksum": "sha256:c8a279f44d9b38306a38b575436540ffcc02c5d8f2a7b03d670770d52968f78d",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "weights-and-biases",
+      "type": "skill",
+      "category": "mlops",
+      "name": "weights-and-biases",
+      "version": "1.0.0",
+      "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+      "tags": [
+        "MLOps",
+        "Weights And Biases",
+        "WandB",
+        "Experiment Tracking",
+        "Hyperparameter Tuning",
+        "Model Registry",
+        "Collaboration",
+        "Real-Time Visualization",
+        "PyTorch",
+        "TensorFlow",
+        "HuggingFace"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/mlops/evaluation/weights-and-biases",
+      "icon": null,
+      "checksum": "sha256:49346f3085e4959e74fba812f4c0873ed0e538c730ec81bdbb26145e79b46670",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "obsidian",
+      "type": "skill",
+      "category": "note-taking",
+      "name": "obsidian",
+      "version": null,
+      "description": "Read, search, create, and edit notes in the Obsidian vault.",
+      "tags": [],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/note-taking/obsidian",
+      "icon": null,
+      "checksum": "sha256:757b5f08836aaa346ad7db597b1d57d221a3d7229ac856d848eb99a454527042",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "airtable",
+      "type": "skill",
+      "category": "productivity",
+      "name": "airtable",
+      "version": "1.1.0",
+      "description": "Airtable REST API via curl. Records CRUD, filters, upserts.",
+      "tags": [
+        "Airtable",
+        "Productivity",
+        "Database",
+        "API"
+      ],
+      "author": "community",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/airtable",
+      "icon": null,
+      "checksum": "sha256:2bc85c58df57bf109fe4406e91c0374926b0a639cd15e432c38825dfed87fbf6",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "google-workspace",
+      "type": "skill",
+      "category": "productivity",
+      "name": "google-workspace",
+      "version": "1.1.0",
+      "description": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+      "tags": [
+        "Google",
+        "Gmail",
+        "Calendar",
+        "Drive",
+        "Sheets",
+        "Docs",
+        "Contacts",
+        "Email",
+        "OAuth"
+      ],
+      "author": "Nous Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/google-workspace",
+      "icon": null,
+      "checksum": "sha256:f5a966487f2192ca6c78b8e3e3f077d302fb382f73dd1c24dfccc87e98d02e34",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "linear",
+      "type": "skill",
+      "category": "productivity",
+      "name": "linear",
+      "version": "1.0.0",
+      "description": "Linear: manage issues, projects, teams via GraphQL + curl.",
+      "tags": [
+        "Linear",
+        "Project Management",
+        "Issues",
+        "GraphQL",
+        "API",
+        "Productivity"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/linear",
+      "icon": null,
+      "checksum": "sha256:bc2c40cb03304a797e254ed9a28d7ca5ee8f3ba076391930547d8d1d055c0a8a",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "maps",
+      "type": "skill",
+      "category": "productivity",
+      "name": "maps",
+      "version": "1.2.0",
+      "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+      "tags": [
+        "maps",
+        "geocoding",
+        "places",
+        "routing",
+        "distance",
+        "directions",
+        "nearby",
+        "location",
+        "openstreetmap",
+        "nominatim",
+        "overpass",
+        "osrm"
+      ],
+      "author": "Mibayy",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/maps",
+      "icon": null,
+      "checksum": "sha256:32746d159f9d78302ce4b962a5467a8931254a9b129ab665892addc6e349aec4",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "nano-pdf",
+      "type": "skill",
+      "category": "productivity",
+      "name": "nano-pdf",
+      "version": "1.0.0",
+      "description": "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).",
+      "tags": [
+        "PDF",
+        "Documents",
+        "Editing",
+        "NLP",
+        "Productivity"
+      ],
+      "author": "community",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/nano-pdf",
+      "icon": null,
+      "checksum": "sha256:2abe830f0ef935e60a4bdb138161bd4534e4b393481e361ed31f084e7b818c7b",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "notion",
+      "type": "skill",
+      "category": "productivity",
+      "name": "notion",
+      "version": "2.0.0",
+      "description": "Notion API + ntn CLI: pages, databases, markdown, Workers.",
+      "tags": [
+        "Notion",
+        "Productivity",
+        "Notes",
+        "Database",
+        "API",
+        "CLI",
+        "Workers"
+      ],
+      "author": "community",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/notion",
+      "icon": null,
+      "checksum": "sha256:98bfccaef84ba1d9dbeb7328a30232cef57d96e761ee4739819637876df164b2",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "ocr-and-documents",
+      "type": "skill",
+      "category": "productivity",
+      "name": "ocr-and-documents",
+      "version": "2.3.0",
+      "description": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+      "tags": [
+        "PDF",
+        "Documents",
+        "Research",
+        "Arxiv",
+        "Text-Extraction",
+        "OCR"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/ocr-and-documents",
+      "icon": null,
+      "checksum": "sha256:933217152560be20a15b8392e8b66c3bb5b46499e405e795b4a1c3865c198437",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "powerpoint",
+      "type": "skill",
+      "category": "productivity",
+      "name": "powerpoint",
+      "version": null,
+      "description": "Create, read, edit .pptx decks, slides, notes, templates.",
+      "tags": [],
+      "author": null,
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/productivity/powerpoint",
+      "icon": null,
+      "checksum": "sha256:84be81bf35b03ea8e9bdaa175ea3de6f91053953930864ce215aee414b1abc42",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "teams-meeting-pipeline",
+      "type": "skill",
+      "category": "productivity",
+      "name": "teams-meeting-pipeline",
+      "version": "1.1.0",
+      "description": "Operate the Teams meeting summary pipeline via Hermes CLI — summarize meetings, inspect pipeline status, replay jobs, manage Microsoft Graph subscriptions.",
+      "tags": [
+        "Teams",
+        "Microsoft Graph",
+        "Meetings",
+        "Productivity",
+        "Operations"
+      ],
+      "author": "Hermes Agent + Teknium",
+      "license": "MIT",
+      "platforms": [],
+      "path": "skills/productivity/teams-meeting-pipeline",
+      "icon": null,
+      "checksum": "sha256:6c8d86f2e8473e47dd3b03e17fca6041ce11ff651fee9104e6d432214d268443",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "godmode",
+      "type": "skill",
+      "category": "red-teaming",
+      "name": "godmode",
+      "version": "1.0.0",
+      "description": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+      "tags": [
+        "jailbreak",
+        "red-teaming",
+        "G0DM0D3",
+        "Parseltongue",
+        "GODMODE",
+        "uncensoring",
+        "safety-bypass",
+        "prompt-engineering",
+        "L1B3RT4S"
+      ],
+      "author": "Hermes Agent + Teknium",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/red-teaming/godmode",
+      "icon": null,
+      "checksum": "sha256:0b9eead85b8cf1bafac41f4c175daad903fa72592097e87fb289fa799080cd6d",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "arxiv",
+      "type": "skill",
+      "category": "research",
+      "name": "arxiv",
+      "version": "1.0.0",
+      "description": "Search arXiv papers by keyword, author, category, or ID.",
+      "tags": [
+        "Research",
+        "Arxiv",
+        "Papers",
+        "Academic",
+        "Science",
+        "API"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/research/arxiv",
+      "icon": null,
+      "checksum": "sha256:e96411bf1a846d7d769aca34143e45b1bf88f3d32c16f8279c380420227c991e",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "blogwatcher",
+      "type": "skill",
+      "category": "research",
+      "name": "blogwatcher",
+      "version": "2.0.0",
+      "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.",
+      "tags": [
+        "RSS",
+        "Blogs",
+        "Feed-Reader",
+        "Monitoring"
+      ],
+      "author": "JulienTant (fork of Hyaxia/blogwatcher)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/research/blogwatcher",
+      "icon": null,
+      "checksum": "sha256:23adfd9effa30fbb23bd7b6c2fd59b0e51244f9b89d937628575a5d02d5c997c",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "llm-wiki",
+      "type": "skill",
+      "category": "research",
+      "name": "llm-wiki",
+      "version": "2.1.0",
+      "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB.",
+      "tags": [
+        "wiki",
+        "knowledge-base",
+        "research",
+        "notes",
+        "markdown",
+        "rag-alternative"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/research/llm-wiki",
+      "icon": null,
+      "checksum": "sha256:567154ae818247eade9ef07347384820fdb5a92743df8de57e5d472a9075bbd6",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "polymarket",
+      "type": "skill",
+      "category": "research",
+      "name": "polymarket",
+      "version": "1.0.0",
+      "description": "Query Polymarket: markets, prices, orderbooks, history.",
+      "tags": [],
+      "author": "Hermes Agent + Teknium",
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/research/polymarket",
+      "icon": null,
+      "checksum": "sha256:3d091185188db2e1e022d5d97fa527fb937d30bec107b9a082347276f1676449",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "research-paper-writing",
+      "type": "skill",
+      "category": "research",
+      "name": "research-paper-writing",
+      "version": "1.1.0",
+      "description": "Write ML papers for NeurIPS/ICML/ICLR: design→submit.",
+      "tags": [
+        "Research",
+        "Paper Writing",
+        "Experiments",
+        "ML",
+        "AI",
+        "NeurIPS",
+        "ICML",
+        "ICLR",
+        "ACL",
+        "AAAI",
+        "COLM",
+        "LaTeX",
+        "Citations",
+        "Statistical Analysis"
+      ],
+      "author": "Orchestra Research",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/research/research-paper-writing",
+      "icon": null,
+      "checksum": "sha256:cb92cf154527cb5e0bc4893e16acb8099a6784bcf4ba858dc92a4e06a4f53f79",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "openhue",
+      "type": "skill",
+      "category": "smart-home",
+      "name": "openhue",
+      "version": "1.0.0",
+      "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+      "tags": [
+        "Smart-Home",
+        "Hue",
+        "Lights",
+        "IoT",
+        "Automation"
+      ],
+      "author": "community",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/smart-home/openhue",
+      "icon": null,
+      "checksum": "sha256:9d78ad339fc1a8112fba5e1d5cb264410b9c7cc694c25da6e69ddded6168ab3f",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "xurl",
+      "type": "skill",
+      "category": "social-media",
+      "name": "xurl",
+      "version": "1.1.1",
+      "description": "X/Twitter via xurl CLI: post, search, DM, media, v2 API.",
+      "tags": [
+        "twitter",
+        "x",
+        "social-media",
+        "xurl",
+        "official-api"
+      ],
+      "author": "xdevplatform + openclaw + Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/social-media/xurl",
+      "icon": null,
+      "checksum": "sha256:ce1b3e4af9bd53d748783ff7497cfb3dee137503854511975e1b375e61f7923f",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "debugging-hermes-tui-commands",
+      "type": "skill",
+      "category": "software-development",
+      "name": "debugging-hermes-tui-commands",
+      "version": "1.0.0",
+      "description": "Debug Hermes TUI slash commands: Python, gateway, Ink UI.",
+      "tags": [
+        "debugging",
+        "hermes-agent",
+        "tui",
+        "slash-commands",
+        "typescript",
+        "python"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/debugging-hermes-tui-commands",
+      "icon": null,
+      "checksum": "sha256:2ba1e1b975f76ebebafff0e51447566bb0fabcd44852dc2a63161d1cde844567",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "hermes-agent-skill-authoring",
+      "type": "skill",
+      "category": "software-development",
+      "name": "hermes-agent-skill-authoring",
+      "version": "1.0.0",
+      "description": "Author in-repo SKILL.md: frontmatter, validator, structure.",
+      "tags": [
+        "skills",
+        "authoring",
+        "hermes-agent",
+        "conventions",
+        "skill-md"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/hermes-agent-skill-authoring",
+      "icon": null,
+      "checksum": "sha256:5a2a4f1ab5e1bcc488002d0ffdbde82b58c09863595fab8d5c57dd59cfe4712e",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "hermes-s6-container-supervision",
+      "type": "skill",
+      "category": "software-development",
+      "name": "hermes-s6-container-supervision",
+      "version": "1.0.0",
+      "description": "Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image — adding new services, debugging profile gateways, understanding the Architecture B main-program pattern.",
+      "tags": [
+        "docker",
+        "s6",
+        "supervision",
+        "gateway",
+        "profiles"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [],
+      "path": "skills/software-development/hermes-s6-container-supervision",
+      "icon": null,
+      "checksum": "sha256:d69b3c0c99d88e7e95f55caa0df467bd958e90678d73420f7d902070b9120534",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "node-inspect-debugger",
+      "type": "skill",
+      "category": "software-development",
+      "name": "node-inspect-debugger",
+      "version": "1.0.0",
+      "description": "Debug Node.js via --inspect + Chrome DevTools Protocol CLI.",
+      "tags": [
+        "debugging",
+        "nodejs",
+        "node-inspect",
+        "cdp",
+        "breakpoints",
+        "ui-tui"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/node-inspect-debugger",
+      "icon": null,
+      "checksum": "sha256:0e25db08b20925cc864a5b91e1dcfcebf1ec5fa31d4845edd9d6a6044a71fe18",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "plan",
+      "type": "skill",
+      "category": "software-development",
+      "name": "plan",
+      "version": "1.0.0",
+      "description": "Plan mode: write markdown plan to .hermes/plans/, no exec.",
+      "tags": [
+        "planning",
+        "plan-mode",
+        "implementation",
+        "workflow"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/plan",
+      "icon": null,
+      "checksum": "sha256:3e6d77f86b917a452fdd6d14ac43e38c646e7986385f037d7eb20cc73359e338",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "python-debugpy",
+      "type": "skill",
+      "category": "software-development",
+      "name": "python-debugpy",
+      "version": "1.0.0",
+      "description": "Debug Python: pdb REPL + debugpy remote (DAP).",
+      "tags": [
+        "debugging",
+        "python",
+        "pdb",
+        "debugpy",
+        "breakpoints",
+        "dap",
+        "post-mortem"
+      ],
+      "author": "Hermes Agent",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "path": "skills/software-development/python-debugpy",
+      "icon": null,
+      "checksum": "sha256:9dd995f21508de9bbecc2caf21e244a56e0b36a34e6b103926ce1414c0fa59a5",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "requesting-code-review",
+      "type": "skill",
+      "category": "software-development",
+      "name": "requesting-code-review",
+      "version": "2.0.0",
+      "description": "Pre-commit review: security scan, quality gates, auto-fix.",
+      "tags": [
+        "code-review",
+        "security",
+        "verification",
+        "quality",
+        "pre-commit",
+        "auto-fix"
+      ],
+      "author": "Hermes Agent (adapted from obra/superpowers + MorAlekss)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/requesting-code-review",
+      "icon": null,
+      "checksum": "sha256:92020a7d0364cf211152daf01f8c9aaae1fadfb8d033457729d7e7d606c30deb",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "spike",
+      "type": "skill",
+      "category": "software-development",
+      "name": "spike",
+      "version": "1.0.0",
+      "description": "Throwaway experiments to validate an idea before build.",
+      "tags": [
+        "spike",
+        "prototype",
+        "experiment",
+        "feasibility",
+        "throwaway",
+        "exploration",
+        "research",
+        "planning",
+        "mvp",
+        "proof-of-concept"
+      ],
+      "author": "Hermes Agent (adapted from gsd-build/get-shit-done)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/spike",
+      "icon": null,
+      "checksum": "sha256:8d6547a45a6b9275bbe21924d07b80d66bc690389f810da7cc25c85d406aabd0",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "subagent-driven-development",
+      "type": "skill",
+      "category": "software-development",
+      "name": "subagent-driven-development",
+      "version": "1.1.0",
+      "description": "Execute plans via delegate_task subagents (2-stage review).",
+      "tags": [
+        "delegation",
+        "subagent",
+        "implementation",
+        "workflow",
+        "parallel"
+      ],
+      "author": "Hermes Agent (adapted from obra/superpowers)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/subagent-driven-development",
+      "icon": null,
+      "checksum": "sha256:94f298aea3533b9102f904f066aadca199d39bed49ef3e3459a83498e4fa3e0b",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "systematic-debugging",
+      "type": "skill",
+      "category": "software-development",
+      "name": "systematic-debugging",
+      "version": "1.1.0",
+      "description": "4-phase root cause debugging: understand bugs before fixing.",
+      "tags": [
+        "debugging",
+        "troubleshooting",
+        "problem-solving",
+        "root-cause",
+        "investigation"
+      ],
+      "author": "Hermes Agent (adapted from obra/superpowers)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/systematic-debugging",
+      "icon": null,
+      "checksum": "sha256:5cb5f1f255d9dff6f7984042759d00caaac8a25802b543cdb67d686118dbfbb7",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "test-driven-development",
+      "type": "skill",
+      "category": "software-development",
+      "name": "test-driven-development",
+      "version": "1.1.0",
+      "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+      "tags": [
+        "testing",
+        "tdd",
+        "development",
+        "quality",
+        "red-green-refactor"
+      ],
+      "author": "Hermes Agent (adapted from obra/superpowers)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/test-driven-development",
+      "icon": null,
+      "checksum": "sha256:31bb5d94f6696de9645cd70f67990e7bd38ffe9f41935972f70319613acf900c",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "writing-plans",
+      "type": "skill",
+      "category": "software-development",
+      "name": "writing-plans",
+      "version": "1.1.0",
+      "description": "Write implementation plans: bite-sized tasks, paths, code.",
+      "tags": [
+        "planning",
+        "design",
+        "implementation",
+        "workflow",
+        "documentation"
+      ],
+      "author": "Hermes Agent (adapted from obra/superpowers)",
+      "license": "MIT",
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/software-development/writing-plans",
+      "icon": null,
+      "checksum": "sha256:10f90617ee2ab1a78f157a48b9006d15a82761e2316bf6b360857c14a748a0d5",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "yuanbao",
+      "type": "skill",
+      "category": "yuanbao",
+      "name": "yuanbao",
+      "version": "1.0.0",
+      "description": "Yuanbao (元宝) groups: @mention users, query info/members.",
+      "tags": [
+        "yuanbao",
+        "mention",
+        "at",
+        "group",
+        "members",
+        "元宝",
+        "派",
+        "艾特"
+      ],
+      "author": null,
+      "license": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/yuanbao",
+      "icon": null,
+      "checksum": "sha256:c37225ede6d75a92f2536f5779516eb811ce48a0cdd1b0b1888bd48225908225",
+      "compatibility": null,
+      "acceptsFunding": false
+    }
+  ]
+}
