@@ -1,8 +1,53 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-06-02T21:18:17+05:30",
-  "count": 99,
+  "generated": "2026-06-03T07:35:22+05:30",
+  "count": 125,
   "entries": [
+    {
+      "id": "api-designer",
+      "type": "agent",
+      "category": null,
+      "name": "API Designer",
+      "version": "1.0.0",
+      "description": "Designs clean, consistent, well-documented HTTP/RPC APIs.",
+      "tags": [
+        "api",
+        "design"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/api-designer",
+      "icon": null,
+      "checksum": "sha256:4888f110f1dce7ddd850530e8d67e28448f27781d2bb75eb30892d678da2fdf9",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "architect",
+      "type": "agent",
+      "category": null,
+      "name": "Architect",
+      "version": "1.0.0",
+      "description": "Designs an implementation plan and weighs architectural trade-offs.",
+      "tags": [
+        "planning",
+        "architecture",
+        "design"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/architect",
+      "icon": null,
+      "checksum": "sha256:e297c8f610d9575543cb76ec8cb491d33a88670f083c8bcbb93c6fd7a5d8ad06",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
     {
       "id": "code-reviewer",
       "type": "agent",
@@ -20,6 +65,73 @@
       "path": "agents/code-reviewer",
       "icon": null,
       "checksum": "sha256:9cb307096caa7151f06bf33bfe5661b1826b2698681d85b8335947c824e786a9",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "data-analyst",
+      "type": "agent",
+      "category": null,
+      "name": "Data Analyst",
+      "version": "1.0.0",
+      "description": "Explores datasets and answers questions with evidence and charts.",
+      "tags": [
+        "data",
+        "analysis"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/data-analyst",
+      "icon": null,
+      "checksum": "sha256:0dd19e30e66b51069c36077c5392da0ce3a34265079970358c334db508bec873",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "debugger",
+      "type": "agent",
+      "category": null,
+      "name": "Debugger",
+      "version": "1.0.0",
+      "description": "Root-causes a failing test or bug and proposes a minimal fix.",
+      "tags": [
+        "debugging",
+        "diagnosis"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/debugger",
+      "icon": null,
+      "checksum": "sha256:44f0b81845b2ae3867dc4e65c36eed63a40dcec8dfd459240835bcd9147c709b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "devops-engineer",
+      "type": "agent",
+      "category": null,
+      "name": "DevOps Engineer",
+      "version": "1.0.0",
+      "description": "Authors CI/CD pipelines, Dockerfiles, and deployment configs.",
+      "tags": [
+        "devops",
+        "ci-cd",
+        "infra"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/devops-engineer",
+      "icon": null,
+      "checksum": "sha256:30b7b62dcfb9ba50281cdc381684efa8746714998ade4bd9dbd9d398c4fab0f4",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -49,6 +161,50 @@
       "acceptsFunding": false
     },
     {
+      "id": "prompt-engineer",
+      "type": "agent",
+      "category": null,
+      "name": "Prompt Engineer",
+      "version": "1.0.0",
+      "description": "Designs, tests, and refines prompts for LLM features.",
+      "tags": [
+        "prompting",
+        "llm"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/prompt-engineer",
+      "icon": null,
+      "checksum": "sha256:712ab2c23ba787ce62ed04ca348fffa655a1ddf7de9d08e549dec8466fb93a46",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "refactorer",
+      "type": "agent",
+      "category": null,
+      "name": "Refactorer",
+      "version": "1.0.0",
+      "description": "Improves code structure and readability without changing behavior.",
+      "tags": [
+        "refactoring",
+        "quality"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/refactorer",
+      "icon": null,
+      "checksum": "sha256:02e3f9944363b15be1dbeeaf3f37c8e1516c37dbcd94e8600bc66208b91f746b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "security-auditor",
       "type": "agent",
       "category": null,
@@ -65,6 +221,72 @@
       "path": "agents/security-auditor",
       "icon": null,
       "checksum": "sha256:b6532e24a1737fe9e4d292fa0788e0f763fbc97b00f854f42f40f63bf7cd1d46",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "sql-expert",
+      "type": "agent",
+      "category": null,
+      "name": "SQL Expert",
+      "version": "1.0.0",
+      "description": "Writes, explains, and optimizes SQL queries against a schema.",
+      "tags": [
+        "sql",
+        "database"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/sql-expert",
+      "icon": null,
+      "checksum": "sha256:4a758a0ff48d27f306873b185647c64a50b598c05c2945f1915d863f03bd9e60",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "test-writer",
+      "type": "agent",
+      "category": null,
+      "name": "Test Writer",
+      "version": "1.0.0",
+      "description": "Writes focused unit and integration tests for existing code.",
+      "tags": [
+        "testing",
+        "quality"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "agents/test-writer",
+      "icon": null,
+      "checksum": "sha256:4ff4bf2d7c6e4dc5b75177ad3829ebece6d6c644d6552cace32fed633d426f74",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "brave-search",
+      "type": "mcp",
+      "category": null,
+      "name": "Brave Search",
+      "version": "1.0.0",
+      "description": "Web and local search via the Brave Search API.",
+      "tags": [
+        "web",
+        "search"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "path": "mcp/brave-search",
+      "icon": null,
+      "checksum": "sha256:5db3d5e6fc8b80663be96c2ab58d4522d6574a4df9b7e9b4b3b715482157f024",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -118,6 +340,28 @@
       "acceptsFunding": false
     },
     {
+      "id": "git",
+      "type": "mcp",
+      "category": null,
+      "name": "Git",
+      "version": "1.0.0",
+      "description": "Read, search, and manipulate local Git repositories.",
+      "tags": [
+        "git",
+        "vcs"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "path": "mcp/git",
+      "icon": null,
+      "checksum": "sha256:47ee8696535d57120ec3c5b741e72b19d25356e4b318f5626cd25b64cb43edae",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "github",
       "type": "mcp",
       "category": null,
@@ -142,6 +386,51 @@
       "acceptsFunding": false
     },
     {
+      "id": "memory",
+      "type": "mcp",
+      "category": null,
+      "name": "Memory",
+      "version": "1.0.0",
+      "description": "Persistent knowledge-graph memory across sessions.",
+      "tags": [
+        "memory",
+        "knowledge-graph"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "path": "mcp/memory",
+      "icon": null,
+      "checksum": "sha256:87e8ca2ee447780d2c8087eac74ae75e6acd186ca41bf89e6e56d10b5f2277b1",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "notion",
+      "type": "mcp",
+      "category": null,
+      "name": "Notion",
+      "version": "1.0.0",
+      "description": "Read and update Notion pages and databases.",
+      "tags": [
+        "notion",
+        "docs",
+        "productivity"
+      ],
+      "author": "Notion",
+      "license": "MIT",
+      "path": "mcp/notion",
+      "icon": null,
+      "checksum": "sha256:627789e82ea1b3c73a61b92f9c5cd7108d35135ba0788ad3249131e5e03fbbfb",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "postgres",
       "type": "mcp",
       "category": null,
@@ -158,6 +447,97 @@
       "path": "mcp/postgres",
       "icon": null,
       "checksum": "sha256:62b3ae30cf9cecdb58a61f6bbae95abaad72dab6e2a89a51bdc949bc2c49bb0a",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "puppeteer",
+      "type": "mcp",
+      "category": null,
+      "name": "Puppeteer",
+      "version": "1.0.0",
+      "description": "Drive a headless browser to navigate, scrape, and screenshot.",
+      "tags": [
+        "browser",
+        "automation",
+        "scraping"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "path": "mcp/puppeteer",
+      "icon": null,
+      "checksum": "sha256:bdde11b29976cbb650f839acf2d183ca1cc73c9f42c147b9bd963d0a2baa8f1a",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "sequential-thinking",
+      "type": "mcp",
+      "category": null,
+      "name": "Sequential Thinking",
+      "version": "1.0.0",
+      "description": "Structured step-by-step reasoning scratchpad for hard problems.",
+      "tags": [
+        "reasoning",
+        "planning"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "path": "mcp/sequential-thinking",
+      "icon": null,
+      "checksum": "sha256:362e6fa0b70ab7c2d20df9e907b98ae1e26d0bb1e8dd006c74ae109bd4566112",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "slack",
+      "type": "mcp",
+      "category": null,
+      "name": "Slack",
+      "version": "1.0.0",
+      "description": "Read and post messages across Slack channels.",
+      "tags": [
+        "slack",
+        "chat",
+        "messaging"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "path": "mcp/slack",
+      "icon": null,
+      "checksum": "sha256:bdca1bc1bffa4a888b585efdfa8cfcebfd2efe9be46ebb8431a52fe620b5f1bf",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "sqlite",
+      "type": "mcp",
+      "category": null,
+      "name": "SQLite",
+      "version": "1.0.0",
+      "description": "Query and inspect a local SQLite database.",
+      "tags": [
+        "database",
+        "sql",
+        "sqlite"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "path": "mcp/sqlite",
+      "icon": null,
+      "checksum": "sha256:ebbbe1682064ea0f711d9918ca3e31fccc5d6ac7e58fa71e5f82e3518a1d3b87",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -2625,6 +3005,50 @@
       "acceptsFunding": false
     },
     {
+      "id": "bug-fix",
+      "type": "workflow",
+      "category": null,
+      "name": "Bug Fix",
+      "version": "1.0.0",
+      "description": "Reproduce a reported bug, fix it, and add a regression test.",
+      "tags": [
+        "debugging",
+        "testing"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/bug-fix",
+      "icon": null,
+      "checksum": "sha256:ee31af5b4f6a9252620d60c207ae0553602fca75376acbfcd2c11a4266a3adc6",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "changelog-update",
+      "type": "workflow",
+      "category": null,
+      "name": "Changelog Update",
+      "version": "1.0.0",
+      "description": "Update CHANGELOG.md from recent commits following Keep a Changelog.",
+      "tags": [
+        "docs",
+        "changelog"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/changelog-update",
+      "icon": null,
+      "checksum": "sha256:453436bfdd6c40c3fdb76e74eb614d04613b96bde8561baf968b8fe36ae483ef",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "deep-research-report",
       "type": "workflow",
       "category": null,
@@ -2648,6 +3072,73 @@
       "acceptsFunding": false
     },
     {
+      "id": "dependency-upgrade",
+      "type": "workflow",
+      "category": null,
+      "name": "Dependency Upgrade",
+      "version": "1.0.0",
+      "description": "Bump dependencies, run the test suite, and open a PR if green.",
+      "tags": [
+        "maintenance",
+        "dependencies"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/dependency-upgrade",
+      "icon": null,
+      "checksum": "sha256:95c712f51dad7ab95e83bedf1306e8ea07b4ec7eb1e82b86770a34442d1a430d",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "feature-implementation",
+      "type": "workflow",
+      "category": null,
+      "name": "Feature Implementation",
+      "version": "1.0.0",
+      "description": "Plan, implement, and test a new feature end to end.",
+      "tags": [
+        "development",
+        "feature"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/feature-implementation",
+      "icon": null,
+      "checksum": "sha256:51a2c6bae468177eb69e9d66dc33b0373c17c9a8909d781ffadefc320cd7ec3d",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "issue-triage",
+      "type": "workflow",
+      "category": null,
+      "name": "Issue Triage",
+      "version": "1.0.0",
+      "description": "Label, prioritize, and route incoming GitHub issues.",
+      "tags": [
+        "github",
+        "automation",
+        "triage"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/issue-triage",
+      "icon": null,
+      "checksum": "sha256:0d0089b947ad3e1a3d14d3588f0e90326cb6f77f72d34f2806e6ab6f3c142e88",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "pr-triage",
       "type": "workflow",
       "category": null,
@@ -2664,6 +3155,95 @@
       "path": "workflows/pr-triage",
       "icon": null,
       "checksum": "sha256:54b660e3b8a11b03a2fdd6346a71259ef10a07bd447ed06c116477a8abe8a969",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "refactor-module",
+      "type": "workflow",
+      "category": null,
+      "name": "Refactor Module",
+      "version": "1.0.0",
+      "description": "Safely refactor a module behind its existing tests.",
+      "tags": [
+        "refactoring",
+        "quality"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/refactor-module",
+      "icon": null,
+      "checksum": "sha256:658b4cdc955fb19ca2e80e1f8b69eb8c8d08dda6b1fe8d0872ef6512d6a399dc",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "release-notes",
+      "type": "workflow",
+      "category": null,
+      "name": "Release Notes",
+      "version": "1.0.0",
+      "description": "Summarize merged PRs since the last tag into release notes.",
+      "tags": [
+        "github",
+        "release",
+        "docs"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/release-notes",
+      "icon": null,
+      "checksum": "sha256:09dbc7348ac15144f2d6b28550bd99696f335a0bf621dddebeeca4a339c4d60b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "security-audit",
+      "type": "workflow",
+      "category": null,
+      "name": "Security Audit",
+      "version": "1.0.0",
+      "description": "Audit a codebase or diff for vulnerabilities and report findings.",
+      "tags": [
+        "security",
+        "audit"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/security-audit",
+      "icon": null,
+      "checksum": "sha256:c9d136ac34caf56222b04715cd951fefbd37e85c8c48860cb302da5c8dd317cf",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "test-coverage-boost",
+      "type": "workflow",
+      "category": null,
+      "name": "Test Coverage Boost",
+      "version": "1.0.0",
+      "description": "Find under-tested code and add the highest-value missing tests.",
+      "tags": [
+        "testing",
+        "coverage"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "path": "workflows/test-coverage-boost",
+      "icon": null,
+      "checksum": "sha256:5b17b350689fd4d46081b448c146857563614bd4904afd0c537815bf1423cba4",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
