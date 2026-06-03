@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "dependency-upgrade",
+  "name": "Dependency Upgrade",
+  "version": "1.0.0",
+  "description": "Bump dependencies, run the test suite, and open a PR if green.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "maintenance",
+    "dependencies"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/test-writer",
+    "mcp/github"
+  ]
+}

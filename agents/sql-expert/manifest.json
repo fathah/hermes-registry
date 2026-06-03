@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "sql-expert",
+  "name": "SQL Expert",
+  "version": "1.0.0",
+  "description": "Writes, explains, and optimizes SQL queries against a schema.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "sql",
+    "database"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-sonnet-4-6",
+  "tools": [
+    "Read",
+    "Bash"
+  ]
+}

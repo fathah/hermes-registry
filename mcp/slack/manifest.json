@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "slack",
+  "name": "Slack",
+  "version": "1.0.0",
+  "description": "Read and post messages across Slack channels.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "license": "MIT",
+  "tags": [
+    "slack",
+    "chat",
+    "messaging"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "permissions": [
+    "network"
+  ],
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-slack"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "SLACK_BOT_TOKEN": {
+        "type": "string",
+        "description": "Slack bot token (xoxb-...)."
+      },
+      "SLACK_TEAM_ID": {
+        "type": "string",
+        "description": "Slack workspace/team id."
+      }
+    },
+    "required": [
+      "SLACK_BOT_TOKEN",
+      "SLACK_TEAM_ID"
+    ]
+  }
+}

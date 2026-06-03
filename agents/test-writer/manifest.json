@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "test-writer",
+  "name": "Test Writer",
+  "version": "1.0.0",
+  "description": "Writes focused unit and integration tests for existing code.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "testing",
+    "quality"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-sonnet-4-6",
+  "tools": [
+    "Read",
+    "Grep",
+    "Write",
+    "Edit",
+    "Bash"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Feature Implementation",
+  "description": "Plan, implement, and test a new feature end to end.",
+  "inputs": {
+    "spec": {
+      "type": "string",
+      "description": "What to build"
+    }
+  },
+  "steps": [
+    {
+      "id": "plan",
+      "uses": "agent/architect",
+      "input": "Design an implementation plan for: ${inputs.spec}"
+    },
+    {
+      "id": "build",
+      "uses": "skill/subagent-driven-development",
+      "input": "Implement: ${plan}"
+    },
+    {
+      "id": "test",
+      "uses": "agent/test-writer",
+      "input": "Write tests for the new feature."
+    },
+    {
+      "id": "review",
+      "uses": "agent/code-reviewer",
+      "input": "Review the implementation diff."
+    }
+  ]
+}

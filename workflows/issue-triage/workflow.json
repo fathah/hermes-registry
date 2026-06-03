@@ -1,0 +1,38 @@
+{
+  "name": "Issue Triage",
+  "description": "Label, prioritize, and route incoming GitHub issues.",
+  "inputs": {
+    "repo": {
+      "type": "string"
+    },
+    "issue_number": {
+      "type": "integer"
+    }
+  },
+  "steps": [
+    {
+      "id": "fetch",
+      "uses": "mcp/github",
+      "tool": "get_issue",
+      "with": {
+        "repo": "${inputs.repo}",
+        "issueNumber": "${inputs.issue_number}"
+      }
+    },
+    {
+      "id": "classify",
+      "uses": "skill/github-issues",
+      "input": "Classify and prioritize this issue:\n${fetch}"
+    },
+    {
+      "id": "label",
+      "uses": "mcp/github",
+      "tool": "add_labels",
+      "with": {
+        "repo": "${inputs.repo}",
+        "issueNumber": "${inputs.issue_number}",
+        "labels": "${classify.labels}"
+      }
+    }
+  ]
+}

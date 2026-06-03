@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "architect",
+  "name": "Architect",
+  "version": "1.0.0",
+  "description": "Designs an implementation plan and weighs architectural trade-offs.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "planning",
+    "architecture",
+    "design"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-opus-4-8",
+  "tools": [
+    "Read",
+    "Grep",
+    "Bash"
+  ]
+}

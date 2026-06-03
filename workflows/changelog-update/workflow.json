@@ -1,0 +1,25 @@
+{
+  "name": "Changelog Update",
+  "description": "Update CHANGELOG.md from recent commits following Keep a Changelog.",
+  "inputs": {
+    "since": {
+      "type": "string",
+      "description": "Tag or commit to start from"
+    }
+  },
+  "steps": [
+    {
+      "id": "log",
+      "uses": "mcp/git",
+      "tool": "log",
+      "with": {
+        "since": "${inputs.since}"
+      }
+    },
+    {
+      "id": "entry",
+      "uses": "agent/doc-writer",
+      "input": "Write a Keep-a-Changelog entry from these commits:\n${log}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "bug-fix",
+  "name": "Bug Fix",
+  "version": "1.0.0",
+  "description": "Reproduce a reported bug, fix it, and add a regression test.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "debugging",
+    "testing"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/debugger",
+    "agent/test-writer"
+  ]
+}

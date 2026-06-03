@@ -1,0 +1,21 @@
+{
+  "name": "Refactor Module",
+  "description": "Safely refactor a module behind its existing tests.",
+  "inputs": {
+    "module": {
+      "type": "string"
+    }
+  },
+  "steps": [
+    {
+      "id": "refactor",
+      "uses": "agent/refactorer",
+      "input": "Refactor ${inputs.module}, keeping tests green."
+    },
+    {
+      "id": "review",
+      "uses": "agent/code-reviewer",
+      "input": "Confirm the refactor is behavior-preserving."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "puppeteer",
+  "name": "Puppeteer",
+  "version": "1.0.0",
+  "description": "Drive a headless browser to navigate, scrape, and screenshot.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "license": "MIT",
+  "tags": [
+    "browser",
+    "automation",
+    "scraping"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "permissions": [
+    "network"
+  ],
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-puppeteer"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "brave-search",
+  "name": "Brave Search",
+  "version": "1.0.0",
+  "description": "Web and local search via the Brave Search API.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "license": "MIT",
+  "tags": [
+    "web",
+    "search"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "permissions": [
+    "network"
+  ],
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-brave-search"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "BRAVE_API_KEY": {
+        "type": "string",
+        "description": "Brave Search API key."
+      }
+    },
+    "required": [
+      "BRAVE_API_KEY"
+    ]
+  }
+}

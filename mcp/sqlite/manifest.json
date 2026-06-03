@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "sqlite",
+  "name": "SQLite",
+  "version": "1.0.0",
+  "description": "Query and inspect a local SQLite database.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "license": "MIT",
+  "tags": [
+    "database",
+    "sql",
+    "sqlite"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "permissions": [
+    "filesystem:read",
+    "filesystem:write"
+  ],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": [
+    "mcp-server-sqlite"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "db_path": {
+        "type": "string",
+        "description": "Path to the .sqlite file (appended as --db-path)."
+      }
+    },
+    "required": [
+      "db_path"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "git",
+  "name": "Git",
+  "version": "1.0.0",
+  "description": "Read, search, and manipulate local Git repositories.",
+  "author": {
+    "name": "Model Context Protocol",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "license": "MIT",
+  "tags": [
+    "git",
+    "vcs"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "permissions": [
+    "filesystem:read",
+    "filesystem:write"
+  ],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": [
+    "mcp-server-git"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "repository": {
+        "type": "string",
+        "description": "Path to the git repo (appended as --repository)."
+      }
+    }
+  }
+}

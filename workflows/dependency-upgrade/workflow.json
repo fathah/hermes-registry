@@ -1,0 +1,34 @@
+{
+  "name": "Dependency Upgrade",
+  "description": "Bump dependencies, run the test suite, and open a PR if green.",
+  "inputs": {
+    "repo": {
+      "type": "string"
+    },
+    "package": {
+      "type": "string"
+    }
+  },
+  "steps": [
+    {
+      "id": "bump",
+      "uses": "skill/plan",
+      "input": "Plan the upgrade of ${inputs.package} and identify breaking changes."
+    },
+    {
+      "id": "test",
+      "uses": "agent/test-writer",
+      "input": "Run the suite after the bump and report failures."
+    },
+    {
+      "id": "pr",
+      "uses": "mcp/github",
+      "tool": "create_pull_request",
+      "with": {
+        "repo": "${inputs.repo}",
+        "title": "Upgrade ${inputs.package}",
+        "body": "${test.summary}"
+      }
+    }
+  ]
+}

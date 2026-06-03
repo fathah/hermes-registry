@@ -1,0 +1,22 @@
+{
+  "name": "Security Audit",
+  "description": "Audit a codebase or diff for vulnerabilities and report findings.",
+  "inputs": {
+    "scope": {
+      "type": "string",
+      "description": "Path or diff to audit"
+    }
+  },
+  "steps": [
+    {
+      "id": "scan",
+      "uses": "skill/codebase-inspection",
+      "input": "Map the attack surface of: ${inputs.scope}"
+    },
+    {
+      "id": "audit",
+      "uses": "agent/security-auditor",
+      "input": "Audit for vulnerabilities:\n${scan}"
+    }
+  ]
+}

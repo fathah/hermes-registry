@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "test-coverage-boost",
+  "name": "Test Coverage Boost",
+  "version": "1.0.0",
+  "description": "Find under-tested code and add the highest-value missing tests.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "testing",
+    "coverage"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/test-writer"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Bug Fix",
+  "description": "Reproduce a reported bug, fix it, and add a regression test.",
+  "inputs": {
+    "issue": {
+      "type": "string",
+      "description": "Bug description or issue link"
+    }
+  },
+  "steps": [
+    {
+      "id": "diagnose",
+      "uses": "agent/debugger",
+      "input": "Reproduce and root-cause: ${inputs.issue}"
+    },
+    {
+      "id": "fix",
+      "uses": "skill/systematic-debugging",
+      "input": "Apply the minimal fix for: ${diagnose.root_cause}"
+    },
+    {
+      "id": "regress",
+      "uses": "agent/test-writer",
+      "input": "Add a regression test for the fixed bug."
+    }
+  ]
+}

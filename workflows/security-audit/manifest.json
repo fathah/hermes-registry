@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "security-audit",
+  "name": "Security Audit",
+  "version": "1.0.0",
+  "description": "Audit a codebase or diff for vulnerabilities and report findings.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "security",
+    "audit"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/security-auditor"
+  ]
+}

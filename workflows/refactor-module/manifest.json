@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "refactor-module",
+  "name": "Refactor Module",
+  "version": "1.0.0",
+  "description": "Safely refactor a module behind its existing tests.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "refactoring",
+    "quality"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "agent/refactorer",
+    "agent/code-reviewer"
+  ]
+}

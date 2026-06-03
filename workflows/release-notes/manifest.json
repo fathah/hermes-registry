@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "workflow",
+  "id": "release-notes",
+  "name": "Release Notes",
+  "version": "1.0.0",
+  "description": "Summarize merged PRs since the last tag into release notes.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "github",
+    "release",
+    "docs"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "workflow.json",
+  "requires": [
+    "mcp/github",
+    "agent/doc-writer"
+  ]
+}

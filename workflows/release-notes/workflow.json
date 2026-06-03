@@ -1,0 +1,28 @@
+{
+  "name": "Release Notes",
+  "description": "Summarize merged PRs since the last tag into release notes.",
+  "inputs": {
+    "repo": {
+      "type": "string"
+    },
+    "since_tag": {
+      "type": "string"
+    }
+  },
+  "steps": [
+    {
+      "id": "prs",
+      "uses": "mcp/github",
+      "tool": "list_merged_pull_requests",
+      "with": {
+        "repo": "${inputs.repo}",
+        "since": "${inputs.since_tag}"
+      }
+    },
+    {
+      "id": "notes",
+      "uses": "agent/doc-writer",
+      "input": "Group these merged PRs into release notes (Features / Fixes / Other):\n${prs}"
+    }
+  ]
+}

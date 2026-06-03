@@ -1,0 +1,21 @@
+{
+  "name": "Test Coverage Boost",
+  "description": "Find under-tested code and add the highest-value missing tests.",
+  "inputs": {
+    "path": {
+      "type": "string"
+    }
+  },
+  "steps": [
+    {
+      "id": "gaps",
+      "uses": "skill/test-driven-development",
+      "input": "Identify the least-tested, highest-risk code under ${inputs.path}."
+    },
+    {
+      "id": "write",
+      "uses": "agent/test-writer",
+      "input": "Write tests for the gaps:\n${gaps}"
+    }
+  ]
+}

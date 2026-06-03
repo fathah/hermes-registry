@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "type": "agent",
+  "id": "prompt-engineer",
+  "name": "Prompt Engineer",
+  "version": "1.0.0",
+  "description": "Designs, tests, and refines prompts for LLM features.",
+  "author": {
+    "name": "Hermes Registry",
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "tags": [
+    "prompting",
+    "llm"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "entry": "AGENT.md",
+  "model": "claude-opus-4-8",
+  "tools": [
+    "Read",
+    "Write",
+    "Edit"
+  ]
+}

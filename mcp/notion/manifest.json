@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "notion",
+  "name": "Notion",
+  "version": "1.0.0",
+  "description": "Read and update Notion pages and databases.",
+  "author": {
+    "name": "Notion",
+    "url": "https://github.com/makenotion/notion-mcp-server"
+  },
+  "license": "MIT",
+  "tags": [
+    "notion",
+    "docs",
+    "productivity"
+  ],
+  "compatibility": {
+    "hermes": ">=0.3.0",
+    "desktop": ">=1.2.0"
+  },
+  "permissions": [
+    "network"
+  ],
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@notionhq/notion-mcp-server"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "NOTION_TOKEN": {
+        "type": "string",
+        "description": "Notion integration token."
+      }
+    },
+    "required": [
+      "NOTION_TOKEN"
+    ]
+  }
+}
