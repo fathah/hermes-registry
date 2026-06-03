@@ -1,4 +1,6 @@
-# Hermes Registry
+<img width="100%" alt="HERMES DESKTOP" src="assets/header.webp" />
+
+<br/>
 
 A community package registry for the **Hermes** agent. It indexes installable
 extensions — skills, MCP servers, agents, and workflows — that the Hermes Python
@@ -11,12 +13,12 @@ code live together), so you can browse, clone, and inspect any artifact directly
 
 ## What's in the registry
 
-| Type | Folder | What it is | Format |
-|------|--------|------------|--------|
-| **Skill** | `skills/` | A task procedure Hermes can follow | `SKILL.md` + frontmatter ([agentskills.io](https://agentskills.io)) |
-| **MCP** | `mcp/` | A Model Context Protocol server (tools/resources) | `manifest.json` |
-| **Agent** | `agents/` | A named subagent persona (system prompt + tools + model) | `manifest.json` + `AGENT.md` |
-| **Workflow** | `workflows/` | A multi-step recipe chaining skills / agents / MCPs | `manifest.json` + `workflow.json` |
+| Type         | Folder       | What it is                                               | Format                                                              |
+| ------------ | ------------ | -------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Skill**    | `skills/`    | A task procedure Hermes can follow                       | `SKILL.md` + frontmatter ([agentskills.io](https://agentskills.io)) |
+| **MCP**      | `mcp/`       | A Model Context Protocol server (tools/resources)        | `manifest.json`                                                     |
+| **Agent**    | `agents/`    | A named subagent persona (system prompt + tools + model) | `manifest.json` + `AGENT.md`                                        |
+| **Workflow** | `workflows/` | A multi-step recipe chaining skills / agents / MCPs      | `manifest.json` + `workflow.json`                                   |
 
 Two formats by design:
 
