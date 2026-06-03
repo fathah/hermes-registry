@@ -32,7 +32,7 @@ agents/<name>/
   "model": "claude-opus-4-8",
   "tools": ["Read", "Grep", "Bash"],
 
-  "funding": { "address": "0x…", "token": "HERMES", "chain": "base" }
+  "funding": { "address": "0x…", "token": "H1", "chain": "base" }
 }
 ```
 
