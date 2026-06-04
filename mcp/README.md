@@ -77,6 +77,57 @@ gallery surfaces it as a **View source** link so users can audit a server even
 though its code isn't vendored here. For first-party servers, point it at the
 local `server/` folder on the registry repo.
 
+## How a client pulls & runs an MCP
+
+Clients — the Hermes Python agent and the Electron desktop app — never clone
+this repo. The whole flow is driven by `index.json` plus the entry's
+`manifest.json`:
+
+1. **Discover** — fetch `index.json`, list the MCP entries, render the gallery.
+2. **Check compatibility** — compare the running Hermes / desktop versions
+   against the entry's `compatibility` ranges; entries that don't match are
+   greyed out or labelled.
+3. **Collect config** — build a form from `configSchema` and ask the user for
+   the required values (secrets, paths). They're stored in the OS keychain —
+   never written to this repo, never to disk in plaintext.
+4. **Install + launch** — spawn the pinned `command` + `args`. The launcher
+   pulls and caches the server on first run; later launches are offline-fast:
+   - `npx -y` → installs the npm package into the npx cache
+   - `uvx`    → installs the PyPI package into the uv cache
+   - `docker run` → pulls the pinned image
+5. **Connect** — `stdio`: speak MCP over the child process's stdin/stdout;
+   `http`: connect to `url`. The server's tools/resources now show up to the
+   agent.
+
+Nothing is "installed" into the registry or pre-built by us — the client
+materialises the server on demand from the pinned coordinates in the manifest.
+
+### Where config values go
+
+`configSchema` says *what* the user must supply. Each property's `description`
+says *where* it goes at launch — a client wires it one of two ways:
+
+- **Environment variable** — tokens/secrets named like env vars
+  (`BRAVE_API_KEY`, `SLACK_BOT_TOKEN`, `NOTION_TOKEN`,
+  `GITHUB_PERSONAL_ACCESS_TOKEN`). The client sets them in the child process's
+  environment, merged over the manifest's static `env`.
+- **Appended to `args`** — values the server reads from the command line
+  (postgres' connection string as the first positional arg; sqlite's
+  `--db-path`; git's `--repository`; filesystem's allowed directories).
+
+Worked example — the postgres entry, once the user supplies `DATABASE_URL`,
+resolves to this spawn:
+
+```sh
+# env: PGCONNECT_TIMEOUT=10
+npx -y @modelcontextprotocol/server-postgres@0.6.2 "postgresql://user:pass@host:5432/db"
+```
+
+> The env-vs-args destination currently lives in the property `description`, so
+> it's human-readable but not machine-explicit. If you want clients to wire
+> config fully deterministically, we can add an explicit marker to the schema
+> (e.g. `x-target: "env" | "arg"`). Until then, follow the descriptions.
+
 ## Secrets & config
 
 **Never commit secrets.** Declare what the server needs via `configSchema`. The

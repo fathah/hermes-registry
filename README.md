@@ -73,6 +73,11 @@ entry — reading skill `SKILL.md` frontmatter and the `manifest.json` of MCPs /
 agents / workflows — and emits a single `index.json`. The desktop gallery and the
 Python agent both fetch this one file to discover everything available.
 
+From there the client resolves the entry's `manifest.json` to install and run it
+on demand — for MCP servers that's a pinned `npx` / `uvx` / `docker` launch with
+user-supplied config injected at startup. See
+[mcp/README.md → How a client pulls & runs an MCP](mcp/README.md#how-a-client-pulls--runs-an-mcp).
+
 ```json
 {
   "schemaVersion": "1",
