@@ -1,15 +1,15 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-06-04T18:17:16+05:30",
+  "generated": "2026-06-05T09:53:30+05:30",
   "types": [
     {
       "type": "agent",
-      "count": 12,
+      "count": 17,
       "categories": []
     },
     {
       "type": "mcp",
-      "count": 12,
+      "count": 53,
       "categories": []
     },
     {

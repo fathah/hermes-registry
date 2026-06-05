@@ -1,14 +1,39 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-06-04T18:17:16+05:30",
-  "count": 125,
+  "generated": "2026-06-05T09:53:30+05:30",
+  "count": 171,
   "entries": [
+    {
+      "id": "accessibility-auditor",
+      "type": "agent",
+      "category": null,
+      "name": "Accessibility Auditor",
+      "version": "1.0.0",
+      "description": "Audits UI against WCAG for accessibility issues and gives concrete fixes.",
+      "tags": [
+        "accessibility",
+        "a11y",
+        "wcag",
+        "ui"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "source": null,
+      "path": "agents/accessibility-auditor",
+      "icon": null,
+      "checksum": "sha256:ee678ee0cf1ee591e916d4cb552e4c99bc4b1947435aaf80d7fe96d07859660a",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
     {
       "id": "api-designer",
       "type": "agent",
       "category": null,
       "name": "API Designer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Designs clean, consistent, well-documented HTTP/RPC APIs.",
       "tags": [
         "api",
@@ -19,7 +44,7 @@
       "source": null,
       "path": "agents/api-designer",
       "icon": null,
-      "checksum": "sha256:4888f110f1dce7ddd850530e8d67e28448f27781d2bb75eb30892d678da2fdf9",
+      "checksum": "sha256:5ce679374c438985c739a4c091c0a886687cda0b24905e73de6d36607ed63794",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -31,7 +56,7 @@
       "type": "agent",
       "category": null,
       "name": "Architect",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Designs an implementation plan and weighs architectural trade-offs.",
       "tags": [
         "planning",
@@ -43,7 +68,32 @@
       "source": null,
       "path": "agents/architect",
       "icon": null,
-      "checksum": "sha256:e297c8f610d9575543cb76ec8cb491d33a88670f083c8bcbb93c6fd7a5d8ad06",
+      "checksum": "sha256:bd36c8825ee518d7bb3d1961eea31be2b7513697990817ada98535254ede9d39",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "backend-engineer",
+      "type": "agent",
+      "category": null,
+      "name": "Backend Engineer",
+      "version": "1.0.0",
+      "description": "Implements robust, secure server-side services, data access, and business logic.",
+      "tags": [
+        "backend",
+        "server",
+        "api",
+        "services"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "source": null,
+      "path": "agents/backend-engineer",
+      "icon": null,
+      "checksum": "sha256:a2b3a2ffefa198297ca95c2d4f9fde8fc7053fc873433a588db88c535f72cc66",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -55,7 +105,7 @@
       "type": "agent",
       "category": null,
       "name": "Code Reviewer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Reviews a diff for correctness bugs and suggests minimal fixes.",
       "tags": [
         "code",
@@ -67,7 +117,7 @@
       "source": null,
       "path": "agents/code-reviewer",
       "icon": null,
-      "checksum": "sha256:9cb307096caa7151f06bf33bfe5661b1826b2698681d85b8335947c824e786a9",
+      "checksum": "sha256:4b495d16d91047ad090e33f1563e1efcd6debdfff0ee89fe3946d1120d14df0a",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -79,7 +129,7 @@
       "type": "agent",
       "category": null,
       "name": "Data Analyst",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Explores datasets and answers questions with evidence and charts.",
       "tags": [
         "data",
@@ -90,7 +140,7 @@
       "source": null,
       "path": "agents/data-analyst",
       "icon": null,
-      "checksum": "sha256:0dd19e30e66b51069c36077c5392da0ce3a34265079970358c334db508bec873",
+      "checksum": "sha256:0507b5ca5361f1971c0fd49556a6788526502f7825c77645a5e3d42e089e08eb",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -102,7 +152,7 @@
       "type": "agent",
       "category": null,
       "name": "Debugger",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Root-causes a failing test or bug and proposes a minimal fix.",
       "tags": [
         "debugging",
@@ -113,7 +163,7 @@
       "source": null,
       "path": "agents/debugger",
       "icon": null,
-      "checksum": "sha256:44f0b81845b2ae3867dc4e65c36eed63a40dcec8dfd459240835bcd9147c709b",
+      "checksum": "sha256:602d0696406afb1f0ce57fb783abab9bd5a0d3e65eb60568d20af815fc078cfd",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -125,7 +175,7 @@
       "type": "agent",
       "category": null,
       "name": "DevOps Engineer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Authors CI/CD pipelines, Dockerfiles, and deployment configs.",
       "tags": [
         "devops",
@@ -137,7 +187,7 @@
       "source": null,
       "path": "agents/devops-engineer",
       "icon": null,
-      "checksum": "sha256:30b7b62dcfb9ba50281cdc381684efa8746714998ade4bd9dbd9d398c4fab0f4",
+      "checksum": "sha256:80d9fa1cd4807b9868439ff7ab1a7a1c63b8a374fc745d5fa0c0664416354bbe",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -149,7 +199,7 @@
       "type": "agent",
       "category": null,
       "name": "Doc Writer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Writes and updates clear technical documentation from code and context.",
       "tags": [
         "documentation",
@@ -160,7 +210,82 @@
       "source": null,
       "path": "agents/doc-writer",
       "icon": null,
-      "checksum": "sha256:52dccde62958ebcf644db7415f2ae64729a4be46524096e2258f83ec93a4f8f1",
+      "checksum": "sha256:86b123b42a8f1ca6686dafd18abad05e4a05b0c22ebff943fdc82fe248145e55",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "frontend-engineer",
+      "type": "agent",
+      "category": null,
+      "name": "Frontend Engineer",
+      "version": "1.0.0",
+      "description": "Builds accessible, performant, maintainable UI components and frontend features.",
+      "tags": [
+        "frontend",
+        "ui",
+        "react",
+        "css",
+        "web"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "source": null,
+      "path": "agents/frontend-engineer",
+      "icon": null,
+      "checksum": "sha256:bd52159926768c8a8d19ffe9821de8b6d5599eaa5e4ed66c77f12987d5de21fc",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "incident-responder",
+      "type": "agent",
+      "category": null,
+      "name": "Incident Responder",
+      "version": "1.0.0",
+      "description": "Triages production incidents, restores service, and runs blameless postmortems.",
+      "tags": [
+        "incident",
+        "sre",
+        "oncall",
+        "reliability"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "source": null,
+      "path": "agents/incident-responder",
+      "icon": null,
+      "checksum": "sha256:7b77ed90485b9a49af74a2eeec5538457c65d432807acc5f9526b14a67b2828f",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "performance-optimizer",
+      "type": "agent",
+      "category": null,
+      "name": "Performance Optimizer",
+      "version": "1.0.0",
+      "description": "Profiles, diagnoses, and fixes performance bottlenecks with measured evidence.",
+      "tags": [
+        "performance",
+        "profiling",
+        "optimization"
+      ],
+      "author": "Hermes Registry",
+      "license": "MIT",
+      "source": null,
+      "path": "agents/performance-optimizer",
+      "icon": null,
+      "checksum": "sha256:c980ed85901e020c990ebace4526907ca3fccf0f5678e7a3d570c8f9c65d6c70",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -172,7 +297,7 @@
       "type": "agent",
       "category": null,
       "name": "Prompt Engineer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Designs, tests, and refines prompts for LLM features.",
       "tags": [
         "prompting",
@@ -183,7 +308,7 @@
       "source": null,
       "path": "agents/prompt-engineer",
       "icon": null,
-      "checksum": "sha256:712ab2c23ba787ce62ed04ca348fffa655a1ddf7de9d08e549dec8466fb93a46",
+      "checksum": "sha256:9d65d1ddef538a2ae980538360998556a71deb8ce30f8fc373acd0f05d38d17b",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -195,7 +320,7 @@
       "type": "agent",
       "category": null,
       "name": "Refactorer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Improves code structure and readability without changing behavior.",
       "tags": [
         "refactoring",
@@ -206,7 +331,7 @@
       "source": null,
       "path": "agents/refactorer",
       "icon": null,
-      "checksum": "sha256:02e3f9944363b15be1dbeeaf3f37c8e1516c37dbcd94e8600bc66208b91f746b",
+      "checksum": "sha256:9ebd4b13a2aee044f54f0789969a27c16b43837d741fc37914549d309293c107",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -218,7 +343,7 @@
       "type": "agent",
       "category": null,
       "name": "Security Auditor",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Audits code changes for security vulnerabilities and unsafe patterns.",
       "tags": [
         "security",
@@ -230,7 +355,7 @@
       "source": null,
       "path": "agents/security-auditor",
       "icon": null,
-      "checksum": "sha256:b6532e24a1737fe9e4d292fa0788e0f763fbc97b00f854f42f40f63bf7cd1d46",
+      "checksum": "sha256:613103d56803295615e1dd4fc03aa0849b9e555e8046b032014a4d4db5473dfa",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -242,7 +367,7 @@
       "type": "agent",
       "category": null,
       "name": "SQL Expert",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Writes, explains, and optimizes SQL queries against a schema.",
       "tags": [
         "sql",
@@ -253,7 +378,7 @@
       "source": null,
       "path": "agents/sql-expert",
       "icon": null,
-      "checksum": "sha256:4a758a0ff48d27f306873b185647c64a50b598c05c2945f1915d863f03bd9e60",
+      "checksum": "sha256:5154524d08bdb576bc80380886da2445470521d7767288186b8c6f83750dde42",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -265,7 +390,7 @@
       "type": "agent",
       "category": null,
       "name": "Test Writer",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Writes focused unit and integration tests for existing code.",
       "tags": [
         "testing",
@@ -276,7 +401,206 @@
       "source": null,
       "path": "agents/test-writer",
       "icon": null,
-      "checksum": "sha256:4ff4bf2d7c6e4dc5b75177ad3829ebece6d6c644d6552cace32fed633d426f74",
+      "checksum": "sha256:8fe93c1adfb38fb0074d4f2e88d44e5f21650e76a8392008639f3c4f23db62a6",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "ableton",
+      "type": "mcp",
+      "category": null,
+      "name": "Ableton Live",
+      "version": "1.0.0",
+      "description": "Control Ableton Live — create tracks, MIDI, and devices, and manipulate a live set. Requires Ableton plus a remote-script bridge.",
+      "tags": [
+        "creator",
+        "music",
+        "ableton",
+        "audio"
+      ],
+      "author": "ahujasid",
+      "license": "MIT",
+      "source": "https://github.com/ahujasid/ableton-mcp",
+      "path": "mcp/ableton",
+      "icon": null,
+      "checksum": "sha256:eec4c022b33feb475f9c60bf5d04dc6aef5820f4845bd36ef257f08699a95214",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "airtable",
+      "type": "mcp",
+      "category": null,
+      "name": "Airtable",
+      "version": "1.0.0",
+      "description": "Read and write records, bases, and schema in Airtable. Community-maintained — scope the PAT to specific bases.",
+      "tags": [
+        "airtable",
+        "database",
+        "no-code",
+        "productivity"
+      ],
+      "author": "domdomegg",
+      "license": "MIT",
+      "source": "https://github.com/domdomegg/airtable-mcp-server",
+      "path": "mcp/airtable",
+      "icon": null,
+      "checksum": "sha256:9f9d3a660a00c43c38ed8595f7021b8cf7a8cead94dfc01838dd7c23dc0b603b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "alpaca",
+      "type": "mcp",
+      "category": null,
+      "name": "Alpaca",
+      "version": "1.0.0",
+      "description": "Trade US equities, ETFs, options, and crypto and manage a portfolio via Alpaca's official server. Start in the paper environment and review every order.",
+      "tags": [
+        "trading",
+        "stocks",
+        "alpaca",
+        "markets"
+      ],
+      "author": "Alpaca",
+      "license": "MIT",
+      "source": "https://github.com/alpacahq/alpaca-mcp-server",
+      "path": "mcp/alpaca",
+      "icon": null,
+      "checksum": "sha256:58a9428d9add62a201da323322bb1a2843c24d6b16e8c8c505cfa990b80dce6b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "asana",
+      "type": "mcp",
+      "category": null,
+      "name": "Asana",
+      "version": "1.0.0",
+      "description": "Tasks, projects, and workload in Asana via the official v2 remote server. Inherits your Asana permissions.",
+      "tags": [
+        "project-management",
+        "tasks",
+        "asana",
+        "productivity"
+      ],
+      "author": "Asana",
+      "license": null,
+      "source": "https://developers.asana.com/docs/using-asanas-mcp-server",
+      "path": "mcp/asana",
+      "icon": null,
+      "checksum": "sha256:1dcb4d511f3be9d423c7aee2e63c574aa90867252f812f4126dcc004d5826e9e",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "atlassian",
+      "type": "mcp",
+      "category": null,
+      "name": "Jira & Confluence (Atlassian)",
+      "version": "1.0.0",
+      "description": "Jira issues, Confluence docs, and Compass via Atlassian's official Rovo remote server. OAuth 2.1; respects your access controls.",
+      "tags": [
+        "jira",
+        "confluence",
+        "atlassian",
+        "project-management"
+      ],
+      "author": "Atlassian",
+      "license": null,
+      "source": "https://www.atlassian.com/platform/remote-mcp-server",
+      "path": "mcp/atlassian",
+      "icon": null,
+      "checksum": "sha256:e305f7050a4cb495f00b4670d473f9913a82000d41d55a6c69d2ac9715e167a6",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "aws",
+      "type": "mcp",
+      "category": null,
+      "name": "AWS",
+      "version": "1.0.0",
+      "description": "AWS Labs core MCP server — entry point to per-service AWS servers (EC2, S3, Lambda, RDS, …). Scope IAM tightly.",
+      "tags": [
+        "cloud",
+        "aws",
+        "infra"
+      ],
+      "author": "AWS Labs",
+      "license": "Apache-2.0",
+      "source": "https://github.com/awslabs/mcp",
+      "path": "mcp/aws",
+      "icon": null,
+      "checksum": "sha256:c29767e86f55e566c1de7767aa4c831ed2fc4d586cb8c758bb7a5bc1bcd1c698",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "base",
+      "type": "mcp",
+      "category": null,
+      "name": "Base",
+      "version": "1.0.0",
+      "description": "Coinbase's official onchain gateway — swap tokens, send funds, track a portfolio, hit DeFi protocols. Non-custodial: you review and sign every transaction in the Base app.",
+      "tags": [
+        "web3",
+        "blockchain",
+        "base",
+        "defi"
+      ],
+      "author": "Base (Coinbase)",
+      "license": null,
+      "source": "https://github.com/base/base-mcp",
+      "path": "mcp/base",
+      "icon": null,
+      "checksum": "sha256:2bb84dc47c2e3e0663e139f702283a433ca7bef3923653886198449b2e866295",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "blender",
+      "type": "mcp",
+      "category": null,
+      "name": "Blender",
+      "version": "1.0.0",
+      "description": "Drive Blender's 3D engine from prompts — scenes, objects, materials, lighting. Requires Blender open with the companion addon running.",
+      "tags": [
+        "creator",
+        "3d",
+        "blender",
+        "modeling"
+      ],
+      "author": "ahujasid",
+      "license": "MIT",
+      "source": "https://github.com/ahujasid/blender-mcp",
+      "path": "mcp/blender",
+      "icon": null,
+      "checksum": "sha256:2a461ac5e9f75f245f3fdbf28050422a7ea92e02ae935483c0f3fef27d942a7b",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -307,6 +631,255 @@
       "acceptsFunding": false
     },
     {
+      "id": "canva",
+      "type": "mcp",
+      "category": null,
+      "name": "Canva",
+      "version": "1.0.0",
+      "description": "Generate and edit designs from templates in Canva. OAuth on first call; inherits your Canva account access.",
+      "tags": [
+        "creator",
+        "design",
+        "canva",
+        "graphics"
+      ],
+      "author": "Canva",
+      "license": null,
+      "source": "https://www.canva.dev/docs/apps/mcp-server/",
+      "path": "mcp/canva",
+      "icon": null,
+      "checksum": "sha256:1d193138c7c253c079b07b3921a3fea0b0992f600410bf8fabb53ee92c8611a7",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "ccxt",
+      "type": "mcp",
+      "category": null,
+      "name": "CCXT",
+      "version": "1.0.0",
+      "description": "Unified read access to 20+ crypto exchanges (Binance, Coinbase, Kraken, Bybit) for market data. Enabling trade execution is real-money territory.",
+      "tags": [
+        "trading",
+        "crypto",
+        "exchanges",
+        "markets"
+      ],
+      "author": "lazy-dinosaur",
+      "license": "MIT",
+      "source": "https://github.com/lazy-dinosaur/ccxt-mcp",
+      "path": "mcp/ccxt",
+      "icon": null,
+      "checksum": "sha256:8640b65d7e24d99a76f628e02aa784a97c08b446149bc8200a731de70a62334f",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "cloudflare",
+      "type": "mcp",
+      "category": null,
+      "name": "Cloudflare",
+      "version": "1.0.0",
+      "description": "Workers, DNS, R2, KV, and Zero Trust across Cloudflare's API via search/execute tools. Authorize and pick scopes on connect.",
+      "tags": [
+        "cloud",
+        "infra",
+        "cloudflare",
+        "dns"
+      ],
+      "author": "Cloudflare",
+      "license": "Apache-2.0",
+      "source": "https://github.com/cloudflare/mcp",
+      "path": "mcp/cloudflare",
+      "icon": null,
+      "checksum": "sha256:cf61e663966df6cb1c5e76434c0b174fa369c01e783b341658fd0eb8a9652aa8",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "coingecko",
+      "type": "mcp",
+      "category": null,
+      "name": "CoinGecko",
+      "version": "1.0.0",
+      "description": "Crypto prices, market caps, and historical data via CoinGecko's official server. Free tier is rate-limited; fine for research.",
+      "tags": [
+        "trading",
+        "crypto",
+        "market-data",
+        "markets"
+      ],
+      "author": "CoinGecko",
+      "license": null,
+      "source": "https://docs.coingecko.com",
+      "path": "mcp/coingecko",
+      "icon": null,
+      "checksum": "sha256:a69e67a4fd184ae99dbc29feb3fd8387356a94aa5e521dd5cf2769a14e98062e",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "context7",
+      "type": "mcp",
+      "category": null,
+      "name": "Context7",
+      "version": "1.0.0",
+      "description": "Pulls current, version-pinned library docs at query time so the agent stops hallucinating package APIs.",
+      "tags": [
+        "docs",
+        "reference",
+        "development"
+      ],
+      "author": "Upstash",
+      "license": "MIT",
+      "source": "https://github.com/upstash/context7",
+      "path": "mcp/context7",
+      "icon": null,
+      "checksum": "sha256:4384c8be22f6bd9826401fe853c4ade7fe3747787557fba2d3dc5d505c0eb6b6",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "davinci-resolve",
+      "type": "mcp",
+      "category": null,
+      "name": "DaVinci Resolve",
+      "version": "1.0.0",
+      "description": "Control DaVinci Resolve Studio via its scripting API — timeline edits, media pool, render setup, color, Fusion, Fairlight. Requires Resolve open with external scripting set to Local.",
+      "tags": [
+        "creator",
+        "video",
+        "editing",
+        "davinci-resolve"
+      ],
+      "author": "samuelgursky",
+      "license": "MIT",
+      "source": "https://github.com/samuelgursky/davinci-resolve-mcp",
+      "path": "mcp/davinci-resolve",
+      "icon": null,
+      "checksum": "sha256:e116ed0bb7242dacf2084d96d1fb6a9a2ca9226713b9a34b442c6da77c81f303",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "docker-hub",
+      "type": "mcp",
+      "category": null,
+      "name": "Docker Hub",
+      "version": "1.0.0",
+      "description": "Search images and manage tags on Docker Hub. Community-maintained — review the source before granting write access.",
+      "tags": [
+        "docker",
+        "containers",
+        "registry",
+        "devops"
+      ],
+      "author": "Community",
+      "license": null,
+      "source": "https://github.com/ckreiling/mcp-server-docker",
+      "path": "mcp/docker-hub",
+      "icon": null,
+      "checksum": "sha256:2b9d4d96713f707a33d30bf6239a5cb065754818c9a50e14f240bc1dde8409dc",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "dune",
+      "type": "mcp",
+      "category": null,
+      "name": "Dune",
+      "version": "1.0.0",
+      "description": "Run and read Dune Analytics queries from the agent. API credits are metered — a chatty agent burns a free tier fast.",
+      "tags": [
+        "web3",
+        "blockchain",
+        "analytics",
+        "data"
+      ],
+      "author": "Dune",
+      "license": null,
+      "source": "https://dune.com/docs/api/",
+      "path": "mcp/dune",
+      "icon": null,
+      "checksum": "sha256:63421cc4d498070293086601eaa1bec1ba3efb095169391e164ed5d81145f09c",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "elevenlabs",
+      "type": "mcp",
+      "category": null,
+      "name": "ElevenLabs",
+      "version": "1.0.0",
+      "description": "Official text-to-speech and audio server — generate speech, clone voices, transcribe. Only clone voices you're allowed to.",
+      "tags": [
+        "creator",
+        "audio",
+        "tts",
+        "voice"
+      ],
+      "author": "ElevenLabs",
+      "license": "MIT",
+      "source": "https://github.com/elevenlabs/elevenlabs-mcp",
+      "path": "mcp/elevenlabs",
+      "icon": null,
+      "checksum": "sha256:0b5900e9b94beb1118be70348f159aa9bfcbf1462d6e97945dc809c075330d73",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "etherscan",
+      "type": "mcp",
+      "category": null,
+      "name": "Etherscan",
+      "version": "1.0.0",
+      "description": "Block explorer access — contract verification, transaction lookups, ABI fetch. Read-only, fine to leave on.",
+      "tags": [
+        "web3",
+        "blockchain",
+        "ethereum",
+        "explorer"
+      ],
+      "author": "Community",
+      "license": null,
+      "source": "https://docs.etherscan.io",
+      "path": "mcp/etherscan",
+      "icon": null,
+      "checksum": "sha256:fe9e85c9437db5884a185a7c4827f42b49a23269b7f9c528f686f25db17216e1",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "fetch",
       "type": "mcp",
       "category": null,
@@ -324,6 +897,31 @@
       "path": "mcp/fetch",
       "icon": null,
       "checksum": "sha256:d0ee2747e75c55204a48ea6dcc5ef1e1a4beea998d64d386e617a41c540d0cc1",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "figma",
+      "type": "mcp",
+      "category": null,
+      "name": "Figma",
+      "version": "1.0.0",
+      "description": "Figma Dev Mode server — read components, variables, and layout; generate code from frames; create and update canvas content. Enable the desktop MCP server (Dev Mode) on port 3845.",
+      "tags": [
+        "creator",
+        "design",
+        "figma",
+        "ui"
+      ],
+      "author": "Figma",
+      "license": null,
+      "source": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server",
+      "path": "mcp/figma",
+      "icon": null,
+      "checksum": "sha256:50b9de45dd11b192b3d772ed30ae32388e33f85920ceb1ef2ebfde114142a7f8",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -403,6 +1001,155 @@
       "acceptsFunding": false
     },
     {
+      "id": "gmail",
+      "type": "mcp",
+      "category": null,
+      "name": "Gmail",
+      "version": "1.0.0",
+      "description": "Read and send mail from Gmail (OAuth on first call). Community-maintained — never let an agent send mail unsupervised.",
+      "tags": [
+        "google",
+        "email",
+        "gmail",
+        "productivity"
+      ],
+      "author": "GongRzhe",
+      "license": "MIT",
+      "source": "https://github.com/GongRzhe/Gmail-MCP-Server",
+      "path": "mcp/gmail",
+      "icon": null,
+      "checksum": "sha256:a6928a73b5fd0656b9381ce895ed43cb1704776c7c963f9373a6b92d3014e12d",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "google-calendar",
+      "type": "mcp",
+      "category": null,
+      "name": "Google Calendar",
+      "version": "1.0.0",
+      "description": "Events, scheduling, and availability checks on Google Calendar (OAuth on first call). Creating invites notifies real people — confirm writes.",
+      "tags": [
+        "google",
+        "calendar",
+        "scheduling",
+        "productivity"
+      ],
+      "author": "nspady",
+      "license": "MIT",
+      "source": "https://github.com/nspady/google-calendar-mcp",
+      "path": "mcp/google-calendar",
+      "icon": null,
+      "checksum": "sha256:8fd90626caa841ce85a68c76cfd4b9bbfc5d914aecb38bfab43fdd6b691b8e4b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "google-drive",
+      "type": "mcp",
+      "category": null,
+      "name": "Google Drive",
+      "version": "1.0.0",
+      "description": "Search and read files across your Google Drive. Archived MCP reference server — works but unmaintained; grant read-only scope.",
+      "tags": [
+        "google",
+        "drive",
+        "files",
+        "productivity"
+      ],
+      "author": "Model Context Protocol",
+      "license": "MIT",
+      "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive",
+      "path": "mcp/google-drive",
+      "icon": null,
+      "checksum": "sha256:ac120de40a88d966658de6433e7f9d51eb3873c729b9df94443f94f382883f16",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "higgsfield",
+      "type": "mcp",
+      "category": null,
+      "name": "Higgsfield",
+      "version": "1.0.0",
+      "description": "30+ image and video models (Sora, Veo, Kling, Seedance) through one endpoint — research, prompt-optimize, and generate creative assets. Use the official connector, not session-scraping forks.",
+      "tags": [
+        "creator",
+        "media",
+        "video",
+        "image-generation"
+      ],
+      "author": "Higgsfield",
+      "license": null,
+      "source": "https://higgsfield.ai",
+      "path": "mcp/higgsfield",
+      "icon": null,
+      "checksum": "sha256:0c3f5684eb715ec33a66fbc3bff2ac3d247c3c79bf76f00791cb17574020f7d1",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "kubernetes",
+      "type": "mcp",
+      "category": null,
+      "name": "Kubernetes",
+      "version": "1.0.0",
+      "description": "Cluster inspection and kubectl-style ops in plain English. Community-maintained — point it at a non-prod context first.",
+      "tags": [
+        "kubernetes",
+        "devops",
+        "infra"
+      ],
+      "author": "Flux159",
+      "license": "MIT",
+      "source": "https://github.com/Flux159/mcp-server-kubernetes",
+      "path": "mcp/kubernetes",
+      "icon": null,
+      "checksum": "sha256:a841b0a9d63a5fb534d42670db2510c8c0bb2031c1a3a9bbfbe0fa532afe65df",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "linear",
+      "type": "mcp",
+      "category": null,
+      "name": "Linear",
+      "version": "1.0.0",
+      "description": "Issues, sprint planning, and search in Linear. Official remote server; permissions inherit your Linear access.",
+      "tags": [
+        "project-management",
+        "issues",
+        "linear",
+        "productivity"
+      ],
+      "author": "Linear",
+      "license": null,
+      "source": "https://linear.app/docs/mcp",
+      "path": "mcp/linear",
+      "icon": null,
+      "checksum": "sha256:a5bd295782c907c99bd6665396f482a33bae84b13030a67bb55f608cbf4a84a0",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "memory",
       "type": "mcp",
       "category": null,
@@ -419,6 +1166,31 @@
       "path": "mcp/memory",
       "icon": null,
       "checksum": "sha256:0b30a64c5ce25d9ec5e733c7e0dfa3a9e3b099623a186ab4c6ddd9b85eb8e381",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "neon",
+      "type": "mcp",
+      "category": null,
+      "name": "Neon",
+      "version": "1.0.0",
+      "description": "Serverless Postgres with branch-based migrations — the agent tests migrations on an instant copy-on-write branch before applying.",
+      "tags": [
+        "database",
+        "postgres",
+        "neon",
+        "serverless"
+      ],
+      "author": "Neon",
+      "license": "MIT",
+      "source": "https://github.com/neondatabase/mcp-server-neon",
+      "path": "mcp/neon",
+      "icon": null,
+      "checksum": "sha256:37eb55392310e2e6704354a9e35290b826017293a1b79789b0c7399f5bb4b46f",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -443,6 +1215,104 @@
       "path": "mcp/notion",
       "icon": null,
       "checksum": "sha256:30c6ebaa5b66dc9a04454bb0aae46f529f038a9c4cdd87b1e7bf92c30a871118",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "paypal",
+      "type": "mcp",
+      "category": null,
+      "name": "PayPal",
+      "version": "1.0.0",
+      "description": "Invoices, transactions, and payouts via PayPal's official MCP / agent toolkit. Moves real money — confirm every write.",
+      "tags": [
+        "payments",
+        "fintech",
+        "paypal"
+      ],
+      "author": "PayPal",
+      "license": null,
+      "source": "https://www.paypal.ai",
+      "path": "mcp/paypal",
+      "icon": null,
+      "checksum": "sha256:6051874631e5137d7f4e48504b38e6661ad4b76c3d557cae9afa8e43f3157766",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "plaid",
+      "type": "mcp",
+      "category": null,
+      "name": "Plaid",
+      "version": "1.0.0",
+      "description": "Bank-data aggregation, balances, and transactions via Plaid's official MCP. Handles people's banking data — read-only, mind the context window.",
+      "tags": [
+        "banking",
+        "fintech",
+        "plaid"
+      ],
+      "author": "Plaid",
+      "license": null,
+      "source": "https://plaid.com/docs/",
+      "path": "mcp/plaid",
+      "icon": null,
+      "checksum": "sha256:eed04d66581181be19afaf81409cd3d2ce3d5757ece107322a4b40b8be469e6d",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "playwright",
+      "type": "mcp",
+      "category": null,
+      "name": "Playwright",
+      "version": "1.0.0",
+      "description": "Drive a real browser — navigate, click, fill forms, screenshot, and run plain-English smoke tests.",
+      "tags": [
+        "browser",
+        "testing",
+        "automation",
+        "web"
+      ],
+      "author": "Microsoft",
+      "license": "Apache-2.0",
+      "source": "https://github.com/microsoft/playwright-mcp",
+      "path": "mcp/playwright",
+      "icon": null,
+      "checksum": "sha256:4b8bbda46d3de859d8c1ed943dcea442b2fff9a15976c40117336ba61d5b3a8b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "polygon-io",
+      "type": "mcp",
+      "category": null,
+      "name": "Polygon.io",
+      "version": "1.0.0",
+      "description": "Market-data feeds — stocks, options, forex, crypto, aggregates and trades — via Polygon.io's official server. Data only, no execution.",
+      "tags": [
+        "trading",
+        "market-data",
+        "stocks",
+        "markets"
+      ],
+      "author": "Polygon.io",
+      "license": null,
+      "source": "https://polygon.io/docs",
+      "path": "mcp/polygon-io",
+      "icon": null,
+      "checksum": "sha256:b0a0548e14d11c28f3559837e483b9c4e5b81c33aab606aaabee871c0c120eaf",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -498,6 +1368,78 @@
       "acceptsFunding": false
     },
     {
+      "id": "quickbooks",
+      "type": "mcp",
+      "category": null,
+      "name": "QuickBooks",
+      "version": "1.0.0",
+      "description": "Bookkeeping, invoicing, and reconciliation via QuickBooks (Intuit). Accounting writes have tax/audit consequences — keep a human signing off.",
+      "tags": [
+        "accounting",
+        "fintech",
+        "quickbooks"
+      ],
+      "author": "Intuit",
+      "license": null,
+      "source": "https://developer.intuit.com",
+      "path": "mcp/quickbooks",
+      "icon": null,
+      "checksum": "sha256:bccbce7b984ff2d1493cb6313453ba793ae11ffbcf46f5bcc61063a7f8bd6239",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "redis",
+      "type": "mcp",
+      "category": null,
+      "name": "Redis",
+      "version": "1.0.0",
+      "description": "Inspect keys, manage caches, and monitor memory on a Redis instance. Official server from Redis.",
+      "tags": [
+        "database",
+        "cache",
+        "redis"
+      ],
+      "author": "Redis",
+      "license": "MIT",
+      "source": "https://github.com/redis/mcp-redis",
+      "path": "mcp/redis",
+      "icon": null,
+      "checksum": "sha256:172f9a48be2975a7020fd459f8baaa8f811e02b075b7b15131954ec26ef96eda",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "sentry",
+      "type": "mcp",
+      "category": null,
+      "name": "Sentry",
+      "version": "1.0.0",
+      "description": "Pipe issues, stack traces, and event detail into the agent — read a prod error and propose the fix. Pairs well with GitHub.",
+      "tags": [
+        "monitoring",
+        "errors",
+        "observability"
+      ],
+      "author": "Sentry",
+      "license": null,
+      "source": "https://docs.sentry.io/product/sentry-mcp/",
+      "path": "mcp/sentry",
+      "icon": null,
+      "checksum": "sha256:350939c1a57303fc62257bb8c4ea3d965f95d7e350e7cdcab23c0284f2b188cb",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "sequential-thinking",
       "type": "mcp",
       "category": null,
@@ -545,6 +1487,30 @@
       "acceptsFunding": false
     },
     {
+      "id": "solana-agent-kit",
+      "type": "mcp",
+      "category": null,
+      "name": "Solana Agent Kit",
+      "version": "1.0.0",
+      "description": "Onchain actions on Solana — transfers, swaps, token ops. Irreversible chain; prefer setups that sign in a separate wallet and never put a funded key in config.",
+      "tags": [
+        "web3",
+        "blockchain",
+        "solana"
+      ],
+      "author": "SendAI",
+      "license": "MIT",
+      "source": "https://github.com/sendaifun/solana-agent-kit",
+      "path": "mcp/solana-agent-kit",
+      "icon": null,
+      "checksum": "sha256:bc9a02d0ae9edad2a33b6fc7f43a6d5aa26f6bbfeead7e9567c3fc1399730ed4",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "sqlite",
       "type": "mcp",
       "category": null,
@@ -562,6 +1528,180 @@
       "path": "mcp/sqlite",
       "icon": null,
       "checksum": "sha256:64c5b9084d39093db85a30d90336c6b12f383bc827d1ff01ccf4a7ef5e334978",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "stripe",
+      "type": "mcp",
+      "category": null,
+      "name": "Stripe",
+      "version": "1.0.0",
+      "description": "Payments, subscriptions, refunds, and customer lookups via Stripe's official server. Moves real money — use a restricted key and keep writes human-confirmed.",
+      "tags": [
+        "payments",
+        "fintech",
+        "stripe"
+      ],
+      "author": "Stripe",
+      "license": null,
+      "source": "https://docs.stripe.com/mcp",
+      "path": "mcp/stripe",
+      "icon": null,
+      "checksum": "sha256:38f20e287f4d13847b1ec6e0575174144d884eb8e1e1ab876fe589890691a28e",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "supabase",
+      "type": "mcp",
+      "category": null,
+      "name": "Supabase",
+      "version": "1.0.0",
+      "description": "Manage your Supabase backend — database, auth, storage, and edge functions — through chat. Start read-only.",
+      "tags": [
+        "database",
+        "backend",
+        "supabase",
+        "auth"
+      ],
+      "author": "Supabase",
+      "license": "Apache-2.0",
+      "source": "https://github.com/supabase-community/supabase-mcp",
+      "path": "mcp/supabase",
+      "icon": null,
+      "checksum": "sha256:72ca3d9dd55e2e3f5572c814bd69c9f17ce607b8db6551eaf36cb366defc9920",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "the-graph",
+      "type": "mcp",
+      "category": null,
+      "name": "The Graph",
+      "version": "1.0.0",
+      "description": "Query onchain data via subgraphs without running an indexer. Read-only data tool, low risk.",
+      "tags": [
+        "web3",
+        "blockchain",
+        "data",
+        "subgraph"
+      ],
+      "author": "The Graph",
+      "license": null,
+      "source": "https://thegraph.com/docs/",
+      "path": "mcp/the-graph",
+      "icon": null,
+      "checksum": "sha256:df51aa6dad6d60c08b1204e2685ea2b4167c359c85c4133576d58cd7d3699520",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "thirdweb",
+      "type": "mcp",
+      "category": null,
+      "name": "thirdweb",
+      "version": "1.0.0",
+      "description": "Deploy and interact with smart contracts across EVM chains. Contract deploys are irreversible and cost gas — test on a testnet first.",
+      "tags": [
+        "web3",
+        "blockchain",
+        "evm",
+        "smart-contracts"
+      ],
+      "author": "thirdweb",
+      "license": null,
+      "source": "https://portal.thirdweb.com",
+      "path": "mcp/thirdweb",
+      "icon": null,
+      "checksum": "sha256:776639e1f7914c0720eb0f593b016d8f6bf6cedc4d423d09316e506f2b2961a6",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "tradingview",
+      "type": "mcp",
+      "category": null,
+      "name": "TradingView",
+      "version": "1.0.0",
+      "description": "Charts and market-data context from TradingView. Community-maintained and scrape-based — fragile when the site changes; treat as best-effort.",
+      "tags": [
+        "trading",
+        "charts",
+        "market-data",
+        "markets"
+      ],
+      "author": "Community",
+      "license": null,
+      "source": "https://www.tradingview.com",
+      "path": "mcp/tradingview",
+      "icon": null,
+      "checksum": "sha256:777f71b654aa3d598a204d5493bc11d9e31b913640e52ed53ccefb38e650d43b",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "vercel",
+      "type": "mcp",
+      "category": null,
+      "name": "Vercel",
+      "version": "1.0.0",
+      "description": "Inspect deploys, manage environment variables, and read logs on Vercel. Keep a human in the loop on anything that ships.",
+      "tags": [
+        "deploy",
+        "hosting",
+        "vercel",
+        "infra"
+      ],
+      "author": "Vercel",
+      "license": null,
+      "source": "https://vercel.com/docs/mcp",
+      "path": "mcp/vercel",
+      "icon": null,
+      "checksum": "sha256:b351cfdca1ed11f0d915d8469b3dc17fe1ced13dab8769c4a8cdabe573915a35",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "youtube",
+      "type": "mcp",
+      "category": null,
+      "name": "YouTube",
+      "version": "1.0.0",
+      "description": "Video search and transcript extraction — great for research and repurposing content. Transcript availability depends on the video having captions.",
+      "tags": [
+        "creator",
+        "youtube",
+        "video",
+        "research"
+      ],
+      "author": "anaisbetts",
+      "license": "MIT",
+      "source": "https://github.com/anaisbetts/mcp-youtube",
+      "path": "mcp/youtube",
+      "icon": null,
+      "checksum": "sha256:4564320a11ca7a25a33cc75b181344e6e5353181288d951ff036e246fc0c88db",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
