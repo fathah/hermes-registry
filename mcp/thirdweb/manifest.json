@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "thirdweb",
+  "name": "thirdweb",
+  "version": "1.0.0",
+  "description": "Deploy and interact with smart contracts across EVM chains. Contract deploys are irreversible and cost gas — test on a testnet first.",
+  "author": { "name": "thirdweb", "url": "https://portal.thirdweb.com" },
+  "source": "https://portal.thirdweb.com",
+  "tags": ["web3", "blockchain", "evm", "smart-contracts"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["thirdweb-mcp"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "THIRDWEB_SECRET_KEY": {
+        "type": "string",
+        "description": "thirdweb secret key, supplied as an env var."
+      }
+    },
+    "required": ["THIRDWEB_SECRET_KEY"]
+  }
+}

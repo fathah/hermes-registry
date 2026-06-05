@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "the-graph",
+  "name": "The Graph",
+  "version": "1.0.0",
+  "description": "Query onchain data via subgraphs without running an indexer. Read-only data tool, low risk.",
+  "author": { "name": "The Graph", "url": "https://thegraph.com/docs/" },
+  "source": "https://thegraph.com/docs/",
+  "tags": ["web3", "blockchain", "data", "subgraph"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://token-api.mcp.thegraph.com/sse"
+}

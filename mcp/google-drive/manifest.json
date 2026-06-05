@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "google-drive",
+  "name": "Google Drive",
+  "version": "1.0.0",
+  "description": "Search and read files across your Google Drive. Archived MCP reference server — works but unmaintained; grant read-only scope.",
+  "author": { "name": "Model Context Protocol", "url": "https://github.com/modelcontextprotocol/servers-archived" },
+  "license": "MIT",
+  "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive",
+  "tags": ["google", "drive", "files", "productivity"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@modelcontextprotocol/server-gdrive"]
+}

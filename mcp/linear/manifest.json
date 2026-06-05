@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "linear",
+  "name": "Linear",
+  "version": "1.0.0",
+  "description": "Issues, sprint planning, and search in Linear. Official remote server; permissions inherit your Linear access.",
+  "author": { "name": "Linear", "url": "https://linear.app/docs/mcp" },
+  "source": "https://linear.app/docs/mcp",
+  "tags": ["project-management", "issues", "linear", "productivity"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.linear.app/sse"
+}

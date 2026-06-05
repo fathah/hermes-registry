@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "solana-agent-kit",
+  "name": "Solana Agent Kit",
+  "version": "1.0.0",
+  "description": "Onchain actions on Solana — transfers, swaps, token ops. Irreversible chain; prefer setups that sign in a separate wallet and never put a funded key in config.",
+  "author": { "name": "SendAI", "url": "https://github.com/sendaifun/solana-agent-kit" },
+  "license": "MIT",
+  "source": "https://github.com/sendaifun/solana-agent-kit",
+  "tags": ["web3", "blockchain", "solana"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "solana-agent-kit-mcp"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "SOLANA_PRIVATE_KEY": {
+        "type": "string",
+        "description": "Wallet private key, supplied as an env var. Use a low-value wallet only; never a key holding real funds."
+      },
+      "RPC_URL": {
+        "type": "string",
+        "description": "Solana RPC endpoint, supplied as an env var."
+      }
+    },
+    "required": ["SOLANA_PRIVATE_KEY"]
+  }
+}

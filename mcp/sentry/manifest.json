@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "sentry",
+  "name": "Sentry",
+  "version": "1.0.0",
+  "description": "Pipe issues, stack traces, and event detail into the agent — read a prod error and propose the fix. Pairs well with GitHub.",
+  "author": { "name": "Sentry", "url": "https://docs.sentry.io/product/sentry-mcp/" },
+  "source": "https://docs.sentry.io/product/sentry-mcp/",
+  "tags": ["monitoring", "errors", "observability"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.sentry.dev/mcp"
+}

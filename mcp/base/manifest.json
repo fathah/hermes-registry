@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "base",
+  "name": "Base",
+  "version": "1.0.0",
+  "description": "Coinbase's official onchain gateway — swap tokens, send funds, track a portfolio, hit DeFi protocols. Non-custodial: you review and sign every transaction in the Base app.",
+  "author": { "name": "Base (Coinbase)", "url": "https://github.com/base/base-mcp" },
+  "source": "https://github.com/base/base-mcp",
+  "tags": ["web3", "blockchain", "base", "defi"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.base.org"
+}

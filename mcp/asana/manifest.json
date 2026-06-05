@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "asana",
+  "name": "Asana",
+  "version": "1.0.0",
+  "description": "Tasks, projects, and workload in Asana via the official v2 remote server. Inherits your Asana permissions.",
+  "author": { "name": "Asana", "url": "https://developers.asana.com/docs/using-asanas-mcp-server" },
+  "source": "https://developers.asana.com/docs/using-asanas-mcp-server",
+  "tags": ["project-management", "tasks", "asana", "productivity"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.asana.com/v2/mcp"
+}

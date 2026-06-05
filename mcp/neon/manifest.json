@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "neon",
+  "name": "Neon",
+  "version": "1.0.0",
+  "description": "Serverless Postgres with branch-based migrations — the agent tests migrations on an instant copy-on-write branch before applying.",
+  "author": { "name": "Neon", "url": "https://github.com/neondatabase/mcp-server-neon" },
+  "license": "MIT",
+  "source": "https://github.com/neondatabase/mcp-server-neon",
+  "tags": ["database", "postgres", "neon", "serverless"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.neon.tech/mcp"
+}

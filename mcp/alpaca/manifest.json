@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "alpaca",
+  "name": "Alpaca",
+  "version": "1.0.0",
+  "description": "Trade US equities, ETFs, options, and crypto and manage a portfolio via Alpaca's official server. Start in the paper environment and review every order.",
+  "author": { "name": "Alpaca", "url": "https://github.com/alpacahq/alpaca-mcp-server" },
+  "license": "MIT",
+  "source": "https://github.com/alpacahq/alpaca-mcp-server",
+  "tags": ["trading", "stocks", "alpaca", "markets"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["alpaca-mcp-server"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "ALPACA_API_KEY": {
+        "type": "string",
+        "description": "Alpaca API key id, supplied as an env var."
+      },
+      "ALPACA_SECRET_KEY": {
+        "type": "string",
+        "description": "Alpaca API secret key, supplied as an env var."
+      },
+      "ALPACA_PAPER_TRADE": {
+        "type": "string",
+        "description": "Set to True to use the paper-trading environment, supplied as an env var. Start with paper trading."
+      }
+    },
+    "required": ["ALPACA_API_KEY", "ALPACA_SECRET_KEY"]
+  }
+}

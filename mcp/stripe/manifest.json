@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "stripe",
+  "name": "Stripe",
+  "version": "1.0.0",
+  "description": "Payments, subscriptions, refunds, and customer lookups via Stripe's official server. Moves real money — use a restricted key and keep writes human-confirmed.",
+  "author": { "name": "Stripe", "url": "https://docs.stripe.com/mcp" },
+  "source": "https://docs.stripe.com/mcp",
+  "tags": ["payments", "fintech", "stripe"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.stripe.com"
+}

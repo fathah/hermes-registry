@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "google-calendar",
+  "name": "Google Calendar",
+  "version": "1.0.0",
+  "description": "Events, scheduling, and availability checks on Google Calendar (OAuth on first call). Creating invites notifies real people — confirm writes.",
+  "author": { "name": "nspady", "url": "https://github.com/nspady/google-calendar-mcp" },
+  "license": "MIT",
+  "source": "https://github.com/nspady/google-calendar-mcp",
+  "tags": ["google", "calendar", "scheduling", "productivity"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@cocal/google-calendar-mcp"]
+}

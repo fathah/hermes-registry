@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "docker-hub",
+  "name": "Docker Hub",
+  "version": "1.0.0",
+  "description": "Search images and manage tags on Docker Hub. Community-maintained — review the source before granting write access.",
+  "author": { "name": "Community", "url": "https://github.com/ckreiling/mcp-server-docker" },
+  "source": "https://github.com/ckreiling/mcp-server-docker",
+  "tags": ["docker", "containers", "registry", "devops"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "mcp-server-docker"]
+}

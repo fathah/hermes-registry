@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "atlassian",
+  "name": "Jira & Confluence (Atlassian)",
+  "version": "1.0.0",
+  "description": "Jira issues, Confluence docs, and Compass via Atlassian's official Rovo remote server. OAuth 2.1; respects your access controls.",
+  "author": { "name": "Atlassian", "url": "https://www.atlassian.com/platform/remote-mcp-server" },
+  "source": "https://www.atlassian.com/platform/remote-mcp-server",
+  "tags": ["jira", "confluence", "atlassian", "project-management"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+}

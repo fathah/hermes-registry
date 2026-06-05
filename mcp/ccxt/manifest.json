@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "ccxt",
+  "name": "CCXT",
+  "version": "1.0.0",
+  "description": "Unified read access to 20+ crypto exchanges (Binance, Coinbase, Kraken, Bybit) for market data. Enabling trade execution is real-money territory.",
+  "author": { "name": "lazy-dinosaur", "url": "https://github.com/lazy-dinosaur/ccxt-mcp" },
+  "license": "MIT",
+  "source": "https://github.com/lazy-dinosaur/ccxt-mcp",
+  "tags": ["trading", "crypto", "exchanges", "markets"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@lazydino/ccxt-mcp"]
+}

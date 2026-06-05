@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "ableton",
+  "name": "Ableton Live",
+  "version": "1.0.0",
+  "description": "Control Ableton Live — create tracks, MIDI, and devices, and manipulate a live set. Requires Ableton plus a remote-script bridge.",
+  "author": { "name": "ahujasid", "url": "https://github.com/ahujasid/ableton-mcp" },
+  "license": "MIT",
+  "source": "https://github.com/ahujasid/ableton-mcp",
+  "tags": ["creator", "music", "ableton", "audio"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["ableton-mcp"]
+}

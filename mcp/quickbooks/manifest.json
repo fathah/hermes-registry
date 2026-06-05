@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "quickbooks",
+  "name": "QuickBooks",
+  "version": "1.0.0",
+  "description": "Bookkeeping, invoicing, and reconciliation via QuickBooks (Intuit). Accounting writes have tax/audit consequences — keep a human signing off.",
+  "author": { "name": "Intuit", "url": "https://developer.intuit.com" },
+  "source": "https://developer.intuit.com",
+  "tags": ["accounting", "fintech", "quickbooks"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@quickbooks/mcp-server"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "QUICKBOOKS_ACCESS_TOKEN": {
+        "type": "string",
+        "description": "QuickBooks OAuth access token, supplied as an env var."
+      },
+      "QUICKBOOKS_REALM_ID": {
+        "type": "string",
+        "description": "QuickBooks company (realm) id, supplied as an env var."
+      }
+    },
+    "required": ["QUICKBOOKS_ACCESS_TOKEN"]
+  }
+}

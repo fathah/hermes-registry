@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "aws",
+  "name": "AWS",
+  "version": "1.0.0",
+  "description": "AWS Labs core MCP server — entry point to per-service AWS servers (EC2, S3, Lambda, RDS, …). Scope IAM tightly.",
+  "author": { "name": "AWS Labs", "url": "https://github.com/awslabs/mcp" },
+  "license": "Apache-2.0",
+  "source": "https://github.com/awslabs/mcp",
+  "tags": ["cloud", "aws", "infra"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["awslabs.core-mcp-server@latest"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "AWS_PROFILE": {
+        "type": "string",
+        "description": "Named AWS credentials profile, supplied as an env var. Use a tightly-scoped role, never admin keys."
+      },
+      "AWS_REGION": {
+        "type": "string",
+        "description": "Default AWS region, e.g. us-east-1, supplied as an env var."
+      }
+    }
+  }
+}

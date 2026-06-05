@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "polygon-io",
+  "name": "Polygon.io",
+  "version": "1.0.0",
+  "description": "Market-data feeds — stocks, options, forex, crypto, aggregates and trades — via Polygon.io's official server. Data only, no execution.",
+  "author": { "name": "Polygon.io", "url": "https://polygon.io/docs" },
+  "source": "https://polygon.io/docs",
+  "tags": ["trading", "market-data", "stocks", "markets"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["--from", "git+https://github.com/polygon-io/mcp_polygon.git", "mcp_polygon"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "POLYGON_API_KEY": {
+        "type": "string",
+        "description": "Polygon.io API key, supplied as an env var."
+      }
+    },
+    "required": ["POLYGON_API_KEY"]
+  }
+}

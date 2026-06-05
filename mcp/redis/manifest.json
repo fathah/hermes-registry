@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "redis",
+  "name": "Redis",
+  "version": "1.0.0",
+  "description": "Inspect keys, manage caches, and monitor memory on a Redis instance. Official server from Redis.",
+  "author": { "name": "Redis", "url": "https://github.com/redis/mcp-redis" },
+  "license": "MIT",
+  "source": "https://github.com/redis/mcp-redis",
+  "tags": ["database", "cache", "redis"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["--from", "git+https://github.com/redis/mcp-redis.git", "redis-mcp-server"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "REDIS_URL": {
+        "type": "string",
+        "description": "Redis connection URL, supplied as an env var, e.g. redis://user:pass@localhost:6379/0. Use a read-only ACL user."
+      }
+    },
+    "required": ["REDIS_URL"]
+  }
+}

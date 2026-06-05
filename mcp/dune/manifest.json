@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "dune",
+  "name": "Dune",
+  "version": "1.0.0",
+  "description": "Run and read Dune Analytics queries from the agent. API credits are metered — a chatty agent burns a free tier fast.",
+  "author": { "name": "Dune", "url": "https://dune.com/docs/api/" },
+  "source": "https://dune.com/docs/api/",
+  "tags": ["web3", "blockchain", "analytics", "data"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["dune-mcp-server"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "DUNE_API_KEY": {
+        "type": "string",
+        "description": "Dune Analytics API key, supplied as an env var."
+      }
+    },
+    "required": ["DUNE_API_KEY"]
+  }
+}

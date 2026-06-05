@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "gmail",
+  "name": "Gmail",
+  "version": "1.0.0",
+  "description": "Read and send mail from Gmail (OAuth on first call). Community-maintained — never let an agent send mail unsupervised.",
+  "author": { "name": "GongRzhe", "url": "https://github.com/GongRzhe/Gmail-MCP-Server" },
+  "license": "MIT",
+  "source": "https://github.com/GongRzhe/Gmail-MCP-Server",
+  "tags": ["google", "email", "gmail", "productivity"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"]
+}

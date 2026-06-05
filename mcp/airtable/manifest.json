@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "airtable",
+  "name": "Airtable",
+  "version": "1.0.0",
+  "description": "Read and write records, bases, and schema in Airtable. Community-maintained — scope the PAT to specific bases.",
+  "author": { "name": "domdomegg", "url": "https://github.com/domdomegg/airtable-mcp-server" },
+  "license": "MIT",
+  "source": "https://github.com/domdomegg/airtable-mcp-server",
+  "tags": ["airtable", "database", "no-code", "productivity"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "airtable-mcp-server"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "AIRTABLE_API_KEY": {
+        "type": "string",
+        "description": "Airtable personal access token, supplied as an env var. Scope it to the specific bases you want reachable."
+      }
+    },
+    "required": ["AIRTABLE_API_KEY"]
+  }
+}

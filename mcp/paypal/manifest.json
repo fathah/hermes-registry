@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "paypal",
+  "name": "PayPal",
+  "version": "1.0.0",
+  "description": "Invoices, transactions, and payouts via PayPal's official MCP / agent toolkit. Moves real money — confirm every write.",
+  "author": { "name": "PayPal", "url": "https://www.paypal.ai" },
+  "source": "https://www.paypal.ai",
+  "tags": ["payments", "fintech", "paypal"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@paypal/mcp", "--tools=all"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "PAYPAL_ACCESS_TOKEN": {
+        "type": "string",
+        "description": "PayPal OAuth access token, supplied as an env var."
+      },
+      "PAYPAL_ENVIRONMENT": {
+        "type": "string",
+        "description": "PayPal environment, supplied as an env var: SANDBOX or PRODUCTION. Start in SANDBOX.",
+        "enum": ["SANDBOX", "PRODUCTION"]
+      }
+    },
+    "required": ["PAYPAL_ACCESS_TOKEN"]
+  }
+}

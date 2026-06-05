@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "figma",
+  "name": "Figma",
+  "version": "1.0.0",
+  "description": "Figma Dev Mode server — read components, variables, and layout; generate code from frames; create and update canvas content. Enable the desktop MCP server (Dev Mode) on port 3845.",
+  "author": { "name": "Figma", "url": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server" },
+  "source": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server",
+  "tags": ["creator", "design", "figma", "ui"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "http://127.0.0.1:3845/mcp"
+}

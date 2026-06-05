@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "higgsfield",
+  "name": "Higgsfield",
+  "version": "1.0.0",
+  "description": "30+ image and video models (Sora, Veo, Kling, Seedance) through one endpoint — research, prompt-optimize, and generate creative assets. Use the official connector, not session-scraping forks.",
+  "author": { "name": "Higgsfield", "url": "https://higgsfield.ai" },
+  "source": "https://higgsfield.ai",
+  "tags": ["creator", "media", "video", "image-generation"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "http",
+  "url": "https://mcp.higgsfield.ai"
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "elevenlabs",
+  "name": "ElevenLabs",
+  "version": "1.0.0",
+  "description": "Official text-to-speech and audio server — generate speech, clone voices, transcribe. Only clone voices you're allowed to.",
+  "author": { "name": "ElevenLabs", "url": "https://github.com/elevenlabs/elevenlabs-mcp" },
+  "license": "MIT",
+  "source": "https://github.com/elevenlabs/elevenlabs-mcp",
+  "tags": ["creator", "audio", "tts", "voice"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["elevenlabs-mcp"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "ELEVENLABS_API_KEY": {
+        "type": "string",
+        "description": "ElevenLabs API key, supplied as an env var."
+      }
+    },
+    "required": ["ELEVENLABS_API_KEY"]
+  }
+}
