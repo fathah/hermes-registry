@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1",
+  "type": "model-provider",
+  "id": "openrouter",
+  "name": "OpenRouter",
+  "version": "1.0.0",
+  "homepage": "https://openrouter.ai",
+  "description": "A unified API that routes to hundreds of models from many providers behind a single OpenAI-compatible endpoint. Model ids are namespaced as 'vendor/model'.",
+  "docs": "https://openrouter.ai/docs",
+  "apiBase": "https://openrouter.ai/api/v1",
+  "envKey": "OPENROUTER_API_KEY",
+  "models": [
+    {
+      "name": "openai/gpt-4o",
+      "label": "GPT-4o (OpenAI)",
+      "context": 128000,
+      "maxOutput": 16384,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming"
+      ]
+    },
+    {
+      "name": "anthropic/claude-3.5-sonnet",
+      "label": "Claude 3.5 Sonnet (Anthropic)",
+      "context": 200000,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming"
+      ]
+    },
+    {
+      "name": "google/gemini-2.5-pro",
+      "label": "Gemini 2.5 Pro (Google)",
+      "context": 1048576,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "reasoning",
+        "streaming"
+      ]
+    },
+    {
+      "name": "meta-llama/llama-3.1-405b-instruct",
+      "label": "Llama 3.1 405B Instruct (Meta)",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming"
+      ]
+    },
+    {
+      "name": "deepseek/deepseek-r1",
+      "label": "DeepSeek R1",
+      "context": 65536,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "reasoning",
+        "streaming"
+      ]
+    },
+    {
+      "name": "mistralai/mistral-large",
+      "label": "Mistral Large",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming"
+      ]
+    },
+    {
+      "name": "x-ai/grok-2",
+      "label": "Grok 2 (xAI)",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming"
+      ]
+    }
+  ]
+}

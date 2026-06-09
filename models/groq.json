@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1",
+  "type": "model-provider",
+  "id": "groq",
+  "name": "Groq",
+  "version": "1.0.0",
+  "homepage": "https://groq.com",
+  "description": "Ultra-low-latency inference for open models on Groq's LPU hardware (OpenAI-compatible API).",
+  "docs": "https://console.groq.com/docs/models",
+  "apiBase": "https://api.groq.com/openai/v1",
+  "envKey": "GROQ_API_KEY",
+  "models": [
+    {
+      "name": "llama-3.3-70b-versatile",
+      "label": "Llama 3.3 70B Versatile",
+      "context": 131072,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming",
+        "json_mode"
+      ]
+    },
+    {
+      "name": "llama-3.1-8b-instant",
+      "label": "Llama 3.1 8B Instant",
+      "context": 131072,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming",
+        "json_mode"
+      ]
+    },
+    {
+      "name": "gemma2-9b-it",
+      "label": "Gemma 2 9B",
+      "context": 8192,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming"
+      ]
+    },
+    {
+      "name": "deepseek-r1-distill-llama-70b",
+      "label": "DeepSeek R1 Distill Llama 70B",
+      "description": "Reasoning-distilled Llama 70B served on Groq.",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "reasoning",
+        "streaming"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1",
+  "type": "model-provider",
+  "id": "deepseek",
+  "name": "DeepSeek",
+  "version": "1.0.0",
+  "homepage": "https://www.deepseek.com",
+  "description": "Open-weight chat and reasoning models from DeepSeek.",
+  "docs": "https://api-docs.deepseek.com/",
+  "apiBase": "https://api.deepseek.com",
+  "envKey": "DEEPSEEK_API_KEY",
+  "models": [
+    {
+      "name": "deepseek-chat",
+      "label": "DeepSeek-V3",
+      "description": "General-purpose chat model.",
+      "context": 65536,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming",
+        "json_mode",
+        "prompt_caching"
+      ]
+    },
+    {
+      "name": "deepseek-reasoner",
+      "label": "DeepSeek-R1",
+      "description": "Reasoning model that emits a chain of thought before the answer.",
+      "context": 65536,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "reasoning",
+        "streaming",
+        "prompt_caching"
+      ]
+    }
+  ]
+}

@@ -23,6 +23,7 @@ from _common import (  # noqa: E402
     folder_checksum,  # noqa: F401  (kept for symmetry / future use)
     hermes_meta,
     iter_manifest_files,
+    iter_model_files,
     iter_skill_files,
     load_manifest,
     parse_frontmatter,
@@ -172,10 +173,53 @@ def validate_manifests(registry: Registry, by_type: dict) -> int:
     return count
 
 
+# --------------------------------------------------------------------------- #
+# Model-provider catalogs (models/<provider>.json)
+# --------------------------------------------------------------------------- #
+def validate_models(registry: Registry) -> int:
+    schema_path = SCHEMA_DIR / "models.schema.json"
+    if not schema_path.exists():
+        return 0
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    validator = jsonschema.Draft202012Validator(schema, registry=registry)
+
+    count = 0
+    for provider_path in iter_model_files():
+        count += 1
+        where = str(provider_path.relative_to(REPO_ROOT))
+        try:
+            data = load_manifest(provider_path)
+        except json.JSONDecodeError as e:
+            err(where, f"invalid JSON: {e}")
+            continue
+
+        for e in sorted(validator.iter_errors(data), key=lambda e: list(e.path)):
+            loc = "/".join(str(p) for p in e.path) or "(root)"
+            err(where, f"{loc}: {e.message}")
+
+        # id must match the filename stem (openai -> openai.json)
+        stem = provider_path.stem
+        if data.get("id") and data["id"] != stem:
+            err(where, f"id '{data['id']}' does not match filename '{stem}'")
+
+        # model names must be unique within a provider
+        seen: set[str] = set()
+        for m in data.get("models", []):
+            mid = m.get("name")
+            if mid in seen:
+                err(where, f"duplicate model name '{mid}'")
+            elif mid:
+                seen.add(mid)
+
+        check_icon(where, provider_path.parent, data.get("icon"))
+    return count
+
+
 def main() -> int:
     registry, by_type = build_registry()
     n_skills = validate_skills()
     n_manifests = validate_manifests(registry, by_type)
+    n_models = validate_models(registry)
 
     for line in warnings:
         print(line)
@@ -184,6 +228,7 @@ def main() -> int:
 
     print()
     print(f"Validated {n_skills} skills + {n_manifests} manifests "
+          f"+ {n_models} model providers "
           f"-> {len(errors)} error(s), {len(warnings)} warning(s)")
     return 1 if errors else 0
 

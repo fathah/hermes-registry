@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1",
+  "type": "model-provider",
+  "id": "openai",
+  "name": "OpenAI",
+  "version": "1.0.0",
+  "homepage": "https://openai.com",
+  "description": "GPT and o-series reasoning models from OpenAI.",
+  "docs": "https://platform.openai.com/docs/models",
+  "apiBase": "https://api.openai.com/v1",
+  "envKey": "OPENAI_API_KEY",
+  "models": [
+    {
+      "name": "gpt-4o",
+      "label": "GPT-4o",
+      "description": "Flagship multimodal model for everyday tasks.",
+      "context": 128000,
+      "maxOutput": 16384,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming",
+        "json_mode",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "gpt-4o-mini",
+      "label": "GPT-4o mini",
+      "description": "Small, fast, low-cost multimodal model.",
+      "context": 128000,
+      "maxOutput": 16384,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming",
+        "json_mode",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "gpt-4.1",
+      "label": "GPT-4.1",
+      "description": "Long-context model with strong coding and instruction following.",
+      "context": 1047576,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming",
+        "json_mode",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "gpt-4.1-mini",
+      "label": "GPT-4.1 mini",
+      "context": 1047576,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming",
+        "json_mode",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "gpt-4.1-nano",
+      "label": "GPT-4.1 nano",
+      "context": 1047576,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming",
+        "json_mode",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "o3",
+      "label": "o3",
+      "description": "Reasoning model for complex, multi-step problems.",
+      "context": 200000,
+      "maxOutput": 100000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "reasoning",
+        "vision",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "o4-mini",
+      "label": "o4-mini",
+      "description": "Fast, cost-efficient reasoning model.",
+      "context": 200000,
+      "maxOutput": 100000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "reasoning",
+        "vision",
+        "structured_outputs"
+      ]
+    }
+  ]
+}

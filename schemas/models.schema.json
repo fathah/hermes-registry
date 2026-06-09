@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hermes-registry/schemas/models.schema.json",
+  "title": "Model provider catalog",
+  "description": "One file per provider (models/<provider>.json). Describes the provider and the models it serves, so Hermes can populate model pickers without crawling each vendor's API.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "type",
+    "id",
+    "name",
+    "version",
+    "homepage",
+    "models"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "1"
+    },
+    "type": {
+      "const": "model-provider"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$",
+      "description": "Unique provider slug. Must match the filename (e.g. openai -> models/openai.json)."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable provider name, e.g. 'OpenAI'."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+([.-].+)?$",
+      "description": "Semantic version of this catalog file. Bump it whenever the model list changes."
+    },
+    "homepage": {
+      "type": "string",
+      "description": "Provider homepage URL."
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the provider."
+    },
+    "docs": {
+      "type": "string",
+      "description": "URL to the provider's model / API documentation."
+    },
+    "apiBase": {
+      "type": "string",
+      "description": "Default REST API base URL, e.g. https://api.openai.com/v1."
+    },
+    "envKey": {
+      "type": "string",
+      "description": "Conventional environment variable that holds this provider's API key, e.g. OPENAI_API_KEY. The key itself is never stored in the registry."
+    },
+    "icon": {
+      "type": "string",
+      "pattern": "\\.(svg|png)$",
+      "description": "Filename of an SVG or 512x512 PNG icon, relative to the models/ folder."
+    },
+    "models": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/model"
+      }
+    }
+  },
+  "$defs": {
+    "model": {
+      "type": "object",
+      "required": [
+        "name",
+        "label",
+        "context"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Model identifier sent to the provider API, e.g. 'gpt-4o' or 'anthropic/claude-3.5-sonnet'."
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable display name, e.g. 'GPT-4o'."
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description of the model."
+        },
+        "context": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Context window size in tokens (input + output)."
+        },
+        "maxOutput": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Maximum output tokens the model can generate in one response."
+        },
+        "modalities": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "input": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "text",
+                  "image",
+                  "audio",
+                  "video",
+                  "pdf",
+                  "file"
+                ]
+              }
+            },
+            "output": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "text",
+                  "image",
+                  "audio"
+                ]
+              }
+            }
+          }
+        },
+        "capabilities": {
+          "type": "array",
+          "description": "Feature flags the model supports.",
+          "items": {
+            "enum": [
+              "tools",
+              "vision",
+              "reasoning",
+              "streaming",
+              "json_mode",
+              "structured_outputs",
+              "prompt_caching",
+              "web_search",
+              "code_execution",
+              "fine_tuning",
+              "batch",
+              "audio"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "pricing": {
+          "type": "object",
+          "description": "Optional, best-effort pricing. Volatile — always confirm against the provider before relying on it.",
+          "additionalProperties": false,
+          "properties": {
+            "input": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Price for input/prompt tokens."
+            },
+            "output": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Price for output/completion tokens."
+            },
+            "currency": {
+              "type": "string",
+              "default": "USD"
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "per_1m_tokens",
+                "per_1k_tokens",
+                "per_token"
+              ],
+              "default": "per_1m_tokens"
+            }
+          }
+        },
+        "releaseDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Release date, YYYY-MM-DD."
+        },
+        "deprecated": {
+          "type": "boolean",
+          "description": "True if the provider has deprecated this model."
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Alternative identifiers that resolve to this model (e.g. 'gpt-4o-latest')."
+        }
+      }
+    }
+  }
+}

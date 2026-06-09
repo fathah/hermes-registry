@@ -22,6 +22,7 @@ artifact directly.
 | **MCP**      | `mcp/`       | A Model Context Protocol server (tools/resources)        | `manifest.json`                                                     |
 | **Agent**    | `agents/`    | A named subagent persona (system prompt + tools + model) | `manifest.json` + `AGENT.md`                                        |
 | **Workflow** | `workflows/` | A multi-step recipe chaining skills / agents / MCPs      | `manifest.json` + `workflow.json`                                   |
+| **Model**    | `models/`    | A provider's model catalog (context, modalities, etc.)   | `<provider>.json` ([models/README.md](models/README.md))            |
 
 Two formats by design:
 
@@ -55,6 +56,9 @@ hermes-registry/
 │       ├── manifest.json
 │       ├── workflow.json
 │       └── icon.svg
+├── models/                    # one <provider>.json per provider (model catalog)
+│   ├── openai.json
+│   └── anthropic.json
 ├── schemas/                   # JSON Schema per type (validation source of truth)
 ├── scripts/
 │   ├── build_index.py         # scans folders → generates index.json

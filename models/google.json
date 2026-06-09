@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1",
+  "type": "model-provider",
+  "id": "google",
+  "name": "Google",
+  "version": "1.0.0",
+  "homepage": "https://ai.google.dev",
+  "description": "The Gemini family of multimodal models from Google.",
+  "docs": "https://ai.google.dev/gemini-api/docs/models",
+  "apiBase": "https://generativelanguage.googleapis.com/v1beta",
+  "envKey": "GEMINI_API_KEY",
+  "models": [
+    {
+      "name": "gemini-2.5-pro",
+      "label": "Gemini 2.5 Pro",
+      "description": "Most capable Gemini model with built-in thinking.",
+      "context": 1048576,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "reasoning",
+        "streaming",
+        "structured_outputs",
+        "code_execution"
+      ]
+    },
+    {
+      "name": "gemini-2.5-flash",
+      "label": "Gemini 2.5 Flash",
+      "description": "Fast, cost-efficient model with thinking.",
+      "context": 1048576,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "reasoning",
+        "streaming",
+        "structured_outputs",
+        "code_execution"
+      ]
+    },
+    {
+      "name": "gemini-2.0-flash",
+      "label": "Gemini 2.0 Flash",
+      "context": 1048576,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "gemini-1.5-pro",
+      "label": "Gemini 1.5 Pro",
+      "description": "Long-context model with up to a 2M token window.",
+      "context": 2097152,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming"
+      ]
+    },
+    {
+      "name": "gemini-1.5-flash",
+      "label": "Gemini 1.5 Flash",
+      "context": 1048576,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text",
+          "image",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming"
+      ]
+    }
+  ]
+}

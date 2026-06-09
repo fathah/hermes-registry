@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1",
+  "type": "model-provider",
+  "id": "mistral",
+  "name": "Mistral AI",
+  "version": "1.0.0",
+  "homepage": "https://mistral.ai",
+  "description": "Open and commercial models from Mistral AI.",
+  "docs": "https://docs.mistral.ai/getting-started/models/",
+  "apiBase": "https://api.mistral.ai/v1",
+  "envKey": "MISTRAL_API_KEY",
+  "models": [
+    {
+      "name": "mistral-large-latest",
+      "label": "Mistral Large",
+      "description": "Top-tier reasoning model for high-complexity tasks.",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming",
+        "json_mode",
+        "structured_outputs"
+      ]
+    },
+    {
+      "name": "mistral-small-latest",
+      "label": "Mistral Small",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming",
+        "json_mode"
+      ]
+    },
+    {
+      "name": "codestral-latest",
+      "label": "Codestral",
+      "description": "Code-specialized model with a large context window.",
+      "context": 262144,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming"
+      ]
+    },
+    {
+      "name": "pixtral-large-latest",
+      "label": "Pixtral Large",
+      "description": "Multimodal model with vision.",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming"
+      ]
+    },
+    {
+      "name": "ministral-8b-latest",
+      "label": "Ministral 8B",
+      "context": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming"
+      ]
+    }
+  ]
+}

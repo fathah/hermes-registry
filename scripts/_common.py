@@ -19,6 +19,7 @@ MANIFEST_TYPES = {
     "workflow": "workflows",
 }
 SKILLS_DIR = REPO_ROOT / "skills"
+MODELS_DIR = REPO_ROOT / "models"
 
 ICON_MAX_BYTES = {".svg": 50 * 1024, ".png": 256 * 1024}
 
@@ -42,6 +43,14 @@ def iter_manifest_files():
             continue
         for manifest in sorted(base.glob("*/manifest.json")):
             yield type_name, manifest
+
+
+def iter_model_files():
+    """Yield every models/<provider>.json path (flat, one file per provider)."""
+    if not MODELS_DIR.is_dir():
+        return
+    for provider in sorted(MODELS_DIR.glob("*.json")):
+        yield provider
 
 
 # --------------------------------------------------------------------------- #

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1",
+  "type": "model-provider",
+  "id": "anthropic",
+  "name": "Anthropic",
+  "version": "1.0.0",
+  "homepage": "https://www.anthropic.com",
+  "description": "The Claude family of models from Anthropic.",
+  "docs": "https://docs.anthropic.com/en/docs/about-claude/models",
+  "apiBase": "https://api.anthropic.com/v1",
+  "envKey": "ANTHROPIC_API_KEY",
+  "models": [
+    {
+      "name": "claude-opus-4-20250514",
+      "label": "Claude Opus 4",
+      "description": "Most capable Claude model for complex reasoning and agentic coding.",
+      "context": 200000,
+      "maxOutput": 32000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "reasoning",
+        "streaming",
+        "prompt_caching"
+      ]
+    },
+    {
+      "name": "claude-sonnet-4-20250514",
+      "label": "Claude Sonnet 4",
+      "description": "Balanced model with strong coding and reasoning at lower cost.",
+      "context": 200000,
+      "maxOutput": 64000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "reasoning",
+        "streaming",
+        "prompt_caching"
+      ]
+    },
+    {
+      "name": "claude-3-7-sonnet-20250219",
+      "label": "Claude 3.7 Sonnet",
+      "description": "Hybrid model with optional extended thinking.",
+      "context": 200000,
+      "maxOutput": 64000,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "reasoning",
+        "streaming",
+        "prompt_caching"
+      ]
+    },
+    {
+      "name": "claude-3-5-sonnet-20241022",
+      "label": "Claude 3.5 Sonnet",
+      "context": 200000,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming",
+        "prompt_caching"
+      ]
+    },
+    {
+      "name": "claude-3-5-haiku-20241022",
+      "label": "Claude 3.5 Haiku",
+      "description": "Fastest, most cost-effective Claude model.",
+      "context": 200000,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "streaming",
+        "prompt_caching"
+      ]
+    },
+    {
+      "name": "claude-3-opus-20240229",
+      "label": "Claude 3 Opus",
+      "context": 200000,
+      "maxOutput": 4096,
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "tools",
+        "vision",
+        "streaming"
+      ]
+    }
+  ]
+}
