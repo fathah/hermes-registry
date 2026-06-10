@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-06-09T15:45:00+05:30",
-  "count": 171,
+  "generated": "2026-06-10T10:40:26+05:30",
+  "count": 180,
   "entries": [
     {
       "id": "accessibility-auditor",
@@ -1150,6 +1150,36 @@
       "acceptsFunding": false
     },
     {
+      "id": "meigen-ai-design",
+      "type": "mcp",
+      "category": null,
+      "name": "MeiGen AI Design",
+      "version": "1.0.0",
+      "description": "Image and video generation across 9 leading models: GPT Image 2, Nanobanana 2, Seedream 5.0, Midjourney V8.1, Flux 2 Klein, Seedance 2.0, Happyhorse 1.0, Veo 3.1, plus local ComfyUI. SSRF-hardened, R2 uploads auto-expire after 24h. 1k+ stars.",
+      "tags": [
+        "image-gen",
+        "video-gen",
+        "midjourney",
+        "flux",
+        "dalle",
+        "seedance",
+        "veo",
+        "comfyui",
+        "creative"
+      ],
+      "author": "jau123",
+      "license": "MIT",
+      "source": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+      "path": "mcp/meigen-ai-design",
+      "icon": null,
+      "checksum": "sha256:b6b5c7a27035d27d712560537d037df55beca303404170d492d282a218ab3597",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
       "id": "memory",
       "type": "mcp",
       "category": null,
@@ -1166,6 +1196,36 @@
       "path": "mcp/memory",
       "icon": null,
       "checksum": "sha256:0b30a64c5ce25d9ec5e733c7e0dfa3a9e3b099623a186ab4c6ddd9b85eb8e381",
+      "compatibility": {
+        "hermes": ">=0.3.0",
+        "desktop": ">=1.2.0"
+      },
+      "acceptsFunding": false
+    },
+    {
+      "id": "mistral",
+      "type": "mcp",
+      "category": null,
+      "name": "Mistral AI",
+      "version": "1.0.0",
+      "description": "Full Mistral AI surface — chat, embeddings, vision, OCR, Voxtral audio (transcribe/speak), Codestral FIM, agents, moderation, files, and batch. 22 tools. Listed on the Official MCP Registry. Free Experiment tier: 1B tokens/month.",
+      "tags": [
+        "mistral",
+        "llm",
+        "ocr",
+        "audio",
+        "transcription",
+        "embeddings",
+        "vision",
+        "codestral",
+        "fim"
+      ],
+      "author": "Swih",
+      "license": "MIT",
+      "source": "https://github.com/Swih/mistral-mcp",
+      "path": "mcp/mistral",
+      "icon": null,
+      "checksum": "sha256:43fca303100a2522dec3142e1f2e0d394aa17f1df2a8197263787076f2896341",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1928,6 +1988,35 @@
       "acceptsFunding": false
     },
     {
+      "id": "hermes-skill-factory",
+      "type": "skill",
+      "category": "autonomous-ai-agents",
+      "name": "hermes-skill-factory",
+      "version": "1.0.0",
+      "description": "Use when you want to auto-generate reusable skills from repeated workflows. Watches your Hermes sessions, detects patterns, and proposes SKILL.md + plugin.py pairs on demand.",
+      "tags": [
+        "meta",
+        "skill-generation",
+        "automation",
+        "workflows",
+        "plugin",
+        "self-improving"
+      ],
+      "author": "Romanescu11",
+      "license": "MIT",
+      "source": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/autonomous-ai-agents/hermes-skill-factory",
+      "icon": null,
+      "checksum": "sha256:201592b0c4d6df69efb0db7facbc99bf3595c4aece66a04e4219c4abb27c483f",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
       "id": "kanban-codex-lane",
       "type": "skill",
       "category": "autonomous-ai-agents",
@@ -1948,6 +2037,38 @@
       "path": "skills/autonomous-ai-agents/kanban-codex-lane",
       "icon": null,
       "checksum": "sha256:bc029017ade22cf9eb634ed755f4120d1820d153f3c9185ba5671ba66fd54e35",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "oh-my-hermes",
+      "type": "skill",
+      "category": "autonomous-ai-agents",
+      "name": "oh-my-hermes",
+      "version": "1.0.0",
+      "description": "Use when orchestrating multi-agent workflows: deep research, planning with consensus, verified execution, triage, or autopilot. Suite of driver skills for Hermes-native multi-agent coordination.",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "research",
+        "planning",
+        "execution",
+        "triage",
+        "autopilot",
+        "delegation",
+        "consensus"
+      ],
+      "author": "witt3rd",
+      "license": "MIT",
+      "source": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/autonomous-ai-agents/oh-my-hermes",
+      "icon": null,
+      "checksum": "sha256:1867e73f5efd3e62bcf14a9a24e5566d84f39c2b6d234f4a2037c5c52ddcfd7d",
       "compatibility": null,
       "acceptsFunding": false
     },
@@ -1976,6 +2097,38 @@
       "path": "skills/autonomous-ai-agents/opencode",
       "icon": null,
       "checksum": "sha256:843019fd291c0bdb52f718537bfd84272da6252ac6bb06bd89703f2fc15fd67a",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "chainlink-agent-skills",
+      "type": "skill",
+      "category": "blockchain",
+      "name": "chainlink-agent-skills",
+      "version": "1.0.0",
+      "description": "Use when working with Chainlink oracle networks, CCIP cross-chain messaging, or smart contract data feeds. Official Chainlink agent skills on the agentskills.io spec.",
+      "tags": [
+        "chainlink",
+        "oracle",
+        "ccip",
+        "smart-contracts",
+        "web3",
+        "defi",
+        "blockchain",
+        "cross-chain",
+        "data-feeds"
+      ],
+      "author": "Chainlink (smartcontractkit)",
+      "license": "MIT",
+      "source": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/blockchain/chainlink-agent-skills",
+      "icon": null,
+      "checksum": "sha256:e7725e41f075778c3a2a9733e4e9ed5b50a17d4004c1bdf4c1f22b7d4aeb960e",
       "compatibility": null,
       "acceptsFunding": false
     },
@@ -2590,6 +2743,40 @@
       "acceptsFunding": false
     },
     {
+      "id": "open-design",
+      "type": "skill",
+      "category": "design",
+      "name": "open-design",
+      "version": "1.0.0",
+      "description": "Use when you need to generate UI designs, web/mobile mockups, presentations, dashboards, or documents from natural language. 31 composable skills across 129 design systems with image, video, and audio generation.",
+      "tags": [
+        "design",
+        "ui",
+        "mockup",
+        "web",
+        "mobile",
+        "dashboard",
+        "presentation",
+        "image-gen",
+        "video-gen",
+        "design-systems",
+        "local-first"
+      ],
+      "author": "nexu-io",
+      "license": "MIT",
+      "source": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/design/open-design",
+      "icon": null,
+      "checksum": "sha256:0582e0fd591ac3a7e2290608389af3b61442214276be0e57253669489545bf70",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
       "id": "kanban-orchestrator",
       "type": "skill",
       "category": "devops",
@@ -2670,6 +2857,39 @@
       "path": "skills/devops/webhook-subscriptions",
       "icon": null,
       "checksum": "sha256:7ef378b1c093a2ac4f66b0e9d08d5f2e3881f4e7b750d65771ab2bb4b9a2b5af",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "drawio",
+      "type": "skill",
+      "category": "diagramming",
+      "name": "drawio",
+      "version": "1.0.0",
+      "description": "Use when you need to generate architecture diagrams, flowcharts, ER diagrams, or any visual diagram from natural language. Exports to PNG, SVG, and PDF via draw.io.",
+      "tags": [
+        "diagrams",
+        "drawio",
+        "architecture",
+        "flowchart",
+        "erd",
+        "visualization",
+        "export",
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "author": "Agents365-ai",
+      "license": "MIT",
+      "source": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/diagramming/drawio",
+      "icon": null,
+      "checksum": "sha256:c6282718f6e357f0d0b9c457d776f1d9f9bb868507713ce34c02d3ddd37c75ad",
       "compatibility": null,
       "acceptsFunding": false
     },
@@ -2967,6 +3187,36 @@
       "path": "skills/mcp/native-mcp",
       "icon": null,
       "checksum": "sha256:f57d524186e2f6dbbd2af97bbe8d953bf54c254decda8a7c4b9fc03c19920124",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "black-forest-labs-flux",
+      "type": "skill",
+      "category": "media",
+      "name": "black-forest-labs-flux",
+      "version": "1.0.0",
+      "description": "Use when generating images with FLUX models. Official first-party FLUX image generation skills from Black Forest Labs — the creators of FLUX.1.",
+      "tags": [
+        "image-gen",
+        "flux",
+        "black-forest-labs",
+        "text-to-image",
+        "bfl",
+        "image-generation",
+        "creative"
+      ],
+      "author": "Black Forest Labs",
+      "license": "MIT",
+      "source": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/media/black-forest-labs-flux",
+      "icon": null,
+      "checksum": "sha256:58af2b8670df757e8e09e5c8a11d2a620d83194033588a4923b3fdade587ec9b",
       "compatibility": null,
       "acceptsFunding": false
     },
@@ -3654,6 +3904,37 @@
       "path": "skills/productivity/teams-meeting-pipeline",
       "icon": null,
       "checksum": "sha256:6c8d86f2e8473e47dd3b03e17fca6041ce11ff651fee9104e6d432214d268443",
+      "compatibility": null,
+      "acceptsFunding": false
+    },
+    {
+      "id": "cybersecurity-mitre",
+      "type": "skill",
+      "category": "red-teaming",
+      "name": "cybersecurity-mitre",
+      "version": "1.0.0",
+      "description": "Use when performing security research, red-teaming, or threat modeling. 753+ structured cybersecurity skills mapped to MITRE ATT&CK tactics and techniques.",
+      "tags": [
+        "cybersecurity",
+        "mitre",
+        "att&ck",
+        "red-teaming",
+        "penetration-testing",
+        "threat-modeling",
+        "security-research",
+        "offensive-security"
+      ],
+      "author": "mukul975",
+      "license": "MIT",
+      "source": null,
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "path": "skills/red-teaming/cybersecurity-mitre",
+      "icon": null,
+      "checksum": "sha256:fcde6173e20fc3943042a3069aca1832fafc90edcfb255feae5951a1e40f516f",
       "compatibility": null,
       "acceptsFunding": false
     },
