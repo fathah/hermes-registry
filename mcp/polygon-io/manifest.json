@@ -8,6 +8,7 @@
   "author": { "name": "Polygon.io", "url": "https://polygon.io/docs" },
   "source": "https://polygon.io/docs",
   "tags": ["trading", "market-data", "stocks", "markets"],
+  "icon": "icon.svg",
   "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
   "permissions": ["network"],
   "transport": "stdio",

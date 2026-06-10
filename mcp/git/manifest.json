@@ -15,6 +15,7 @@
     "git",
     "vcs"
   ],
+  "icon": "icon.svg",
   "compatibility": {
     "hermes": ">=0.3.0",
     "desktop": ">=1.2.0"

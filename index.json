@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1",
-  "generated": "2026-06-10T10:40:26+05:30",
+  "generated": "2026-06-10T05:22:58.828487+00:00",
   "count": 180,
   "entries": [
     {
@@ -425,8 +425,8 @@
       "license": "MIT",
       "source": "https://github.com/ahujasid/ableton-mcp",
       "path": "mcp/ableton",
-      "icon": null,
-      "checksum": "sha256:eec4c022b33feb475f9c60bf5d04dc6aef5820f4845bd36ef257f08699a95214",
+      "icon": "mcp/ableton/icon.svg",
+      "checksum": "sha256:bf660aac99f354d37e43bbf914f9ce32fff48aa4179873a01379da9e665f6a20",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -450,8 +450,8 @@
       "license": "MIT",
       "source": "https://github.com/domdomegg/airtable-mcp-server",
       "path": "mcp/airtable",
-      "icon": null,
-      "checksum": "sha256:9f9d3a660a00c43c38ed8595f7021b8cf7a8cead94dfc01838dd7c23dc0b603b",
+      "icon": "mcp/airtable/icon.svg",
+      "checksum": "sha256:859fe7ea66f44ccb2b700a5e8255f9a92dbdf0ea13d3a485897933b673d8f7be",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -475,8 +475,8 @@
       "license": "MIT",
       "source": "https://github.com/alpacahq/alpaca-mcp-server",
       "path": "mcp/alpaca",
-      "icon": null,
-      "checksum": "sha256:58a9428d9add62a201da323322bb1a2843c24d6b16e8c8c505cfa990b80dce6b",
+      "icon": "mcp/alpaca/icon.svg",
+      "checksum": "sha256:7bee1b9e83b1c9f4240e9d02b6475765a100d8026db588935e416087f65ae937",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -500,8 +500,8 @@
       "license": null,
       "source": "https://developers.asana.com/docs/using-asanas-mcp-server",
       "path": "mcp/asana",
-      "icon": null,
-      "checksum": "sha256:1dcb4d511f3be9d423c7aee2e63c574aa90867252f812f4126dcc004d5826e9e",
+      "icon": "mcp/asana/icon.svg",
+      "checksum": "sha256:03e11d80416771687ffc5d7c9a496abaae688ca3bfe9906e20bdf646206b6bf8",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -525,8 +525,8 @@
       "license": null,
       "source": "https://www.atlassian.com/platform/remote-mcp-server",
       "path": "mcp/atlassian",
-      "icon": null,
-      "checksum": "sha256:e305f7050a4cb495f00b4670d473f9913a82000d41d55a6c69d2ac9715e167a6",
+      "icon": "mcp/atlassian/icon.svg",
+      "checksum": "sha256:10922554c8e307e4662de609888b75e1b95cdb4d847fdabdb3fec118cd5c912e",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -549,8 +549,8 @@
       "license": "Apache-2.0",
       "source": "https://github.com/awslabs/mcp",
       "path": "mcp/aws",
-      "icon": null,
-      "checksum": "sha256:c29767e86f55e566c1de7767aa4c831ed2fc4d586cb8c758bb7a5bc1bcd1c698",
+      "icon": "mcp/aws/icon.svg",
+      "checksum": "sha256:044a90937fe4a2003e1b8270dca75fb46bace20ec9269712ebf28fa9e58af9f7",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -574,8 +574,8 @@
       "license": null,
       "source": "https://github.com/base/base-mcp",
       "path": "mcp/base",
-      "icon": null,
-      "checksum": "sha256:2bb84dc47c2e3e0663e139f702283a433ca7bef3923653886198449b2e866295",
+      "icon": "mcp/base/icon.svg",
+      "checksum": "sha256:ffddd4ad2902201e9170e0d8d96ce2ff0a00adc30dbbb4f0a32d2b10044ac1da",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -599,8 +599,8 @@
       "license": "MIT",
       "source": "https://github.com/ahujasid/blender-mcp",
       "path": "mcp/blender",
-      "icon": null,
-      "checksum": "sha256:2a461ac5e9f75f245f3fdbf28050422a7ea92e02ae935483c0f3fef27d942a7b",
+      "icon": "mcp/blender/icon.svg",
+      "checksum": "sha256:463920b43d0fb0fe7e0cecf631254159574dfe0dd4c7e3f2db686b9ed542a6a7",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -622,8 +622,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/brave-search",
       "path": "mcp/brave-search",
-      "icon": null,
-      "checksum": "sha256:c2602e8c25dd38096bedeed2dda2a9e2f920f92d84795e070b23b87703ad3ef1",
+      "icon": "mcp/brave-search/icon.svg",
+      "checksum": "sha256:d50261400182c5dbb5610ffa8aabbd0f30953a9692d4f4cda694a9af6db1ff1b",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -647,8 +647,8 @@
       "license": null,
       "source": "https://www.canva.dev/docs/apps/mcp-server/",
       "path": "mcp/canva",
-      "icon": null,
-      "checksum": "sha256:1d193138c7c253c079b07b3921a3fea0b0992f600410bf8fabb53ee92c8611a7",
+      "icon": "mcp/canva/icon.svg",
+      "checksum": "sha256:a476d3f9fda5bbf4a6f7b5ad72299685d71ba20cc5987c3a428f9e60198d5c2b",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -672,8 +672,8 @@
       "license": "MIT",
       "source": "https://github.com/lazy-dinosaur/ccxt-mcp",
       "path": "mcp/ccxt",
-      "icon": null,
-      "checksum": "sha256:8640b65d7e24d99a76f628e02aa784a97c08b446149bc8200a731de70a62334f",
+      "icon": "mcp/ccxt/icon.svg",
+      "checksum": "sha256:4a8a2238e609bdaeac6a7634d1d11adda2ee0631dec2c7896faeb7a7cc92cf6e",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -697,8 +697,8 @@
       "license": "Apache-2.0",
       "source": "https://github.com/cloudflare/mcp",
       "path": "mcp/cloudflare",
-      "icon": null,
-      "checksum": "sha256:cf61e663966df6cb1c5e76434c0b174fa369c01e783b341658fd0eb8a9652aa8",
+      "icon": "mcp/cloudflare/icon.svg",
+      "checksum": "sha256:a692090c25019f3bfd928a3294ec919a09ad71f4ce89c4508a693c39fdec84d2",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -722,8 +722,8 @@
       "license": null,
       "source": "https://docs.coingecko.com",
       "path": "mcp/coingecko",
-      "icon": null,
-      "checksum": "sha256:a69e67a4fd184ae99dbc29feb3fd8387356a94aa5e521dd5cf2769a14e98062e",
+      "icon": "mcp/coingecko/icon.svg",
+      "checksum": "sha256:d866a7c3ec6d3450a55d59cb008c3a704251ad68492463c165edd509865d381d",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -746,8 +746,8 @@
       "license": "MIT",
       "source": "https://github.com/upstash/context7",
       "path": "mcp/context7",
-      "icon": null,
-      "checksum": "sha256:4384c8be22f6bd9826401fe853c4ade7fe3747787557fba2d3dc5d505c0eb6b6",
+      "icon": "mcp/context7/icon.svg",
+      "checksum": "sha256:4b64ef22a5e98b7828fe31f8e6f1e06bdbd51c36cf0eb350d141884be58a6655",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -771,8 +771,8 @@
       "license": "MIT",
       "source": "https://github.com/samuelgursky/davinci-resolve-mcp",
       "path": "mcp/davinci-resolve",
-      "icon": null,
-      "checksum": "sha256:e116ed0bb7242dacf2084d96d1fb6a9a2ca9226713b9a34b442c6da77c81f303",
+      "icon": "mcp/davinci-resolve/icon.svg",
+      "checksum": "sha256:92ee9d1f92e6b1ec1c63bbd3fecb15c10a45e35c3243c3e4e7d002efe7973804",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -796,8 +796,8 @@
       "license": null,
       "source": "https://github.com/ckreiling/mcp-server-docker",
       "path": "mcp/docker-hub",
-      "icon": null,
-      "checksum": "sha256:2b9d4d96713f707a33d30bf6239a5cb065754818c9a50e14f240bc1dde8409dc",
+      "icon": "mcp/docker-hub/icon.svg",
+      "checksum": "sha256:d7b24b26be772c0a6ae57f32535dd10eb986f41eae9eb4521952b117087e4ef7",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -821,8 +821,8 @@
       "license": null,
       "source": "https://dune.com/docs/api/",
       "path": "mcp/dune",
-      "icon": null,
-      "checksum": "sha256:63421cc4d498070293086601eaa1bec1ba3efb095169391e164ed5d81145f09c",
+      "icon": "mcp/dune/icon.svg",
+      "checksum": "sha256:f0d8a85f030e25cbc815b5387c28f6042b063cfebeb1e38efb57db186ba903ae",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -846,8 +846,8 @@
       "license": "MIT",
       "source": "https://github.com/elevenlabs/elevenlabs-mcp",
       "path": "mcp/elevenlabs",
-      "icon": null,
-      "checksum": "sha256:0b5900e9b94beb1118be70348f159aa9bfcbf1462d6e97945dc809c075330d73",
+      "icon": "mcp/elevenlabs/icon.svg",
+      "checksum": "sha256:e034717cbeb6a539386ba0fb7b21fb0bb5af54cb536b08f31d6719c633baf606",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -871,8 +871,8 @@
       "license": null,
       "source": "https://docs.etherscan.io",
       "path": "mcp/etherscan",
-      "icon": null,
-      "checksum": "sha256:fe9e85c9437db5884a185a7c4827f42b49a23269b7f9c528f686f25db17216e1",
+      "icon": "mcp/etherscan/icon.svg",
+      "checksum": "sha256:c90c61367c8984e0a490b6f415a4a26a7d37704c1784bf15d19d2b1c19ae5e9a",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -895,8 +895,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
       "path": "mcp/fetch",
-      "icon": null,
-      "checksum": "sha256:d0ee2747e75c55204a48ea6dcc5ef1e1a4beea998d64d386e617a41c540d0cc1",
+      "icon": "mcp/fetch/icon.svg",
+      "checksum": "sha256:37227b22e20cd0c8f6b51b4384300e3ed88df875f6b8d13f898356fc7b179ccf",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -920,8 +920,8 @@
       "license": null,
       "source": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server",
       "path": "mcp/figma",
-      "icon": null,
-      "checksum": "sha256:50b9de45dd11b192b3d772ed30ae32388e33f85920ceb1ef2ebfde114142a7f8",
+      "icon": "mcp/figma/icon.svg",
+      "checksum": "sha256:ee9070c80d5ae3b02f49b8bffb272965006379fc9a4fc2db90c96572d2952129",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -944,8 +944,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
       "path": "mcp/filesystem",
-      "icon": null,
-      "checksum": "sha256:8c7489378cd7415432828c4c5098b1c85785caa0a843e3a4640e7c3465e6fda3",
+      "icon": "mcp/filesystem/icon.svg",
+      "checksum": "sha256:c83451556d739b6b567b86596d137026dc2e223fa4b9d6b9a9950cd5cdfdab0c",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -967,8 +967,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
       "path": "mcp/git",
-      "icon": null,
-      "checksum": "sha256:866576092d40f1d0b72549e24886818eca99ab9446830ae8def9c6b66f139b40",
+      "icon": "mcp/git/icon.svg",
+      "checksum": "sha256:e243fcaad379320d7d8659783a16158fd30eaf6bfea4ce6b64383fe143533fa5",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -992,8 +992,8 @@
       "license": "MIT",
       "source": "https://github.com/github/github-mcp-server",
       "path": "mcp/github",
-      "icon": null,
-      "checksum": "sha256:c36572f641fcf3c97f481141b4214f1e8981b553c682e11c286ad0871ee1a496",
+      "icon": "mcp/github/icon.svg",
+      "checksum": "sha256:8c631bdc4f33266a212c0d25d1a84b9c0831efb5fe50bd4897c3d15a64ede3d6",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1017,8 +1017,8 @@
       "license": "MIT",
       "source": "https://github.com/GongRzhe/Gmail-MCP-Server",
       "path": "mcp/gmail",
-      "icon": null,
-      "checksum": "sha256:a6928a73b5fd0656b9381ce895ed43cb1704776c7c963f9373a6b92d3014e12d",
+      "icon": "mcp/gmail/icon.svg",
+      "checksum": "sha256:e3c111c519b9af9bb27a58e459eaa354da37b6d80e933031d38a71bdd5298a3d",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1042,8 +1042,8 @@
       "license": "MIT",
       "source": "https://github.com/nspady/google-calendar-mcp",
       "path": "mcp/google-calendar",
-      "icon": null,
-      "checksum": "sha256:8fd90626caa841ce85a68c76cfd4b9bbfc5d914aecb38bfab43fdd6b691b8e4b",
+      "icon": "mcp/google-calendar/icon.svg",
+      "checksum": "sha256:c1cfb87de6cae803dcf84379e9ae0838f8ed7bc61bb24ee3d95440feec96b9fb",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1067,8 +1067,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive",
       "path": "mcp/google-drive",
-      "icon": null,
-      "checksum": "sha256:ac120de40a88d966658de6433e7f9d51eb3873c729b9df94443f94f382883f16",
+      "icon": "mcp/google-drive/icon.svg",
+      "checksum": "sha256:a2bb2ae6af47bb1d73f5fd6cc17dc5e4a9fddf3b6dbd34857c450032ce542979",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1092,8 +1092,8 @@
       "license": null,
       "source": "https://higgsfield.ai",
       "path": "mcp/higgsfield",
-      "icon": null,
-      "checksum": "sha256:0c3f5684eb715ec33a66fbc3bff2ac3d247c3c79bf76f00791cb17574020f7d1",
+      "icon": "mcp/higgsfield/icon.svg",
+      "checksum": "sha256:3c30ede036ab99885f1ae57e31a242089f32080b4a19df22b6ebcd07a36ad315",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1116,8 +1116,8 @@
       "license": "MIT",
       "source": "https://github.com/Flux159/mcp-server-kubernetes",
       "path": "mcp/kubernetes",
-      "icon": null,
-      "checksum": "sha256:a841b0a9d63a5fb534d42670db2510c8c0bb2031c1a3a9bbfbe0fa532afe65df",
+      "icon": "mcp/kubernetes/icon.svg",
+      "checksum": "sha256:68f7186e4af0ac25869e4f5fcb446697fb7803928aacde34b1a690332b126628",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1141,8 +1141,8 @@
       "license": null,
       "source": "https://linear.app/docs/mcp",
       "path": "mcp/linear",
-      "icon": null,
-      "checksum": "sha256:a5bd295782c907c99bd6665396f482a33bae84b13030a67bb55f608cbf4a84a0",
+      "icon": "mcp/linear/icon.svg",
+      "checksum": "sha256:e9965b9cc15f80e509470bea6a675a27e27e24e530fe473b19fc013b28358e5a",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1171,8 +1171,8 @@
       "license": "MIT",
       "source": "https://github.com/jau123/MeiGen-AI-Design-MCP",
       "path": "mcp/meigen-ai-design",
-      "icon": null,
-      "checksum": "sha256:b6b5c7a27035d27d712560537d037df55beca303404170d492d282a218ab3597",
+      "icon": "mcp/meigen-ai-design/icon.svg",
+      "checksum": "sha256:aaddc4fdbd6c6e9c233514272daa34501bdbfcdd7aefb52428b4ec989d7e0a5d",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1194,8 +1194,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
       "path": "mcp/memory",
-      "icon": null,
-      "checksum": "sha256:0b30a64c5ce25d9ec5e733c7e0dfa3a9e3b099623a186ab4c6ddd9b85eb8e381",
+      "icon": "mcp/memory/icon.svg",
+      "checksum": "sha256:22e5a6ceee1f24d6f492cc6c5c583171caabe5d1bd9a1daacc6dd9b47befdea8",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1224,8 +1224,8 @@
       "license": "MIT",
       "source": "https://github.com/Swih/mistral-mcp",
       "path": "mcp/mistral",
-      "icon": null,
-      "checksum": "sha256:43fca303100a2522dec3142e1f2e0d394aa17f1df2a8197263787076f2896341",
+      "icon": "mcp/mistral/icon.svg",
+      "checksum": "sha256:06f917ef3c2018988a3452d9a7c535b58af1a512c49efd1c628cce3817975117",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1249,8 +1249,8 @@
       "license": "MIT",
       "source": "https://github.com/neondatabase/mcp-server-neon",
       "path": "mcp/neon",
-      "icon": null,
-      "checksum": "sha256:37eb55392310e2e6704354a9e35290b826017293a1b79789b0c7399f5bb4b46f",
+      "icon": "mcp/neon/icon.svg",
+      "checksum": "sha256:bfe71ad8a2f28b6eabf4587c61d23e11dda69d50988cf1b2e509bb860ab0ce33",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1273,8 +1273,8 @@
       "license": "MIT",
       "source": "https://github.com/makenotion/notion-mcp-server",
       "path": "mcp/notion",
-      "icon": null,
-      "checksum": "sha256:30c6ebaa5b66dc9a04454bb0aae46f529f038a9c4cdd87b1e7bf92c30a871118",
+      "icon": "mcp/notion/icon.svg",
+      "checksum": "sha256:be67dec06a1311ab3b5677d1e4ce0f4e56c79a3e775bbd551d9cf94a6b2f17ae",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1297,8 +1297,8 @@
       "license": null,
       "source": "https://www.paypal.ai",
       "path": "mcp/paypal",
-      "icon": null,
-      "checksum": "sha256:6051874631e5137d7f4e48504b38e6661ad4b76c3d557cae9afa8e43f3157766",
+      "icon": "mcp/paypal/icon.svg",
+      "checksum": "sha256:947d0705d95468da7c30dace065603abdacce9cb2613e7d58d822b5dd6938a72",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1321,8 +1321,8 @@
       "license": null,
       "source": "https://plaid.com/docs/",
       "path": "mcp/plaid",
-      "icon": null,
-      "checksum": "sha256:eed04d66581181be19afaf81409cd3d2ce3d5757ece107322a4b40b8be469e6d",
+      "icon": "mcp/plaid/icon.svg",
+      "checksum": "sha256:cfb11c55b7d5ee74a447b31d033a0bae53d5b11841ff9cca23619b803426d140",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1346,8 +1346,8 @@
       "license": "Apache-2.0",
       "source": "https://github.com/microsoft/playwright-mcp",
       "path": "mcp/playwright",
-      "icon": null,
-      "checksum": "sha256:4b8bbda46d3de859d8c1ed943dcea442b2fff9a15976c40117336ba61d5b3a8b",
+      "icon": "mcp/playwright/icon.svg",
+      "checksum": "sha256:1dcd0d9b58a5257d72eaa1032e59ee692122b5fa6b13bdb814c7e7d8c71554ca",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1371,8 +1371,8 @@
       "license": null,
       "source": "https://polygon.io/docs",
       "path": "mcp/polygon-io",
-      "icon": null,
-      "checksum": "sha256:b0a0548e14d11c28f3559837e483b9c4e5b81c33aab606aaabee871c0c120eaf",
+      "icon": "mcp/polygon-io/icon.svg",
+      "checksum": "sha256:94cdc49112a05b96e8a86f35c001ceb77781e92f31c595383f318786d233a380",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1395,8 +1395,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/postgres",
       "path": "mcp/postgres",
-      "icon": null,
-      "checksum": "sha256:5b19b1594eaca1c6eb9cba1ac36f33127d50e5703b6188dfa02abfdf15a8ad96",
+      "icon": "mcp/postgres/icon.svg",
+      "checksum": "sha256:5042c51d2b9874705e5a6ec2d7cbf34fd959e0d96cafb4e265d5cd4bdeeee989",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1419,8 +1419,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/puppeteer",
       "path": "mcp/puppeteer",
-      "icon": null,
-      "checksum": "sha256:3d3b888d00b8133345b85098e4cf97dd063831c540e14345249f174c74cb8185",
+      "icon": "mcp/puppeteer/icon.svg",
+      "checksum": "sha256:0a55e0128ca6d00a882f9d0abd4743708c2220086ea6bc05b2aae3e7894bee49",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1443,8 +1443,8 @@
       "license": null,
       "source": "https://developer.intuit.com",
       "path": "mcp/quickbooks",
-      "icon": null,
-      "checksum": "sha256:bccbce7b984ff2d1493cb6313453ba793ae11ffbcf46f5bcc61063a7f8bd6239",
+      "icon": "mcp/quickbooks/icon.svg",
+      "checksum": "sha256:ecd4159f0221de3d7622b0040ddcde521ae8459bd9cc0dce504fbc3f023050b5",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1467,8 +1467,8 @@
       "license": "MIT",
       "source": "https://github.com/redis/mcp-redis",
       "path": "mcp/redis",
-      "icon": null,
-      "checksum": "sha256:172f9a48be2975a7020fd459f8baaa8f811e02b075b7b15131954ec26ef96eda",
+      "icon": "mcp/redis/icon.svg",
+      "checksum": "sha256:2699a7e99e1513508e70fa89c520313187c986405861bb9d9ae9d7c48e32b697",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1491,8 +1491,8 @@
       "license": null,
       "source": "https://docs.sentry.io/product/sentry-mcp/",
       "path": "mcp/sentry",
-      "icon": null,
-      "checksum": "sha256:350939c1a57303fc62257bb8c4ea3d965f95d7e350e7cdcab23c0284f2b188cb",
+      "icon": "mcp/sentry/icon.svg",
+      "checksum": "sha256:8ad407c1b6dc4d6dba6aaa2dab145dc921c81a05cb778d5e5088e9a2869dbd66",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1514,8 +1514,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
       "path": "mcp/sequential-thinking",
-      "icon": null,
-      "checksum": "sha256:50718d0906b699fdae8715bf0ac36241c578deba528312f20b198f5b40604b97",
+      "icon": "mcp/sequential-thinking/icon.svg",
+      "checksum": "sha256:7de8cc03d77bcbcd750454dddea11cb7285bc17e64975aaf61ae378adcb07519",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1538,8 +1538,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/slack",
       "path": "mcp/slack",
-      "icon": null,
-      "checksum": "sha256:b689ea23af1d39d2818591958e8c6975d8491321114e79d16d5cbe728fad254a",
+      "icon": "mcp/slack/icon.svg",
+      "checksum": "sha256:a897b13bdb2139e506626d5f2b1cba9d74d9312d4f020e2483ffb0b2a8e1de49",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1562,8 +1562,8 @@
       "license": "MIT",
       "source": "https://github.com/sendaifun/solana-agent-kit",
       "path": "mcp/solana-agent-kit",
-      "icon": null,
-      "checksum": "sha256:bc9a02d0ae9edad2a33b6fc7f43a6d5aa26f6bbfeead7e9567c3fc1399730ed4",
+      "icon": "mcp/solana-agent-kit/icon.svg",
+      "checksum": "sha256:ebe11acb2551f5c5c4f4181a422ea291ca45bc35e63f6a1bdf7549f3f6b4489f",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1586,8 +1586,8 @@
       "license": "MIT",
       "source": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite",
       "path": "mcp/sqlite",
-      "icon": null,
-      "checksum": "sha256:64c5b9084d39093db85a30d90336c6b12f383bc827d1ff01ccf4a7ef5e334978",
+      "icon": "mcp/sqlite/icon.svg",
+      "checksum": "sha256:35c78350312a58d742af2f4f58506ef66a7834de84e8cb2de2367ccb8c54f692",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1610,8 +1610,8 @@
       "license": null,
       "source": "https://docs.stripe.com/mcp",
       "path": "mcp/stripe",
-      "icon": null,
-      "checksum": "sha256:38f20e287f4d13847b1ec6e0575174144d884eb8e1e1ab876fe589890691a28e",
+      "icon": "mcp/stripe/icon.svg",
+      "checksum": "sha256:739834f42dc262b58c8b6bbd3e63e5e565cc1a8b94a7213ba74947e861805461",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1635,8 +1635,8 @@
       "license": "Apache-2.0",
       "source": "https://github.com/supabase-community/supabase-mcp",
       "path": "mcp/supabase",
-      "icon": null,
-      "checksum": "sha256:72ca3d9dd55e2e3f5572c814bd69c9f17ce607b8db6551eaf36cb366defc9920",
+      "icon": "mcp/supabase/icon.svg",
+      "checksum": "sha256:69bb0d45562b9372bb1a4cbb2b79f6a4d3193884201401a8255d85aa34f1c401",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1660,8 +1660,8 @@
       "license": null,
       "source": "https://thegraph.com/docs/",
       "path": "mcp/the-graph",
-      "icon": null,
-      "checksum": "sha256:df51aa6dad6d60c08b1204e2685ea2b4167c359c85c4133576d58cd7d3699520",
+      "icon": "mcp/the-graph/icon.svg",
+      "checksum": "sha256:fc561cab41c0d47130d97c5bff985c383f600abe2531fe725c09692dec83ce6a",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1685,8 +1685,8 @@
       "license": null,
       "source": "https://portal.thirdweb.com",
       "path": "mcp/thirdweb",
-      "icon": null,
-      "checksum": "sha256:776639e1f7914c0720eb0f593b016d8f6bf6cedc4d423d09316e506f2b2961a6",
+      "icon": "mcp/thirdweb/icon.svg",
+      "checksum": "sha256:cca42bed9e995f5cac2b4ab5310f9113b6b3fd31925aac15d103c08b2987f6c0",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1710,8 +1710,8 @@
       "license": null,
       "source": "https://www.tradingview.com",
       "path": "mcp/tradingview",
-      "icon": null,
-      "checksum": "sha256:777f71b654aa3d598a204d5493bc11d9e31b913640e52ed53ccefb38e650d43b",
+      "icon": "mcp/tradingview/icon.svg",
+      "checksum": "sha256:4fc125d9c20b81776533f7bd8dd6aacc1c4ea0af5016ac4ea50cca340ab55d2c",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1735,8 +1735,8 @@
       "license": null,
       "source": "https://vercel.com/docs/mcp",
       "path": "mcp/vercel",
-      "icon": null,
-      "checksum": "sha256:b351cfdca1ed11f0d915d8469b3dc17fe1ced13dab8769c4a8cdabe573915a35",
+      "icon": "mcp/vercel/icon.svg",
+      "checksum": "sha256:acd82d613c1fdef1227ad922cf8dae692aabd0ad301bb3290a22936fecf3056f",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"
@@ -1760,8 +1760,8 @@
       "license": "MIT",
       "source": "https://github.com/anaisbetts/mcp-youtube",
       "path": "mcp/youtube",
-      "icon": null,
-      "checksum": "sha256:4564320a11ca7a25a33cc75b181344e6e5353181288d951ff036e246fc0c88db",
+      "icon": "mcp/youtube/icon.svg",
+      "checksum": "sha256:a2b8d500aa483d18083f3da2fac45cb738afa8350afd63e6c3f95260dbde69ad",
       "compatibility": {
         "hermes": ">=0.3.0",
         "desktop": ">=1.2.0"

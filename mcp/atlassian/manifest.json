@@ -8,6 +8,7 @@
   "author": { "name": "Atlassian", "url": "https://www.atlassian.com/platform/remote-mcp-server" },
   "source": "https://www.atlassian.com/platform/remote-mcp-server",
   "tags": ["jira", "confluence", "atlassian", "project-management"],
+  "icon": "icon.svg",
   "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
   "permissions": ["network"],
   "transport": "http",

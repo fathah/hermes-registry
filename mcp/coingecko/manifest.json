@@ -8,6 +8,7 @@
   "author": { "name": "CoinGecko", "url": "https://docs.coingecko.com" },
   "source": "https://docs.coingecko.com",
   "tags": ["trading", "crypto", "market-data", "markets"],
+  "icon": "icon.svg",
   "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
   "permissions": ["network"],
   "transport": "http",
