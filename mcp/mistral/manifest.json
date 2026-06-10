@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "mistral",
+  "name": "Mistral AI",
+  "version": "1.0.0",
+  "description": "Full Mistral AI surface — chat, embeddings, vision, OCR, Voxtral audio (transcribe/speak), Codestral FIM, agents, moderation, files, and batch. 22 tools. Listed on the Official MCP Registry. Free Experiment tier: 1B tokens/month.",
+  "author": { "name": "Swih", "url": "https://github.com/Swih/mistral-mcp" },
+  "license": "MIT",
+  "source": "https://github.com/Swih/mistral-mcp",
+  "tags": ["mistral", "llm", "ocr", "audio", "transcription", "embeddings", "vision", "codestral", "fim"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["mistral-mcp"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "MISTRAL_API_KEY": {
+        "type": "string",
+        "description": "Mistral API key. Free Experiment tier provides 1B tokens/month at mistral.ai."
+      }
+    },
+    "required": ["MISTRAL_API_KEY"]
+  }
+}
