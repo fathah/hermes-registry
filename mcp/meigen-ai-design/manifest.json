@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1",
+  "type": "mcp",
+  "id": "meigen-ai-design",
+  "name": "MeiGen AI Design",
+  "version": "1.0.0",
+  "description": "Image and video generation across 9 leading models: GPT Image 2, Nanobanana 2, Seedream 5.0, Midjourney V8.1, Flux 2 Klein, Seedance 2.0, Happyhorse 1.0, Veo 3.1, plus local ComfyUI. SSRF-hardened, R2 uploads auto-expire after 24h. 1k+ stars.",
+  "author": { "name": "jau123", "url": "https://github.com/jau123/MeiGen-AI-Design-MCP" },
+  "license": "MIT",
+  "source": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+  "tags": ["image-gen", "video-gen", "midjourney", "flux", "dalle", "seedance", "veo", "comfyui", "creative"],
+  "compatibility": { "hermes": ">=0.3.0", "desktop": ">=1.2.0" },
+  "permissions": ["network"],
+  "transport": "stdio",
+  "command": "uvx",
+  "args": ["meigen-mcp"],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "MEIGEN_API_KEY": {
+        "type": "string",
+        "description": "MeiGen cloud API key for managed image/video generation. Not required when using BYOK or offline ComfyUI mode."
+      },
+      "OPENAI_API_KEY": {
+        "type": "string",
+        "description": "OpenAI API key for BYOK mode (GPT Image 2). Optional — only needed for BYOK backend."
+      }
+    },
+    "required": []
+  }
+}
